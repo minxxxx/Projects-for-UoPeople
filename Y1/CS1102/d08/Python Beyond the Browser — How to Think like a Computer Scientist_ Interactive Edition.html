@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html -->
+<html class="js-focus-visible" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Beyond the Browser — How to Think like a Computer Scientist: Interactive Edition</title>
+    <link rel="stylesheet" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/basic.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/webgldemo.css">
+    <link rel="stylesheet" type="text/css" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/webglinteractive.css">
+    <link rel="stylesheet" type="text/css" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/accessibility.css">
+    <link rel="stylesheet" type="text/css" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/matrixeq.css">
+    <link rel="stylesheet" type="text/css" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/CodeChat.css">
+    <link rel="stylesheet" type="text/css" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/bootstrap-sphinx.css">
+    <link rel="stylesheet" type="text/css" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/637.css">
+    <link rel="stylesheet" type="text/css" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/runestone.css">
+
+
+
+    <script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/osd.js.download"></script><script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/f.txt"></script><script async="" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/ga.js.download"></script><script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/f(1).txt" id="google_shimpl"></script><script id="documentation_options" data-url_root="../" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/documentation_options.js.download"></script>
+    <script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/jquery.js.download"></script>
+    <script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/underscore.js.download"></script>
+    <script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/doctools.js.download"></script>
+    <script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/webglinteractive.js.download"></script>
+    <script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/FileSaver.min.js.download"></script>
+    <script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/matrixeq.js.download"></script>
+    <script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/animationbase.js.download"></script>
+    <script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/html4css1.css"></script>
+    <script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/runtime.bundle.js.download"></script>
+    <script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/637.bundle.js.download"></script>
+    <script src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/runestone.bundle.js.download"></script>
+    <link rel="index" title="Index" href="https://runestone.academy/runestone/books/published/thinkcspy/genindex.html">
+    <link rel="search" title="Search" href="https://runestone.academy/runestone/books/published/thinkcspy/search.html">
+    <link rel="next" title="Experimenting With the 3n+1 Sequence" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/sequencelab.html">
+    <link rel="prev" title="Approximating the Value of Pi" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/montepi.html">
+
+
+<link rel="shortcut icon" href="https://runestone.academy/runestone/static/favicon.ico" type="image/ico">
+
+
+<script>
+  eBookConfig = {};
+  
+    
+    eBookConfig.useRunestoneServices = true;
+    eBookConfig.host = '';
+    eBookConfig.app = eBookConfig.host + '/' + 'runestone';
+    eBookConfig.course = 'thinkcspy';
+    eBookConfig.basecourse = 'thinkcspy';
+    eBookConfig.isLoggedIn = false;
+    eBookConfig.email = '';
+    eBookConfig.isInstructor = false;
+    eBookConfig.username = 'Anonymous';
+    eBookConfig.readings = null;
+    eBookConfig.activities = {}
+    eBookConfig.downloadsEnabled = false;
+    eBookConfig.allow_pairs = false
+    eBookConfig.enableCompareMe = true;
+    
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "4.0.2";
+  eBookConfig.python3 = true;
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.9.0';
+  eBookConfig.jobehost = '';
+  eBookConfig.proxyuri_runs = '';
+  eBookConfig.proxyuri_files = '';
+  eBookConfig.enable_chatcodes = false ? false : false;
+
+</script>
+
+<!-- Ad Serving Headers Only serve ads to Anonymous Users -->
+
+    
+        
+         <script data-ad-client="ca-pub-8347101402675282" async="" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/f(2).txt" data-checked-head="true"></script>
+        
+    
+
+
+
+  <meta http-equiv="origin-trial" content="A88otRz1Fd3Nt567e2IYshC18LL3KGVXpVJW9oTCId4RYaygt23pbb4JqrbdIO/bwZPWEmRjBIRBu/bZbDR7Pg4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A0gCLbXCcL0R1Oc8tFPDs0G4Elz17w3zHp+Zst66+D17veE2o7fUcPsA114QtSTRqfVJLMeTSdeWOom0CcyCsgYAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9RQ+LxFazAousxUwSCzaihJjHLO1UyjQp0teZKHl7WdbVjPDfHSKMd6D/ZI5MTjqClFycbl70EFd7cBJWXqKQEAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6WKeWsdn1Ct+ZPqS9NCxxaiBoQ7wdTkK2/gE69Yu0gfBKJfo1gOvgkGmf5/xaIajT/RUb9AbnF1FsSZ47cCcQcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A04ZCu7yjrHgwQJK5ISHhH1DSg0qqowEay3n70KO6wV3D2Mj+OX3Kw20aSMitzgdG1xfrN7sOJV/dZIk+RvCzA4AAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjM0MDgzMTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A2YAd4xOntTGygIDjApOTtXOgVI3IWsd5OnOGq3RbRkIQwyqYWNl1JGRAcvtm6VOHDj4n07T/J19VqLuJn3MmQ8AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A2c5Ux+hivdkLh/KbZUGr6f7SCR0mZrBVfPJ+/OuDVHNwiYv+Lo83b9z5qL8sod78bQl0pSLtbvRWURo+xRl7AIAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AzNJ4sd3tVurolpdvWYZ4cmP9Po7RJhEHSqmC3pgxW9fFVZvchhtcMUgHAs97npxMD1jhXHO8s6q6Wy1MMLxKgEAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AwfG8hAcHnPa/kJ1Co0EvG/K0F9l1s2JZGiDLt2mhC3QI5Fh4qmsmSwrWObZFbRC9ieDaSLU6lHRxhGUF/i9sgoAAACBeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwQ7dCmHkvR6FuOFxAuNnktYSQrGbL4dF+eBkrwNLALc69Wr//PnO1yzns3pjUoCaYbKHtVcnng2hU+8OUm0PAYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AysVDPGQTLD/Scn78x4mLwB1tMfje5jwUpAAzGRpWsr1NzoN7MTFhT3ClmImi2svDZA7V6nWGIV8YTPsSRTe0wYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link rel="sidebar" href="https://hypothes.is/app.html" type="application/annotator+html" data-hypothesis-asset=""><link rel="notebook" href="https://hypothes.is/notebook" type="application/annotator+html" data-hypothesis-asset=""><link rel="hypothesis-client" href="https://cdn.hypothes.is/hypothesis/1.855.0/build/boot.js" type="application/annotator+javascript" data-hypothesis-asset=""><script type="text/javascript" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/annotator.bundle.js.download" data-hypothesis-asset=""></script><link rel="stylesheet" type="text/css" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/annotator.css" data-hypothesis-asset=""><link rel="stylesheet" type="text/css" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/pdfjs-overrides.css" data-hypothesis-asset=""><link rel="preload" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/f(3).txt" as="script"><script type="text/javascript" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/f(3).txt"></script><link rel="preload" href="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/f(4).txt" as="script"><script type="text/javascript" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/f(4).txt"></script></head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+        
+          <a class="brand-logo" href="https://runestone.academy/runestone/default/user/login" aria-label="Login"><img src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/logo_small.png" alt=""></a>
+        
+        <a class="navbar-brand" href="https://runestone.academy/runestone/books/published/thinkcspy/index.html" aria-label="index-page">
+          
+            
+            thinkcspy
+            
+          
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span class="visuallyhidden" aria-label="Social">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone">Follow @iRunestone</a>
+                <a href="https://www.facebook.com/RunestoneInteractive">Our Facebook Page</a>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Search">Search</span></i>
+          </a>
+          <ul class="dropdown-menu">
+            
+                <li><a href="https://runestone.academy/runestone/books/published/thinkcspy/index.html" aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href="https://runestone.academy/runestone/books/published/thinkcspy/genindex.html">Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="https://runestone.academy/runestone/books/published/thinkcspy/search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes">
+                <input type="hidden" name="area" value="default">
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"><span class="visuallyhidden" aria-label="User">User</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class="loggedinuser">Not logged in</span></li>
+            <li class="divider"></li>
+            <li><a href="https://runestone.academy/runestone/assignments/chooseAssignment.html">Assignments</a></li>
+            <li><a href="https://runestone.academy/runestone/assignments/practice">Practice</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="https://runestone.academy/runestone/default/courses">Change Course</a></li>
+			      <li class="divider"></li>
+            <li id="ip_dropdown_link" style="display: none;"><a href="https://runestone.academy/runestone/admin/index">Instructor's Page</a></li>
+            
+            <li><a href="https://runestone.academy/runestone/dashboard/studentreport">Progress Page</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="https://runestone.academy/runestone/default/user/profile" id="profilelink" style="display: none;">Edit Profile</a></li>
+            <li><a href="https://runestone.academy/runestone/default/user/change_password" id="passwordlink" style="display: none;">Change Password</a></li>
+            <li><a href="https://runestone.academy/runestone/default/user/register" id="registerlink">Register</a></li>
+            
+            <li class="loginout"><a href="https://runestone.academy/runestone/default/user/login">Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+			<!-- dark mode toggle -->
+             <li><label class="theme-switch" for="checkbox">
+					  <input type="checkbox" id="checkbox" onchange="runestoneComponents.switchTheme()">
+							<div class="slider round"></div>
+					</label>Dark Mode</li>
+			 </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:runestoneComponents.popupScratchAC()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Scratch Activecode">Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Help">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href="http://runestoneinteractive.org/pages/faq.html">FAQ</a></li>
+            <li><a href="https://runestone.academy/runestone/static/instructorguide/index.html">Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href="http://runestoneinteractive.org/">About Runestone</a></li>
+            <li><a href="https://runestone.academy/runestone/default/reportabug?course=thinkcspy&amp;page=pythonshell">Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+            <script>
+</script>
+<li class="dropdown globaltoc-container">
+  <a href="https://runestone.academy/runestone/books/published/thinkcspy/index.html" class="dropdown-toggle" data-toggle="dropdown" aria-label="index">This Chapter<b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc">
+      
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/sinlab.html">Plotting a sine Wave</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/sequencelab.html">Experimenting With the 3n+1 Sequence</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html">Python Beyond the Browser</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/montepi.html">Approximating the Value of Pi</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/lab12_02.html">Letter Count Histogram</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/lab12_01.html">Counting Letters</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/lab04_01a.html">Lessons from a Triangle</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/lab04_01.html">Drawing a Circle</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/lab03_01.html">Turtle Racing Lab</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/astronomylab.html">Astronomy Animation</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/Exercises.html">Exercises</a></li>
+      
+      
+  </ul>
+</li>
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+  <li id="relations-prev" title="Previous Chapter - Approximating the Value of Pi" data-toggle="tooltip">
+    <a href="montepi.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Experimenting With the 3n+1 Sequence' data-toggle="tooltip" >              
+    <a href="sequencelab.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script>
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  window.addEventListener('load', (event) => {
+    $('#relations-prev').tooltip(opts);
+    $('#relations-next').tooltip(opts);
+  });
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- navbar -->
+  </div> <!-- container -->
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+
+  
+    <ul role="navigation" class="nextprev-list nextprev-list-top" aria-label="Change page">
+<li id="relations-prev-top" class="relations-prev navLink" title="" data-toggle="tooltip" data-original-title="Previous Section - Approximating the Value of Pi">
+  <a href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/montepi.html" aria-label="Previous - Approximating the Value of Pi">
+    <i class="prevNav glyphicon glyphicon-chevron-left" style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next-top" class="relations-next navLink" title="" data-toggle="tooltip" data-original-title="Next Section - Experimenting With the 3n+1 Sequence">
+    <a href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/sequencelab.html" aria-label="Next - Experimenting With the 3n+1 Sequence">
+      <i id="relationsNextIcon" class="nextNav glyphicon glyphicon-chevron-right" style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev-top').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next-top').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+  
+
+<!-- Ad Serving for Runestone Campaign -->
+
+    
+        
+    
+
+
+  
+  <div class="section" id="python-beyond-the-browser">
+<h1>Python Beyond the Browser<a class="headerlink" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html#python-beyond-the-browser" title="Permalink to this headline">¶</a></h1>
+<p>Although having Python available for you to use right in the browser is
+convenient, there are some limitations, and Python is a real programming
+language used for real applications by some very large and impressive
+corporations.  In this Advanced Topic we’ll show you how to use the Python
+shell along with a simple text editor.  In a later advanced topic we will
+introduce you to something called an Integrated Development Environment or
+IDE that will make life even better for you when working on a larger Python
+project.</p>
+<div class="section" id="the-python-shell">
+<h2>The Python Shell<a class="headerlink" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html#the-python-shell" title="Permalink to this headline">¶</a></h2>
+<p>One of the most important ways you can learn computer science is by simply
+experimenting or trying things.  Unlike chemistry where you can explode
+things and do real damage, in computer science you really can’t go wrong by
+just experimenting a bit.  In the worst case you might have to reboot your
+computer, but its pretty hard to do any long lasting damage.</p>
+<p>For those of you used to fancy graphical user interfaces the Python shell
+make look a bit primitive, but don’t be fooled by the lack of fancy
+interface, you can do a lot of powerful stuff in the shell.  On a Mac or with
+Linux Python is already installed for you.  There is a short video link at
+the end of this topic that explains how to download and install Python on
+Windows.  Here is an example of what the shell looks like once you have it
+started up.</p>
+<img alt="../_images/python_shell.png" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/python_shell.png">
+<p>To run the Python shell you will first need to start up the Terminal
+application, on the Mac you can find this under Utilities in the Applications
+folder, on most versions of Linux you can find it under the accessories menu.
+Once you have a terminal started, you simply type python and press the return
+key.  To start the shell under windows simply go to the start menu and choose
+<cite>Python (command line)</cite> from the menu.</p>
+<p>Now that you have the shell started you may wonder what you can do with it?
+In the shell you can do anything you would do in a Python program.  Any of
+the examples you have seen in this chapter can be typed in directly to the
+shell.  Any Python expression can be entered into the shell and you will see
+the result printed out for you right underneath.  Here are some examples
+using the functions and expressions introduced in this chapter.</p>
+<img alt="../_images/shell_expressions.png" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/shell_expressions.png">
+<p>It’s a good idea to get in the habit of using the shell.  Very often if you
+have a question about how something works you can answer the question for
+yourself by simply trying it in the shell.  If you need a really extensable
+calculator you can simply start up your Python shell and use it to calculate
+just about anything.  Soon you’ll find yourself writing little Python
+snippets for all kinds of things.</p>
+</div>
+<div class="section" id="running-a-python-program">
+<h2>Running a Python Program<a class="headerlink" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html#running-a-python-program" title="Permalink to this headline">¶</a></h2>
+<p>Of course the problem with the Python shell is that you can’t save anything,
+so you always have to retype whatever you want to do over again.  It’s also
+difficult to do anything more than a few lines long because if you make a
+typo you end up retying everything.  Fortunately there is a solution for that
+as well.  Python allows you to write a program, and save it as a text file
+with the extension <cite>.py</cite> and then you can run that program right from the
+command line.</p>
+<p>Here is a simple example of a Python program.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Hello World'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'2 + 3 = '</span><span class="p">,</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Let’s assume that you have typed in the lines above in Notepad or TextEdit or
+some similar editor, if you already know emacs or vi you are a awesome!  Now
+save the file as <cite>testprog1.py</cite> and then head back to the terminal.  Now at
+the command line of the terminal type <cite>python testprog1.py</cite> and you will see
+the following output</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bmiller</span><span class="nd">@chronos</span><span class="o">&gt;</span> <span class="n">python</span> <span class="n">testprog1</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Hello</span> <span class="n">World</span>
+<span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">=</span>  <span class="mi">5</span>
+</pre></div>
+</div>
+<p>Anything we do in the following chapters that appears in the editing window
+in the web page can be done exactly the same in the terminal just like the
+small example above.  This example illustrates one very important difference
+between entering expressions in the Python shell, and writing a Python
+program.  The Python shell uses what we call a read eval print loop.  That
+is, Python <em>reads</em> an expression from the command line,
+then <em>evaluates</em> that expression, and finally <em>prints</em> the result.  In a
+python program that you run using the Python interpreter,
+you have to be explicit about what it is you want to print.  That is why in
+the Python program we use the print function on both lines.</p>
+</div>
+<div class="section" id="installing-python-on-windows">
+<h2>Installing Python on Windows<a class="headerlink" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html#installing-python-on-windows" title="Permalink to this headline">¶</a></h2>
+<p>If you are using windows you will need to install Python for yourself.  Here
+is a video that explains how to do it.</p>
+<iframe width="425" height="349" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/9EfGpN1Pnsg.html" frameborder="0" allowfullscreen=""></iframe><p>We are assuming that you use Python 3.x, as of this writing the latest
+version is Python 3.2.1.  This link will tell you how to update or install
+Python on Linux, Mac, or Windows. <a class="reference external" href="http://www.diveintopython3.net/installing-python.html">Install Python</a></p>
+</div>
+<div class="section" id="glossary">
+<h2>Glossary<a class="headerlink" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html#glossary" title="Permalink to this headline">¶</a></h2>
+<dl class="glossary simple">
+<dt id="term-terminal">terminal<a class="headerlink" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html#term-terminal" title="Permalink to this term">¶</a></dt><dd><p>A terminal is a program now days, but not too many years ago computer
+scientists did their work at a hardware device called a terminal.
+The terminal was connected by wire, or phone line to a computer
+somewhere else.  Yes, the internet has not always been here.</p>
+</dd>
+<dt id="term-command-line">command line<a class="headerlink" href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html#term-command-line" title="Permalink to this term">¶</a></dt><dd><p>The command line is often synonymous with terminal in that when you
+are using the terminal you are also using the command line.  It’s
+where you type in commands, and then the computer interprets those
+commands and responds to you with results.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal">1</span> of <span id="scprogressposs">1</span> activities on this page <div id="subchapterprogress" aria-label="Page progress" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div class="ui-progressbar-value ui-widget-header ui-corner-left ui-corner-right loggedout" style="width: 500px;"></div></div>
+  </div>
+  
+    <ul role="navigation" class="nextprev-list nextprev-list-bottom" aria-label="Change page">
+<li id="relations-prev-bottom" class="relations-prev navLink" title="" data-toggle="tooltip" data-original-title="Previous Section - Approximating the Value of Pi">
+  <a href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/montepi.html" aria-label="Previous - Approximating the Value of Pi">
+    <i class="prevNav glyphicon glyphicon-chevron-left" style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next-bottom" class="relations-next navLink" title="" data-toggle="tooltip" data-original-title="Next Section - Experimenting With the 3n+1 Sequence">
+    <a href="https://runestone.academy/runestone/books/published/thinkcspy/Labs/sequencelab.html" aria-label="Next - Experimenting With the 3n+1 Sequence">
+      <i id="relationsNextIcon" class="nextNav glyphicon glyphicon-chevron-right" style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev-bottom').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next-bottom').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+  
+</div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-load-complete="true"></iframe></ins></ins></ins>
+<footer class="footer">user not logged in</footer>
+
+
+
+  
+    
+      <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32029811-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    
+  
+
+  
+    <script type="application/json" class="js-hypothesis-config">
+    {
+      "showHighlights": false
+    }
+    </script>
+
+    <script async="" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/embed.js.download"></script>
+    <!--provide space to prevent hypothes.is sidebar from obscuring content-->
+    <style>@media screen and (max-width:767px) { body { padding-right: 21px; }}</style>
+
+  
+
+
+<script> 
+  window.addEventListener('load', (event) => {
+    runestoneComponents.getSwitch(); 
+  });
+</script>
+
+
+  
+<hypothesis-adder data-js-focus-visible="" style="position: absolute; top: 0px; left: 0px;"></hypothesis-adder><hypothesis-sidebar data-js-focus-visible=""></hypothesis-sidebar><hypothesis-notebook data-js-focus-visible=""></hypothesis-notebook><iframe id="google_osd_static_frame_9978466910735" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/saved_resource.html"></iframe><iframe src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./Python Beyond the Browser — How to Think like a Computer Scientist_ Interactive Edition_files/zrt_lookup.html" style="display: none;"></iframe></html>

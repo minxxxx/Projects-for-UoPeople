@@ -1,0 +1,82 @@
+Term 2 2021/2022 -> ? September, ? November
+
+Week 1 -> ? September, ? September
+Day01 -> Sunday, ? September
+	* Check course assignments and map out
+	* Java Notes Handguide Chapter 1 - The Mental Landscape, 16-33
+Day02 -> Monday, ? September
+	* Java Notes Handguide Chapter 2 - Names and Things, 34-87
+Day03 -> Tuesday, ? September
+	* Check course submissions are complete
+
+Week 2 -> ? September, ? September
+Day04 -> Sunday, ? September
+	* Check course assignments and map out
+	* Java Notes Handguide Chapter 3 - Control, 88-157
+Day05 -> Monday, ? September
+	* Course assignments
+Day06 -> Tuesday, ? September
+	* Check course submissions are complete
+
+Week 3 -> ? September, ? September
+Day07 -> Sunday, ? September
+	* Check course assignments and map out
+	* Java Notes Handguide Chapter 4 - Subroutines, 158-217
+Day08 -> Monday, ? September
+	* Course assignments
+Day09 -> Tuesday, ? September
+	* Check course submissions are complete
+
+Week 4 -> ? September, ? September
+Day10 -> Sunday, ? September
+	* Check course assignments and map out
+	* Java Notes Handguide Chapter 5 - Objects and Classes, 218-282
+Day11 -> Monday, ? September
+	* Course assignments
+Day12 -> Tuesday, ? September
+	* Check course submissions are complete
+
+Week 5 -> ? September, ? October
+Day13 -> Sunday, ? October
+	* Check course assignments and map out
+	* Java Notes Handguide Chapter 6 - Introduction to GUI Programming, 283-348
+Day14 -> Monday, ? October
+	* Java Notes Handguide Chapter 7 - Arrays and ArrayLists, 349-401
+Day15 -> Tuesday, ? October
+	* Check course submissions are complete
+
+Week 6 -> ? October, ? October
+Day16 -> Sunday, ? October
+	* Check course assignments and map out
+	* Java Notes Handguide Chapter 8 - Correctness, Robustness, Effeciency, 402-445
+Day17 -> Monday, ? October
+	* Java Notes Handguide Chapter 9 - Linked Data Structures and Recursion, 446-502
+Day18 -> Tuesday, ? October
+	* Check course submissions are complete
+
+Week 7 -> ? October, ? October
+Day19 -> Sunday, ? October
+	* Check course assignments and map out
+	* Java Notes Handguide Chapter 10 - Generic Programming and Collection Classes, 503-562
+Day20 -> Monday, ? October
+	* Java Notes Handguide Chapter 11 - I/O Streams, Files, and Networking, 563-616
+Day21 -> Tuesday, ? October
+	* Check course submissions are complete
+
+Week 8 -> ? October, ? October
+Day22 -> Sunday, ? October
+	* Check course assignments and map out
+	* Java Notes Handguide Chapter 12 - Threads and Multiprocessing, 617-683
+Day23 -> Monday, ? October
+	* Java Notes Handguide Chapter 13 - GUI Programming Continued, 684-738
+Day24 -> Tuesday, ? October
+	* Check course submissions are complete
+
+Week 9 -> ? October, ? November
+Day25 -> Sunday, ? October
+	* Check course assignments and map out
+	* Complete exams (?th to ?st)
+Day26 -> Tuesday, ? October
+	* Check course submissions are complete
+
+Grades available Nov ?

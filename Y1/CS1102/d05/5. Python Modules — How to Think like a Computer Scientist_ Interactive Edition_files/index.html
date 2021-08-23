@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://s0.2mdn.net/9250509/1628146192481/728x90/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+  <script type="text/javascript">
+    var clickTag = "https://www.doubleclickbygoogle.com/"; 
+  </script>
+  <meta id="adSizeMeta" name="ad.size" content="width=728,height=90">
+   
+  <link rel="stylesheet" href="./styles.min.css">
+  <script src="./tweenmax_2.0.1_min.js.download"></script>
+<script type="text/javascript">
+    
+  (function() {
+    var MAX_URL_PARAM_LENGTH = 34;
+    var CLICK_X_URL_KEY = 'nx';
+    var CLICK_Y_URL_KEY = 'ny';
+    var CREATIVE_DIMENSIONS_KEY = 'dim';
+    var AD_URL_PARAM = '&adurl=';
+
+    var relegateNavigation = '';
+    var urlParamMap = {};
+
+    urlParamMap[CLICK_X_URL_KEY] = null;
+    urlParamMap[CLICK_Y_URL_KEY] = null;
+    urlParamMap[CREATIVE_DIMENSIONS_KEY] = null;
+
+    var handleClickTagMessage = function(e) {
+      try {
+        var eventData = JSON.parse(e.data);
+      } catch (err) {
+        return;
+      }
+      if (eventData.isInitClickTag) {
+        if (eventData.clickTags) {
+          for (var i = 0; i < eventData.clickTags.length; i++) {
+            var clkTag = eventData.clickTags[i];
+            window[clkTag.name] = clkTag.url;
+          }
+        } else if (eventData.clickTag) {
+          window.clickTag = eventData.clickTag;
+        }
+        relegateNavigation = eventData.relegateNavigation;
+      }
+    };
+
+    var storeClickCoordinates = function(e) {
+      urlParamMap[CLICK_X_URL_KEY] = Math.round(e.clientX);
+      urlParamMap[CLICK_Y_URL_KEY] = Math.round(e.clientY);
+    };
+
+    var getCreativeDimensions = function() {
+      return window.innerWidth + 'x' + window.innerHeight;
+    }
+
+    var getExitClickParams = function(e) {
+      urlParamMap[CREATIVE_DIMENSIONS_KEY] = getCreativeDimensions();
+
+      var exitParams = '';
+      for (var key in urlParamMap) {
+        exitParams += '&' + key + '=';
+        if (urlParamMap[key] !== null) {
+          exitParams += urlParamMap[key];
+        }
+      }
+      return exitParams;
+    }
+
+    var appendExitClickParams = function(url) {
+      var adUrlIndex = url.toLowerCase().indexOf(AD_URL_PARAM);
+      var paramsToBeAdded = getExitClickParams();
+      if (adUrlIndex > -1 && paramsToBeAdded.length <= MAX_URL_PARAM_LENGTH) {
+        url = url.substr(0, adUrlIndex) + paramsToBeAdded +
+          url.substr(adUrlIndex);
+      };
+      return url;
+    };
+
+    if (open.call) {
+      window.open = function(open) {
+        return function(url, name, features) {
+          url = appendExitClickParams(url);
+          if (relegateNavigation === 'parent') {
+            var message = {'clickTag': url, 'isPostClickTag': true};
+            parent.postMessage(JSON.stringify(message), '*');
+          } else {
+            var args = [url, name];
+            if (features) {
+              args.push(features);
+            }
+            open.apply(window, args);
+          }
+        };
+      }(window.open);
+    }
+
+    if (window.addEventListener) {
+      window.addEventListener(
+          'message', handleClickTagMessage, false);
+      window.addEventListener('mousedown', storeClickCoordinates, true);
+    } else {
+      window.attachEvent('onmessage', handleClickTagMessage);
+    }
+  })();
+    
+  </script></head>
+<body>
+      <a href="javascript:window.open(window.clickTag)">
+      <div id="wrapper">
+        <div id="image_holder"><img class="autoBgImages preload" id="img_1" src="./img_1.gif" style="height: 100%;"><img class="autoBgImages preload" id="img_2" src="./img_2.gif" style="opacity: 0; height: 100%;"><img class="autoBgImages preload" id="img_3" src="./img_3.gif" style="opacity: 0; height: 100%;"></div>
+        <div id="darkeners"></div>        
+        <div id="copy_holder" class="copy">
+          <div id="copy_1" style=""><div class="lines" style="display: block; text-align: start; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); opacity: 0;"> Sophisticated custom reporting </div><div class="lines" style="display: block; text-align: start; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); opacity: 0;">and analytics for financial services </div></div>
+          <div id="copy_2" style=""><div class="lines" style="display: block; text-align: start; position: relative; transform: translate3d(-17.1043px, 0px, 0px); opacity: 1;"> Use a preferred financial </div><div class="lines" style="display: block; text-align: start; position: relative; transform: translate3d(-44.7486px, 0px, 0px); opacity: 0.127211;">management solution </div></div>
+          <div id="copy_3" style=""><div class="lines" style="display: block; text-align: start; position: relative; transform: matrix(1, 0, 0, 1, -70, 0);"> Sophisticated custom reporting </div><div class="lines" style="display: block; text-align: start; position: relative; transform: matrix(1, 0, 0, 1, -70, 0);">and analytics for financial services </div></div>
+        </div>
+        <div id="logo" style="opacity: 1;"></div>
+        <div id="cta" style="opacity: 1;"></div>       
+        <div id="startPlate" style="opacity: 0;"></div>
+      </div>
+    </a><!-- clickTag closing -->
+    <script src="./script.min.js.download"></script>
+
+</body></html>
