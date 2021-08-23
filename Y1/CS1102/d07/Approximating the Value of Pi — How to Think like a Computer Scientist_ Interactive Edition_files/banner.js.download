@@ -1,0 +1,42 @@
+/************************************** CREATIVE ************************************/
+var Creative = {};
+var tweenTime = .75;
+var tl = new TimelineMax();
+
+Creative.init = function() {
+
+    Creative.listener();
+
+    tl.addLabel('frame01');
+    tl.to(id('logo'), tweenTime, {left:0}, 'frame01');
+    tl.to(id('f1Copy'), tweenTime, {opacity:1}, 'frame01+=1');
+    tl.to(id('f1Image'), tweenTime, {opacity:1}, 'frame01+=1.5');
+    
+    tl.addLabel('frame02', '+=2');
+    tl.to([id('f1Copy'), id('f1Image')], tweenTime, {opacity:0}, 'frame02');
+    tl.to(id('f1ImageHolder'), tweenTime, {width:'50%'}, 'frame02');
+    tl.to(id('f2Image'), (tweenTime / 4), {opacity:1}, 'frame02');
+    tl.to([id('f2Image'), id('steam')], tweenTime, {left:0, ease:Power1.easeOut}, 'frame02');
+    tl.to(id('steam'), (tweenTime / 10), {opacity:1, ease:Power1.easeOut}, 'frame02+=.3');
+    tl.to(id('steam'), tweenTime, {y:-60, x:10, scale:1.1, ease:Power1.easeOut}, 'frame02+=.3');
+    tl.to(id('steam'), (tweenTime / 2), {opacity:0, ease:Power1.easeOut}, 'frame02+=.6');
+    tl.to(id('f2Copy'), tweenTime, {opacity:1}, 'frame02+=1');
+    
+    tl.addLabel('frame03', '+=2');
+    tl.to(id('f2Copy'), tweenTime, {opacity:0}, 'frame03');
+    tl.to(id('f3Copy'), tweenTime, {opacity:1}, 'frame03+=1');
+};
+
+Creative.listener = function (){
+    id('border').addEventListener("click", function(){
+        window.open(window.clickTag)
+    });
+}
+
+function id(input) {
+    return document.getElementById(input);
+}
+
+window.onload = function (){
+    Creative.init();
+};

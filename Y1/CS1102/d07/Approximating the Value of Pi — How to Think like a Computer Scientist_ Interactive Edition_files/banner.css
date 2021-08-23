@@ -1,0 +1,43 @@
+* {
+    margin:0; padding:0;
+}
+
+img {
+    position:absolute;
+    width:100%; height:100%;
+}
+
+p {
+    position:relative;
+    display:block;
+    text-align:center;
+}
+
+span {
+    position:relative;
+    text-align:center;
+}
+
+img, .fullScreen { position:absolute; width:728px; height:90px; }
+
+#f1ImageHolder { position:absolute; width:70%; height:90px; overflow:hidden; } 
+
+#mainContainer {
+    overflow:hidden;
+    width:728px; height:90px;
+    position:relative;
+    background-image: url('../images/bg.jpg');
+    background-size:100% 100%;
+    cursor:pointer;
+}
+
+#border {
+    width:100%; height:100%;
+    border:1px solid #f1746b;
+    box-sizing:border-box;
+    cursor:pointer;
+}
+
+.offScreenLeft { left:-100%; }
+.offScreenRight { left:20%; opacity:0; }
+.transparent { opacity:0; }
