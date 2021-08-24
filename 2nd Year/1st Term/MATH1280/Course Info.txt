@@ -1,0 +1,59 @@
+Introduction to Statistics
+– MATH 1280 :Learning Materials
+Get Ready For Your College Courses
+To best prepare for your future studies, please review the below preparation resources. We encourage you to use the time before starting your first term, to get a taste of the topics of your upcoming courses. There’s no better time to start than now! Good luck with your studies!
+
+ 
+
+Learn Introduction to Statistics
+Course Overview
+
+This course presents students with basic concepts in statistics and probability, and encourages statistical thinking. This course is intended to bring students to a level where they can carry out simple statistical analysis of simple data. Topics covered include descriptive statistics, probability, discrete and continuous random variables, the sampling distribution and the Central Limit Theorem. The R statistical programming environment is used for computation, graphical presentation, and simulations. The emphasis in the course is on the presentation of statistical methods and on the interpretation of the outcome. The philosophy of statistics, and not its mathematics, is at the center of this course; needed mathematical concepts are demonstrated via simulations rather than by abstract proofs.
+
+ 
+
+ 
+
+Preparation Resources
+Yakir, B. (2011). Introduction to Statistical Thinking (With R, Without Calculus). Jerusalem, IL: The Hebrew University of Jerusalem, Department of Statistics.https://pluto.huji.ac.il/~msby/StatThink/
+
+ 
+
+Introduction to Statistics – MATH 1280 -Course Schedule and Topics:
+This course will cover the following topics in eight learning sessions, with one Unit per week. The Final Exam will take place during Week/Unit 9 (UoPeople time).
+
+ 
+
+Week 1: Unit 1 – Introduction
+
+ 
+
+Week 2: Unit 2 – Sampling and Data Structures
+
+ 
+
+Week 3: Unit 3 – Descriptive Statistics
+
+ 
+
+Week 4: Unit 4 – Probability
+
+ 
+
+Week 5: Unit 5 – Random Variables
+
+ 
+
+Week 6: Unit 6 – The Normal Random Variable
+
+ 
+
+Week 7: Unit 7 – The Sampling Distribution
+
+ 
+
+Week 8: Unit 8 – Overview and Integration
+
+ 
+
+Week 9: Unit 9 – Final Exam
