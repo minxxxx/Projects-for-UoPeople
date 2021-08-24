@@ -1,0 +1,179 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+   background-color:gray;
+}
+div.page {
+   background-color: #EEEEEE;
+   color: black;
+   max-width: 9.5in;
+   margin: 0 auto;
+   padding: 8px;
+   border: thin solid black;
+}
+
+a[href]:link {
+   color: #0000CC;
+   text-decoration: underline;
+}
+a[href]:visited {
+   color: #553377;
+   text-decoration: underline;
+}
+a[href]:active {
+   color: #CC2222;
+   text-decoration: underline;
+}
+a[href]:hover {
+   color: #6666FF;
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+div.content {
+   margin-left: 25px;
+   margin-right: 25px;
+}
+
+pre.exercisecode {
+   margin-left: 25px;
+}
+
+pre {
+   margin-left: 60px;
+}
+
+.chapter_title {
+   text-align: center;
+}
+
+.quiz_title {
+   text-align: center;
+}
+
+.section_title {
+   text-align: center;
+}
+
+.subsection_title {
+}
+
+hr.break {
+   align:center;
+   width: 33%;
+}
+
+ul.contents {
+   margin-left: 20px;
+}
+
+img.bordered {
+   border: solid black 1px;
+   background-color: white;
+   padding: 10px;
+}
+
+table.subsections {
+  background: white;
+}
+
+h3.exercise {
+   color: #CC0000;
+}
+
+div.exercisesubtitle {
+   color: #CC0000;
+}
+
+span.start {
+    text-transform: uppercase;
+}
+
+span.newword {
+    color: #CC0000;
+}
+
+span.codedef {
+    color: #CC0000;
+    font-family: monospace;
+}
+
+span.ptype {
+    color: #0050C0;
+}
+
+
+span.classname {
+    color: #0050C0;
+    font-style: oblique;
+}
+
+span.atype {
+    color: #0050C0;
+    font-family: monospace;
+}
+
+
+span.code {
+	font-family: monospace;
+}
+
+span.newcode {
+	font-family: monospace;
+	color: #CC0000;
+}
+
+span.bnf {
+	font-weight: bold;
+	color: #009900;
+}
+
+p.question {
+    text-indent: 0;
+    font-weight: bold;
+    color: #990000;
+    margin: 4px 0 0 0;
+}
+
+div.quiz-question {
+    background: #FFFFEE;
+    padding: 0 8px;
+    border: thin solid #808000;
+    border-radius:8px;
+    margin: 8px 12px;
+}
+
+p.answer {
+    text-indent: 0;
+    font-weight: bold;
+    color: #000080;
+    margin: 4px 0 0 0;
+}
+
+div.quiz-answer {
+    background: #EEEEFF;
+    padding: 0 8px;
+    border: thin solid #000080;
+    border-radius:8px;
+    margin: 8px 12px 20px 12px;
+}
+
+span.sourceref {
+    font-style: italic;
+}
+
+p.glossary_item {
+    text-indent: -30px;
+    padding-left: 30px;
+}
+
+span.glossary_term {
+    font-weight: bold;
+    color: #A20;
+}
+
+span.glossary_definition {
+}

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/toctree.html -->
+<html class="js-focus-visible" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19. Inheritance — How to Think like a Computer Scientist: Interactive Edition</title>
+    <link rel="stylesheet" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/basic.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/webgldemo.css">
+    <link rel="stylesheet" type="text/css" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/webglinteractive.css">
+    <link rel="stylesheet" type="text/css" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/accessibility.css">
+    <link rel="stylesheet" type="text/css" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/matrixeq.css">
+    <link rel="stylesheet" type="text/css" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/CodeChat.css">
+    <link rel="stylesheet" type="text/css" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/bootstrap-sphinx.css">
+    <link rel="stylesheet" type="text/css" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/637.css">
+    <link rel="stylesheet" type="text/css" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/runestone.css">
+
+
+
+    <script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/f(6).txt"></script><script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/osd.js.download"></script><script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/f(7).txt"></script><script async="" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/ga.js.download"></script><script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/f(8).txt" id="google_shimpl"></script><script id="documentation_options" data-url_root="../" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/documentation_options.js.download"></script>
+    <script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/jquery.js.download"></script>
+    <script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/underscore.js.download"></script>
+    <script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/doctools.js.download"></script>
+    <script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/webglinteractive.js.download"></script>
+    <script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/FileSaver.min.js.download"></script>
+    <script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/matrixeq.js.download"></script>
+    <script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/animationbase.js.download"></script>
+    <script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/html4css1.css"></script>
+    <script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/runtime.bundle.js.download"></script>
+    <script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/637.bundle.js.download"></script>
+    <script src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/runestone.bundle.js.download"></script>
+    <link rel="index" title="Index" href="https://runestone.academy/runestone/books/published/thinkcspy/genindex.html">
+    <link rel="search" title="Search" href="https://runestone.academy/runestone/books/published/thinkcspy/search.html">
+    <link rel="next" title="19.1. Pillars of OOP" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/01-PillarsOfOop.html">
+    <link rel="prev" title="18.6. Exercises" href="https://runestone.academy/runestone/books/published/thinkcspy/ClassesDiggingDeeper/Exercises.html">
+
+
+<link rel="shortcut icon" href="https://runestone.academy/runestone/static/favicon.ico" type="image/ico">
+
+
+<script>
+  eBookConfig = {};
+  
+    
+    eBookConfig.useRunestoneServices = true;
+    eBookConfig.host = '';
+    eBookConfig.app = eBookConfig.host + '/' + 'runestone';
+    eBookConfig.course = 'thinkcspy';
+    eBookConfig.basecourse = 'thinkcspy';
+    eBookConfig.isLoggedIn = false;
+    eBookConfig.email = '';
+    eBookConfig.isInstructor = false;
+    eBookConfig.username = 'Anonymous';
+    eBookConfig.readings = null;
+    eBookConfig.activities = {}
+    eBookConfig.downloadsEnabled = false;
+    eBookConfig.allow_pairs = false
+    eBookConfig.enableCompareMe = true;
+    
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "4.0.2";
+  eBookConfig.python3 = true;
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.9.0';
+  eBookConfig.jobehost = '';
+  eBookConfig.proxyuri_runs = '';
+  eBookConfig.proxyuri_files = '';
+  eBookConfig.enable_chatcodes = false ? false : false;
+
+</script>
+
+<!-- Ad Serving Headers Only serve ads to Anonymous Users -->
+
+    
+        
+         <script data-ad-client="ca-pub-8347101402675282" async="" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/f(9).txt" data-checked-head="true"></script>
+        
+    
+
+
+
+  <meta http-equiv="origin-trial" content="A88otRz1Fd3Nt567e2IYshC18LL3KGVXpVJW9oTCId4RYaygt23pbb4JqrbdIO/bwZPWEmRjBIRBu/bZbDR7Pg4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A0gCLbXCcL0R1Oc8tFPDs0G4Elz17w3zHp+Zst66+D17veE2o7fUcPsA114QtSTRqfVJLMeTSdeWOom0CcyCsgYAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9RQ+LxFazAousxUwSCzaihJjHLO1UyjQp0teZKHl7WdbVjPDfHSKMd6D/ZI5MTjqClFycbl70EFd7cBJWXqKQEAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6WKeWsdn1Ct+ZPqS9NCxxaiBoQ7wdTkK2/gE69Yu0gfBKJfo1gOvgkGmf5/xaIajT/RUb9AbnF1FsSZ47cCcQcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A04ZCu7yjrHgwQJK5ISHhH1DSg0qqowEay3n70KO6wV3D2Mj+OX3Kw20aSMitzgdG1xfrN7sOJV/dZIk+RvCzA4AAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjM0MDgzMTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A2YAd4xOntTGygIDjApOTtXOgVI3IWsd5OnOGq3RbRkIQwyqYWNl1JGRAcvtm6VOHDj4n07T/J19VqLuJn3MmQ8AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A2c5Ux+hivdkLh/KbZUGr6f7SCR0mZrBVfPJ+/OuDVHNwiYv+Lo83b9z5qL8sod78bQl0pSLtbvRWURo+xRl7AIAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AzNJ4sd3tVurolpdvWYZ4cmP9Po7RJhEHSqmC3pgxW9fFVZvchhtcMUgHAs97npxMD1jhXHO8s6q6Wy1MMLxKgEAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AwfG8hAcHnPa/kJ1Co0EvG/K0F9l1s2JZGiDLt2mhC3QI5Fh4qmsmSwrWObZFbRC9ieDaSLU6lHRxhGUF/i9sgoAAACBeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwQ7dCmHkvR6FuOFxAuNnktYSQrGbL4dF+eBkrwNLALc69Wr//PnO1yzns3pjUoCaYbKHtVcnng2hU+8OUm0PAYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AysVDPGQTLD/Scn78x4mLwB1tMfje5jwUpAAzGRpWsr1NzoN7MTFhT3ClmImi2svDZA7V6nWGIV8YTPsSRTe0wYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link rel="preload" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/f(10).txt" as="script"><script type="text/javascript" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/f(10).txt"></script><link rel="preload" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/f(11).txt" as="script"><script type="text/javascript" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/f(11).txt"></script><link rel="sidebar" href="https://hypothes.is/app.html" type="application/annotator+html" data-hypothesis-asset=""><link rel="notebook" href="https://hypothes.is/notebook" type="application/annotator+html" data-hypothesis-asset=""><link rel="hypothesis-client" href="https://cdn.hypothes.is/hypothesis/1.856.0/build/boot.js" type="application/annotator+javascript" data-hypothesis-asset=""><script type="text/javascript" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/annotator.bundle.js.download" data-hypothesis-asset=""></script><link rel="stylesheet" type="text/css" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/annotator.css" data-hypothesis-asset=""><link rel="stylesheet" type="text/css" href="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/pdfjs-overrides.css" data-hypothesis-asset=""></head><body aria-hidden="false" style="padding: 60px 0px 154px;">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+        
+          <a class="brand-logo" href="https://runestone.academy/runestone/default/user/login" aria-label="Login"><img src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/logo_small.png" alt=""></a>
+        
+        <a class="navbar-brand" href="https://runestone.academy/runestone/books/published/thinkcspy/index.html" aria-label="index-page">
+          
+            
+            thinkcspy
+            
+          
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/toctree.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span class="visuallyhidden" aria-label="Social">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone">Follow @iRunestone</a>
+                <a href="https://www.facebook.com/RunestoneInteractive">Our Facebook Page</a>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/toctree.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Search">Search</span></i>
+          </a>
+          <ul class="dropdown-menu">
+            
+                <li><a href="https://runestone.academy/runestone/books/published/thinkcspy/index.html" aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href="https://runestone.academy/runestone/books/published/thinkcspy/genindex.html">Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="https://runestone.academy/runestone/books/published/thinkcspy/search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes">
+                <input type="hidden" name="area" value="default">
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/toctree.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"><span class="visuallyhidden" aria-label="User">User</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class="loggedinuser">Not logged in</span></li>
+            <li class="divider"></li>
+            <li><a href="https://runestone.academy/runestone/assignments/chooseAssignment.html">Assignments</a></li>
+            <li><a href="https://runestone.academy/runestone/assignments/practice">Practice</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="https://runestone.academy/runestone/default/courses">Change Course</a></li>
+			      <li class="divider"></li>
+            <li id="ip_dropdown_link" style="display: none;"><a href="https://runestone.academy/runestone/admin/index">Instructor's Page</a></li>
+            
+            <li><a href="https://runestone.academy/runestone/dashboard/studentreport">Progress Page</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="https://runestone.academy/runestone/default/user/profile" id="profilelink" style="display: none;">Edit Profile</a></li>
+            <li><a href="https://runestone.academy/runestone/default/user/change_password" id="passwordlink" style="display: none;">Change Password</a></li>
+            <li><a href="https://runestone.academy/runestone/default/user/register" id="registerlink">Register</a></li>
+            
+            <li class="loginout"><a href="https://runestone.academy/runestone/default/user/login">Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+			<!-- dark mode toggle -->
+             <li><label class="theme-switch" for="checkbox">
+					  <input type="checkbox" id="checkbox" onchange="runestoneComponents.switchTheme()">
+							<div class="slider round"></div>
+					</label>Dark Mode</li>
+			 </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:runestoneComponents.popupScratchAC()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Scratch Activecode">Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/toctree.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Help">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href="http://runestoneinteractive.org/pages/faq.html">FAQ</a></li>
+            <li><a href="https://runestone.academy/runestone/static/instructorguide/index.html">Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href="http://runestoneinteractive.org/">About Runestone</a></li>
+            <li><a href="https://runestone.academy/runestone/default/reportabug?course=thinkcspy&amp;page=toctree">Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+            <script>
+</script>
+<li class="dropdown globaltoc-container">
+  <a href="https://runestone.academy/runestone/books/published/thinkcspy/index.html" class="dropdown-toggle" data-toggle="dropdown" aria-label="index">This Chapter<b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc">
+      
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/01-PillarsOfOop.html">19.1 Pillars of OOP</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/02-IntroToInheritance.html">19.2 Introduction to Inheritance</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/03-Extending.html">19.3 Extending</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/04-ReuseThroughComposition.html">19.4 Reuse Through Composition</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/05-ClassDiagrams.html">19.5 Class Diagrams</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/06-CompositionVsInheritance.html">19.6 Composition vs. Inheritance</a></li>
+      
+        <li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/07-CaseStudy.html">19.7 Case Study: Structured Postal Addresses</a></li>
+      
+      
+  </ul>
+</li>
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">18.6. </span>Exercises" data-toggle="tooltip">
+    <a href="../ClassesDiggingDeeper/Exercises.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">19.1. </span>Pillars of OOP' data-toggle="tooltip" >              
+    <a href="01-PillarsOfOop.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script>
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  window.addEventListener('load', (event) => {
+    $('#relations-prev').tooltip(opts);
+    $('#relations-next').tooltip(opts);
+  });
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- navbar -->
+  </div> <!-- container -->
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+
+  
+    <ul role="navigation" class="nextprev-list nextprev-list-top" aria-label="Change page">
+<li id="relations-prev-top" class="relations-prev navLink" title="" data-toggle="tooltip" data-original-title="Previous Section - 18.6. Exercises">
+  <a href="https://runestone.academy/runestone/books/published/thinkcspy/ClassesDiggingDeeper/Exercises.html" aria-label="Previous - 18.6. Exercises">
+    <i class="prevNav glyphicon glyphicon-chevron-left" style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next-top" class="relations-next navLink" title="" data-toggle="tooltip" data-original-title="Next Section - 19.1. Pillars of OOP">
+    <a href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/01-PillarsOfOop.html" aria-label="Next - 19.1. Pillars of OOP">
+      <i id="relationsNextIcon" class="nextNav glyphicon glyphicon-chevron-right" style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev-top').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next-top').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+  
+
+<!-- Ad Serving for Runestone Campaign -->
+
+    
+        
+    
+
+
+  
+  <div class="section" id="inheritance">
+<h1><span class="section-number">19. </span>Inheritance<a class="headerlink" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/toctree.html#inheritance" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Inheritance</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/01-PillarsOfOop.html">19.1. Pillars of OOP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/02-IntroToInheritance.html">19.2. Introduction to Inheritance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/03-Extending.html">19.3. Extending</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/04-ReuseThroughComposition.html">19.4. Reuse Through Composition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/05-ClassDiagrams.html">19.5. Class Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/06-CompositionVsInheritance.html">19.6. Composition vs. Inheritance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/07-CaseStudy.html">19.7. Case Study: Structured Postal Addresses</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/07-CaseStudy.html#storing-postal-addresses">19.7.1. Storing Postal Addresses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/07-CaseStudy.html#storing-international-addresses">19.7.2. Storing International Addresses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/07-CaseStudy.html#inheritance-applied">19.7.3. Inheritance Applied</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/07-CaseStudy.html#a-list-of-addresses">19.7.4. A List of Addresses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/07-CaseStudy.html#using-isinstance">19.7.5. Using isinstance</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+  <div id="scprogresscontainer" style="display: none;">
+    You have attempted <span id="scprogresstotal">1</span> of <span id="scprogressposs">1</span> activities on this page <div id="subchapterprogress" aria-label="Page progress" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div class="ui-progressbar-value ui-widget-header ui-corner-left ui-corner-right loggedout" style="width: 102%;"></div></div>
+  </div>
+  
+    <ul role="navigation" class="nextprev-list nextprev-list-bottom" aria-label="Change page">
+<li id="relations-prev-bottom" class="relations-prev navLink" title="" data-toggle="tooltip" data-original-title="Previous Section - 18.6. Exercises">
+  <a href="https://runestone.academy/runestone/books/published/thinkcspy/ClassesDiggingDeeper/Exercises.html" aria-label="Previous - 18.6. Exercises">
+    <i class="prevNav glyphicon glyphicon-chevron-left" style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next-bottom" class="relations-next navLink" title="" data-toggle="tooltip" data-original-title="Next Section - 19.1. Pillars of OOP">
+    <a href="https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/01-PillarsOfOop.html" aria-label="Next - 19.1. Pillars of OOP">
+      <i id="relationsNextIcon" class="nextNav glyphicon glyphicon-chevron-right" style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev-bottom').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next-bottom').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+  
+</div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-load-complete="true"></iframe></ins></ins></ins>
+<footer class="footer">user not logged in</footer>
+
+
+
+  
+    
+      <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32029811-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    
+  
+
+  
+    <script type="application/json" class="js-hypothesis-config">
+    {
+      "showHighlights": false
+    }
+    </script>
+
+    <script async="" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/embed.js.download"></script>
+    <!--provide space to prevent hypothes.is sidebar from obscuring content-->
+    <style>@media screen and (max-width:767px) { body { padding-right: 21px; }}</style>
+
+  
+
+
+<script> 
+  window.addEventListener('load', (event) => {
+    runestoneComponents.getSwitch(); 
+  });
+</script>
+
+
+  
+<iframe id="google_osd_static_frame_8179810508976" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/saved_resource(2).html"></iframe><hypothesis-adder data-js-focus-visible="" style="position: absolute; top: 0px; left: 0px;"></hypothesis-adder><hypothesis-sidebar data-js-focus-visible=""></hypothesis-sidebar><hypothesis-notebook data-js-focus-visible=""></hypothesis-notebook><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" data-anchor-status="dismissed" style="display: block; width: 100% !important; height: 129px !important; bottom: -124px; clear: none !important; float: none !important; left: 0px; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1; overflow: visible !important; padding: 0px !important; position: fixed; right: auto !important; top: auto !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647; background: rgb(250, 250, 250) !important;" data-ad-status="filled" data-anchor-shown="true"><ins class="ee" style="bottom: auto !important; clear: none !important; display: block !important; float: none !important; height: 5px !important; left: auto !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: relative !important; right: auto !important; top: auto !important; vertical-align: baseline !important; visibility: visible !important; width: auto !important; z-index: 1 !important; background-color: rgb(250, 250, 250) !important; box-shadow: rgba(0, 0, 0, 0.2) 0px -1px 5px -1px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px !important;"><span style="display: block !important; width: 80px !important; height: 45px !important; bottom: 0px !important; left: 0% !important; pointer-events: none !important;"> 
+ 
+<svg style="margin: 0px !important; position: absolute !important; bottom: 0px !important; left: 0% !important; display: block !important; width: 80px !important; height: 30px !important; transform: none !important; pointer-events: initial !important;" xmlns="http://www.w3.org/2000/svg"> 
+<defs> 
+<filter id="dropShadowTop" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> 
+<fecomponenttransfer in="SourceAlpha" result="TransferredAlpha"> 
+  <fefuncr type="discrete" tableValues="0.5"></fefuncr> 
+  <fefuncg type="discrete" tableValues="0.5"></fefuncg> 
+  <fefuncb type="discrete" tableValues="0.5"></fefuncb> 
+</fecomponenttransfer> 
+<fegaussianblur in="TransferredAlpha" stdDeviation="2"></fegaussianblur> 
+<feoffset dx="0" dy="0" result="offsetblur"></feoffset> 
+  <femerge> 
+  <femergenode></femergenode> 
+<femergenode in="SourceGraphic"></femergenode> 
+</femerge> 
+</filter> 
+</defs> 
+<path d="M0,26 L0,6 A6,6 0 0,1 6,1 L50,1 A6,6 0 0,1 56,6 L56,20 A6,6 0 0,0 62,26 Z" stroke="#FAFAFA" stroke-width="1" fill="#FAFAFA" style="filter:url(#dropShadowTop)"></path> 
+<rect x="0" y="25" width="80" height="5" style="fill:#FAFAFA"></rect> 
+<g class="down" stroke="#616161" stroke-width="2px" stroke-linecap="square"><line x1="22" y1="18" x2="28" y2="12"></line><line x1="28" y1="12" x2="34" y2="18"></line></g></svg></span></ins><ins id="aswift_2_expand" style="display: inline-table !important; border: none !important; height: 124px !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; width: 100% !important; background-color: transparent !important; bottom: auto !important; clear: none !important; float: none !important; left: auto !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; right: auto !important; top: auto !important; vertical-align: baseline !important; z-index: auto !important;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_2_anchor" style="display: block !important; border: none !important; height: 124px !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; width: 100% !important; background-color: transparent !important; bottom: auto !important; clear: none !important; float: none !important; left: auto !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; right: auto !important; top: auto !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_2" name="" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/zrt_lookup.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" style="display: block; margin: 0px auto;" data-google-container-id="a!3" data-google-query-id="CLnaxMCjyfICFRzo7QodFQEPhw" data-load-complete="true"></iframe></ins></ins></ins><iframe src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/zrt_lookup(1).html" style="display: none;"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important; width: 100vw !important; height: 100vh !important; bottom: auto !important; clear: none !important; float: none !important; left: 0px !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: fixed !important; right: auto !important; top: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647 !important; background-color: transparent;" aria-hidden="true" data-ad-status="filled" data-vignette-loaded="true"><ins id="aswift_1_expand" style="display: inline-table !important; border: none !important; height: 100vh !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; width: 100vw !important; background-color: transparent !important; bottom: auto !important; clear: none !important; float: none !important; left: auto !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; right: auto !important; top: auto !important; vertical-align: baseline !important; z-index: auto !important;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_1_anchor" style="display: block !important; border: none !important; height: 100vh !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; width: 100vw !important; background-color: transparent !important; bottom: auto !important; clear: none !important; float: none !important; left: auto !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; right: auto !important; top: auto !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_1" name="" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" src="./19. Inheritance — How to Think like a Computer Scientist_ Interactive Edition_files/zrt_lookup(2).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" style="width: 100vw !important; height: 100vh !important; left: 0px !important; position: absolute !important; top: 0px !important; bottom: auto !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; right: auto !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" data-google-container-id="a!2" data-google-query-id="CLjaxMCjyfICFRzo7QodFQEPhw" data-load-complete="true"></iframe></ins></ins></ins></html>
