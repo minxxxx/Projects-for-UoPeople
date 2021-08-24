@@ -1,0 +1,251 @@
+var engage = function() {
+	var helper = {
+		track_referrer: true,
+		domain: function() {
+			return window.location.hostname;
+		},
+		referrer: function() {
+			var referrer = '';
+			if (!helper.track_referrer) {
+				return referrer;
+			}
+
+			// only track referrer once
+			helper.track_referrer = false;
+			try {
+				referrer = top.document.referrer;
+			} catch (e1) {
+				try {
+					referrer = parent.document.referrer;
+				} catch (e2) {
+					referrer = '';
+				}
+			}
+
+			if (referrer == '') {
+				referrer = document.referrer;
+			}
+
+			return referrer;
+		},
+		agent: function() {
+			return navigator.userAgent;
+		},
+		resource: function() {
+			return document.location.href;
+		},
+		timestamp: function() {
+			return Date.now();
+		},
+		requestId: function(url, timestamp) {
+			var hashString = function (s) {
+				if (s && s.length) {
+					var h = 0;
+
+					for (var i = 0; i < s.length; i++) {
+						h += s.charCodeAt(i);
+						h += (h << 10);
+						h ^= (h >> 6);
+						h = h & h;
+					}
+
+					h += (h << 3);
+					h ^= (h >> 11);
+					h += (h << 15);
+					h = h & h;
+
+					return h;
+				}
+
+				console.log({ warning: 'Hashing null or empty string' });
+				return 0;
+			}
+
+			return hashString(url + ';' + timestamp);
+		},
+		title: function() {
+			return document.title;
+		},
+		screenWidth: function() {
+			try {
+				return screen.width;
+			} catch (e) {
+				return 0;
+			}
+		},
+		browserDimensions: function() {
+			var width = 0,
+				height = 0;
+			try {
+				if (typeof (window.innerWidth) == 'number') {
+					width = window.innerWidth;
+					height = window.innerHeight;
+				} else if (document.documentElement && document.documentElement.clientWidth) {
+					width = document.documentElement.clientWidth;
+					height = document.documentElement.clientHeight;
+				} else if (document.body && document.body.clientWidth) {
+					width = document.body.clientWidth;
+					height = document.body.clientHeight;
+				}
+			} catch (e) {
+			}
+			return {
+				width: width,
+				height: height
+			}
+		},
+		browserWidth: function() {
+			return helper.browserDimensions().width;
+		},
+		browserHeight: function() {
+			return helper.browserDimensions().height;
+		},
+		eventData: function () {
+			var timestamp = helper.timestamp();
+			var url = helper.resource();
+			var requestId = helper.requestId(url, timestamp);
+			return {
+				requestId: requestId,
+				url: url,
+				referrer: helper.referrer(),
+				title: helper.title(),
+				userAgent: helper.agent(),
+				screenWidth: helper.screenWidth(),
+				browserWidth: helper.browserWidth(),
+				browserHeight: helper.browserHeight(),
+				timestamp: timestamp,
+			};
+		},
+		getCookie: function(cookieName) {
+			var x = cookieName + "=",
+				values = document.cookie.split(';');
+			for (var index = 0; index < values.length; index++) {
+				var cookie = values[index];
+				while (cookie.charAt(0) == ' ') {
+					cookie = cookie.substring(1, cookie.length);
+				}
+				if (cookie.indexOf(x) == 0) {
+					return unescape(cookie.substring(x.length, cookie.length));
+				}
+			}
+			return null;
+		},
+		setCookie: function (cookieName, data) {
+			document.cookie = cookieName + '=' + escape(data);
+		},
+		getFromStorage: function (key) {
+			if (window.localStorage) {
+				var item = window.localStorage.getItem(key);
+				if (item) {
+					return JSON.parse(item);
+				}
+			} else {
+				return JSON.parse(helper.getCookie(key));
+			}
+
+			return null;
+		},
+		setToStorage: function (key, data) {
+			if (window.localStorage) {
+				if (data) {
+					window.localStorage.setItem(key, JSON.stringify(data));
+				} else {
+					window.localStorage.removeItem(key);
+				}
+			} else {
+				helper.setCookie(key, JSON.stringify(data));
+			}
+
+			return null;
+		},
+		createCORSRequest: function (method, url, withCredentials) {
+			var xhr = new XMLHttpRequest();
+			if ("withCredentials" in xhr) {
+				// Check if the XMLHttpRequest object has a "withCredentials" property.
+				// "withCredentials" only exists on XMLHTTPRequest2 objects.
+				xhr.open(method, url, true);
+				xhr.withCredentials = withCredentials;
+			} else if (typeof XDomainRequest != "undefined") {
+				// Otherwise, check if XDomainRequest.
+				// XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+				xhr = new XDomainRequest();
+				xhr.open(method, url);
+
+			} else {
+				// Otherwise, CORS is not supported by the browser.
+				xhr = null;
+			}
+			return xhr;
+		},
+		getNewSasToken: function (method, url, data, callback) {
+			var xhr = helper.createCORSRequest(method, url, true);
+			if (xhr) {
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState === 4) {
+						if (xhr.status === 200) {
+							callback(JSON.parse(xhr.responseText));
+						} else {
+							console.log({ sasStatus: xhr });
+						}
+					}
+				}
+
+				if (method === "POST") {
+					xhr.setRequestHeader("Content-type", "application/json");
+					if (data) {
+						xhr.send(JSON.stringify(data));
+					} else {
+						xhr.send();
+					}
+				} else {
+					xhr.send();
+				}
+			}
+		}
+	};
+
+	var tracker = function() {
+		return {
+			init: function(renewUrl, resetSas, callback) {
+				var sas = helper.getFromStorage("engage:sas");
+				if (sas && resetSas !== "true" && sas.tokenExpires > Date.now()) {
+					callback(sas);
+				} else {
+					helper.getNewSasToken("POST", renewUrl, null, function (token) {
+						helper.setToStorage("engage:sas", token);
+						callback(token);
+					});
+				}
+			},
+
+			send: function (sas) {
+				var xhr = helper.createCORSRequest("POST", sas.url, false);
+				if (xhr) {
+					xhr.setRequestHeader("Content-Type", "application/atom+xml;type=entry;charset=utf-8");
+					if (sas.token) {
+						xhr.setRequestHeader("Authorization", sas.token);
+					}
+
+					var eventData = helper.eventData();
+					eventData.ipAddress = sas.ipAddress;
+
+					xhr.onreadystatechange = function() {
+						if (this.readyState === 4) {
+							/* success */
+						}
+					};
+
+					xhr.send(JSON.stringify(eventData));
+				}
+			}
+		}
+	}
+
+	return {
+		tracker: tracker()
+	}
+}();
+
+engage.tracker.init("https://wt.engage.ubiquity.co.nz/device/renew/g88pvrrxyc4xcx5mr93xbctk740s0nndrn6wjz_lj8cvszz3r030", "true", function(sasToken) {
+	engage.tracker.send(sasToken);
+});

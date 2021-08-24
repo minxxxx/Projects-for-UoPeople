@@ -1,0 +1,1 @@
+function helperClassToggle(s,a,l){s.hasClass(a)?s.removeClass(a).addClass(l):s.removeClass(l).addClass(a)}

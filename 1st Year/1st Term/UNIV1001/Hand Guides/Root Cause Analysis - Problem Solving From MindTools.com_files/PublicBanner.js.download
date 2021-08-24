@@ -1,0 +1,1 @@
+$(".banner-link").click(function(n){var a=n.target.id,i=$(this).attr("href");$.post("/pages/Banner/saveBannerLink/"+a,{public_banner_id:a,public_banner_link:i})});

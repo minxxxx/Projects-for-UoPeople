@@ -1,0 +1,115 @@
+// also used for other carousels formed in the same way - i.e. kicks in on "mobile" - like the story page image gallery
+
+(function($){
+	$(document).ready(function() {
+		var container = $('.story-slice-container, .image-gallery');
+		container.each(function () {
+			var sliceElem = $(this);
+			if (sliceElem.hasClass('story-slice-container')) {
+				$(this).find('.cell.story-block').each(function () {
+					// copies the story block to add to carousel holder
+					var item = $(this).clone();
+					// looks for a "mobile" version of the image and, if there is one, replaces the "desktop" one
+					var mo = item.find('.media-object');
+					if (mo.data('mobile-image')) {
+						var altImg = 'url(' + mo.data('mobile-image') + ')';
+						var altMo = mo.css({backgroundImage: altImg});
+						altMo.removeAttr('data-mobile-image');
+						mo.remove();
+						altMo.appendTo(item.children('a'));
+					}
+					// item.find('.sb02').addClass('sb01').removeClass('sb02');
+					// item.find('.sb03').addClass('sb01').removeClass('sb03');
+
+					//  creates new story block item for carousel
+					sliceElem.find('.story-carousel .slides').append('<li class="owl-item story-block">' + item.html() + '</li>');
+				});
+			}
+			else if (sliceElem.hasClass('image-gallery')) {
+				$(this).find('img').each(function() {
+					var item = $(this).clone();
+					$('<li/>',{
+						'class': 'owl-item image-block',
+						html: item
+					}).appendTo(sliceElem.find('.image-gallery-carousel .slides'));
+				});
+			}
+
+			var owlCarousel2 = sliceElem.find('.owl-carousel');
+
+			owlCarousel2.on('initialized.owl.carousel', function(e) {
+				// var owlCarousel2Item = $('.owl-item');
+				storyslice_owlItemMakeInactive();
+				storyslice_owlItemMakeActive();
+			});
+
+			// after the carousel's been changed, adjust items' attributes
+			owlCarousel2.on('translated.owl.carousel', function(e){
+				storyslice_owlItemMakeInactive();
+				storyslice_owlItemMakeActive();
+			});
+
+			var dots;
+			if (sliceElem.hasClass('image-gallery')) {
+				dots = false;
+			}
+			else {
+				dots = true;
+			}
+			// initialize the owl carousel
+			owlCarousel2.owlCarousel({
+				loop: true,
+				dots: dots,
+				nav: true,
+				responsiveClass: true,
+				items: 1,
+				autoWidth: false,
+				margin: 0,
+				navText: [
+					'<div class="svg-icon svg-icon-slider-chevron-left"><svg><title>Previous</title><use xlink:href="themes/openpolytechnic/images/svg/op-sprite.svg#slider-chevron-left"></use></svg></div>',
+					'<div class="svg-icon svg-icon-slider-chevron-right"><svg><title>Next</title><use xlink:href="themes/openpolytechnic/images/svg/op-sprite.svg#slider-chevron-right"></use></svg></div>'
+				]
+				// responsive: {
+				// 	0: {
+				// 		autoWidth: false,
+				// 		margin: 0,
+				// 		items: 1
+				// 	},
+				// 	481: {
+				// 		autoWidth: true,
+				// 		margin: 20,
+				// 		items: 3
+				// 	}
+				// }
+			});
+
+			// listen for keyboard input
+            $(document).on('keydown', function(e){
+				var focusedElement = $(document.activeElement);
+				// only activate arrow keys if carousel is focused
+				if (focusedElement.parents('.owl-carousel').length) {
+					owlCarousel2.keyup(function (event) {
+						// handle cursor keys
+						if (event.keyCode == 37) {
+							// go left
+							owlCarousel2.trigger('prev.owl.carousel');
+						} else if (event.keyCode == 39) {
+							// go right
+							owlCarousel2.trigger('next.owl.carousel');
+						}
+					});
+				}
+			});
+		});
+	});
+	/* Changing owl item attributes
+	 * set the item itself and its children to be non-tabable when inactive
+	 * reverse when activated
+	 */
+	function storyslice_owlItemMakeInactive(){
+		$('.owl-carousel .owl-item:not(.active)').attr('role', 'option').attr('tabindex', '-1').attr('aria-selected', 'false').find('a').attr('tabindex', '-1');
+	}
+	function storyslice_owlItemMakeActive(){
+		$('.owl-carousel .owl-item.active').attr('role', 'option').attr('aria-selected', 'true').find('a').attr('tabindex', '0');
+	}
+})(jQuery);

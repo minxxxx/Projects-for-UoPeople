@@ -1,0 +1,33 @@
+/* Container Styles for DotNetNuke
+Transparent Container Simple Red Leaf Skin */
+
+/* Adds spacing between the containers 
+.rlcontent_transparent
+{
+    margin-bottom: 15px;
+}
+*/
+
+a:link {
+text-decoration:underline;
+}
+
+a:hover {
+text-decoration:underline;
+}
+
+a:visited {
+text-decoration:underline;
+}
+
+#skinobject a:link {
+text-decoration:none;
+}
+
+#skinobject a:hover {
+text-decoration:underline;
+}
+
+#skinobject a:visited {
+text-decoration:none;
+}

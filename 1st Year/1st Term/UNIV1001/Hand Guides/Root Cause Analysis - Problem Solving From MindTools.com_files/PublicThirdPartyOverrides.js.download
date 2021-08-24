@@ -1,0 +1,1 @@
+jQuery.validator.addMethod("noEmail",function(e,n){var a=!0,o=-1==e.indexOf("@"),r=-1==e.indexOf(".");return 0==o&&0==r&&(a=!1),a},"Choose a username that is not your email"),jQuery.validator.addMethod("noSpaces",function(e,n){return-1==e.indexOf(" ")},"Please use only letters or numbers");

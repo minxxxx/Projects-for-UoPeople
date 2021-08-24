@@ -1,0 +1,110 @@
+(function($) {
+
+	sticky_obj = {
+		env: false,
+		place_holder: false, 
+		on_scroll: function(element) {
+			//account for mobile, so if mobile, do nothing!
+			if (!sticky_obj.env) {
+				sticky_obj.env = sticky_obj.findBootstrapEnvironment();
+			}
+
+			if (sticky_obj.env != 'desktop') {
+				return;
+			}
+			
+			//account for admin bar if logged in
+			var adminbar_height = 0;
+			if ($('#wpadminbar').length > 0) {
+				adminbar_height = $('#wpadminbar').height();
+			}
+
+			//make sure we have a menu
+			if ($('#ubc7-unit-menu.stick-to-top').length == 0) {
+				return;
+			}
+			
+			//make sure that place_holder is set, as it smooths things out when nav jumps out of flow
+			sticky_obj.place_holder = $('div.place_holder');
+			if ( sticky_obj.place_holder.length == 0) {
+				$('#ubc7-unit-menu').after('<div class="place_holder">')
+				sticky_obj.place_holder = $('div.place_holder');
+				sticky_obj.place_holder.css('height', $('#ubc7-unit-menu.stick-to-top ul:first').height());
+			}
+			
+			if ( sticky_obj.place_holder.height() == 0 ) {
+				sticky_obj.place_holder.css('height', $('#ubc7-unit-menu.stick-to-top ul:first').height());
+			}
+
+			//get top of menu
+			var eTop = $('#ubc7-unit-menu').position().top;
+			//we need this because once we separate the menu from normal flow, it becomes 0, so we use div.place_holder instead
+			if (Math.round(eTop) == adminbar_height) {
+				eTop = sticky_obj.place_holder.position().top;
+			}
+			
+			//actual logic to check if we want to "stick to top" or not.
+			var menu = $('#ubc7-unit-menu.stick-to-top'); 
+			var win_scrollTop = $(element).scrollTop();
+			if (win_scrollTop > (eTop - adminbar_height)) { 
+				var menu_css = {'position': 'fixed', 'top': adminbar_height};
+				if ($('body.full-width').length > 0) {
+					menu_css['width'] = '100%';
+				}
+				menu.css(menu_css);
+				sticky_obj.place_holder.css('display', 'block');
+			} 
+			if (win_scrollTop < (eTop - adminbar_height)) {
+				menu.css({'position': 'static'});
+				sticky_obj.place_holder.css('display', 'none');
+			}	
+		},
+		
+		/**
+		 * figures out whether bootstrap think it's in phone, tablet, or desktop mode.
+		 * 
+		 * @props http://stackoverflow.com/questions/14441456/how-to-detect-which-device-view-youre-on-using-twitter-bootstrap-api
+		 * @returns string
+		 */
+		findBootstrapEnvironment: function() {
+			var envs = ['phone', 'tablet', 'desktop'];
+
+		    $el = $('<div>');
+		    $el.appendTo($('body'));
+
+		    for (var i = envs.length - 1; i >= 0; i--) {
+		        var env = envs[i];
+
+		        $el.addClass('hidden-'+env);
+		        if ($el.is(':hidden')) {
+		            $el.remove();
+		            return env
+		        }
+		    };
+		}
+	}
+	
+	jQuery(window).scroll(function() {
+		sticky_obj.on_scroll( this );
+	});
+	
+}(jQuery));
+
+//properly handle resizing of window relative to menu bar and stickiness
+jQuery(window).resize(function() {
+	sticky_obj.env = sticky_obj.findBootstrapEnvironment();
+	var main_menu = jQuery('#ubc7-unit-menu ul:first');
+	var sticky = jQuery('#ubc7-unit-menu.stick-to-top');
+	
+	//if no main nav or no sticky class, do nothing!
+	if (sticky.length == 0 || main_menu.length == 0 || sticky_obj.place_holder == false) {
+		return;
+	}
+	
+	if (sticky_obj.env == 'desktop') {
+		sticky.css({'position': 'static'});
+		sticky_obj.place_holder.css('height', main_menu.height());
+	} else {
+		sticky_obj.place_holder.css('height', '0px');
+	} 
+});

@@ -1,0 +1,1311 @@
+/************** DNN STUFF *********************/
+/*********************************************/
+/* --- Hacks Begin --- */
+.Clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .Clearfix {height: 1%;}
+/* End hide from IE-mac */
+/* --- Hacks End --- */
+/*****************************************************/
+/*****************************************************/
+
+/*******************GENERAL STUFF************************/
+/*******************************************************/
+body{
+	font: small Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #303030;
+	background-color:#f5f6f9;
+	padding: 0;
+}
+
+.Normal,.NormalDisabled, P, TD{
+	font: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.Normal span{
+}
+
+/* text style used for rendered text which should appear disabled */
+.NormalDisabled
+{
+    color: Silver;
+}
+
+/* text style used for rendered text which requires emphasis */
+.NormalBold
+{
+	font: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold
+}
+
+/* text style used for error messages */
+.NormalRed
+{
+	font: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ff0000
+}
+
+/* text style used for textboxes in the admin and edit pages, for Nav compatibility */
+.NormalTextBox
+{
+	font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #303030;
+	font-weight: normal;
+	width:200px;
+}   
+/* GENERIC */
+img {
+	border:0;
+}
+
+img#Logo
+{
+	float:right;
+	margin:13px 0px 0px 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+	color: #005b8f;
+}
+
+h1  {
+	font: small Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size:  200%; 
+	line-height: 115%;
+    font-weight: bold;
+}
+
+H2, .Head  {
+	font: small Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size:  130%; /*20px;*/
+    font-weight: bold;
+}
+
+H3  {
+	font: small Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size:  120%;
+    font-weight: bold;
+}
+
+H4  {
+	font: small Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size:  110%; /*12px;*/
+    font-weight: bold;
+}
+
+H5  {
+	font: small Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size:  100%; /*11px*/
+    font-weight: bold;
+}
+
+H6  {
+	font: small Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size:  100%; /*11px*/
+    color: #303030;
+    font-weight: bold;
+}
+
+TFOOT, THEAD    {
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size:  100%; /*12px;*/
+    color: #303030;
+}
+
+TH  {
+    vertical-align: baseline;
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size:  100%; /*12px;*/
+    font-weight:    bold;
+    color: #303030;
+}
+
+
+SMALL   {
+    font-size:  80%; /*8px;*/
+}
+
+BIG {
+    font-size:  105%; /*14px;*/
+}
+
+BLOCKQUOTE, PRE {
+    font-family:    "Lucida Console", monospace;
+}
+
+TD TABLE TR TD, TD .Normal{
+font-size:100%;
+}
+
+.Normal, .NormalDisabled {
+    font-size:0.8em;
+}
+
+.Normal P {
+}
+
+UL LI   {
+    list-style-type:    disc ;
+	/*line-height: 0%; /*needed because line height of p etc. */
+}
+
+UL LI LI, UL LI UL LI    {
+    list-style-type:    circle;
+	font-size:100%;
+}
+
+UL LI LI LI, UL LI UL LI UL LI {
+    list-style-type:    square;
+	font-size:100%;
+}
+
+OL LI   {
+    list-style-type:    decimal;
+}
+
+OL OL LI    {
+    list-style-type:    lower-alpha;
+	font-size:100%;
+}
+
+OL OL OL LI {
+    list-style-type:    lower-roman;
+	font-size:100%;
+}
+
+HR {
+    color: dimgrey;
+    height:1pt;
+    text-align:left
+}
+
+a:link {	
+	color:#005b8f;
+}
+
+a:hover {
+}
+
+.Normal a:link, p a:link {text-decoration:underline;}
+.Normal a:visited, p a:visited {text-decoration:underline;}
+.Normal a:hover, p a:hover {text-decoration:underline;}
+
+/* Login Box */
+.timebox{
+	font-size:85%;
+	font-weight:normal;
+	display:inline;
+	float:right;
+	color: #A00E04;
+}
+/* style the login link which is actually as special link */
+/*#dnn_dnnLOGIN_hypLogin.SkinObject {
+	color: #900806;
+	text-decoration: none;
+}*/
+
+/*#dnn_dnnUSER_hypRegister.SkinObject {
+	color:#900806;
+	text-decoration: none;
+}*/
+
+/* ==================================================== */
+/* Structural layout */
+/*   	container holds (begin, header, contentbodywrapper,  end)  */
+/*	header holds (logo, shortcutmenu) font-size:small			*/
+/*	contentbodywrapper holds (navigation,  wrapper, footer) */
+/*	navigation holds (loginOuter,"LSTreeView",Breadcrumb,"LeftPane") font-size:x-small */
+/*	wrapper holds (content, extra) 	font-size:small			*/
+/*   
+/* ==================================================== */
+
+#bgcontainer {
+	width:834px;
+	margin:auto;
+	background-image:url(/Portals/101/Skins/REAP/images/background.png);
+	background-repeat:repeat-y;
+}
+
+/* main content holder.  super wide to prevent ie6 reflowing divs*/
+/* put the background image here*/
+div#PageContainer{
+	/*width: 98%;*/
+	width: 800px;
+	margin:auto;
+	color: #333;
+	line-height: 130%;
+	background: #fff;
+	background-image:url(/Portals/101/Skins/REAP/images/header.png);
+	background-repeat:no-repeat;
+	border-top:solid 7px #ffffff;
+}
+
+div#header{
+	clear:both;
+	/*background:  url(images/bar_item_small.png) repeat-x;*/
+	/*background-color:#000000;*/
+	height: 105px;
+	padding-top: 0px;
+	padding-left: 10px;
+	/*width:800px;*/
+	margin: 0px auto;
+	
+	font-size:small;
+	z-index:40;
+	white-space:nowrap;
+	border-bottom:solid 4px #87aed6;
+}
+
+#bannerbox{
+	float:left;
+	width: 100%;
+	/*width must be 100% for safari to put the grphic to the far right;*/
+}
+
+#bannerbox h1 {
+	color:#f6ddda;
+	width:400px;
+	font-size:x-large;
+	font-weight:normal;
+	margin:5px 0 0 10px;
+	white-space:normal;
+	float:left;
+}
+
+#bannerbox p{
+	color:#f6ddda;
+	font-size:x-large;
+	margin:5px 0 0 0;
+	white-space:no-wrap;
+}
+
+#logo {
+	background:  url(images/reap_logo.gif) no-repeat;
+	height: 45px;
+	width: 86px;
+	margin-top: 15px;
+	margin-left:10px;
+	display: inline;
+	float: left;
+	z-index:50;
+}
+#logo a {
+	height: 45px;
+	width: 86px;
+	display: block;
+}
+#logo a:hover, #logo a:active {
+	background:  url(images/reap_logo.gif) no-repeat 0px -45px;
+}
+#logo a span {
+	display: none;
+}
+
+#shortcutmenu {
+	padding: 0;
+	margin: 18px 0 0px 0px;
+	clear:left;
+	float: left;
+	width: 600px;
+}
+/*#shortcutmenu ul {
+	margin: 0;
+	padding: 0;
+	display:inline;
+	white-space:no-wrap;
+	
+}
+#shortcutmenu ul li {
+	margin: 0;
+	padding: 0;
+	display: block;
+	float:left;
+	text-align: center;
+}
+#shortcutmenu ul li a {
+	color : #FFFFFF;
+	text-decoration : none;
+	font-weight: bold;
+	display: block;
+	border: none;
+}
+#shortcutmenu ul li a {
+	background:  url(images/menu_item3.png) no-repeat;
+	height: 26px;
+	width: 94px;
+	line-height: 26px;
+	padding-top: 7px;
+}
+#shortcutmenu ul li a:hover, #shortcutmenu ul li a:active {
+	background:  url(images/menu_item3.png) no-repeat 0px -33px;
+	height: 29px;
+	width: 94px;
+	line-height: 29px;
+	padding-top: 4px;
+}
+#shortcutmenu ul li.active a {
+	background:  url(images/menu_item_active3.png) no-repeat 0px -33px;
+	height: 29px;
+	width: 94px;
+	line-height: 29px;
+	padding-top: 4px;
+}
+#shortcutmenu ul li.active a:hover, #shortcutmenu ul li.active a:active {
+	background:  url(images/menu_item_active3.png) no-repeat 0px -33px;
+	height: 29px;
+	width: 94px;
+	line-height: 29px;
+	padding-top: 4px;
+}*/
+
+/*div#yellowbar{
+	clear:left;
+	background-color: #DBBC60;
+	font-size:small;
+	font-weight:bold;
+	margin-top: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+	height:20px;
+}
+
+#yellowbar a:hover{
+	text-decoration: underline;
+}*/
+
+div#bluebar{
+	background-color:#e2e7fa;
+	background:  url(/Portals/101/Skins/REAP/images/submenu_bg.png) repeat-x;
+	clear:left;
+	font-size:small;
+	font-weight:bold;
+	padding-right: 5px;
+	padding-left: 5px;
+	height:10px;
+}
+
+#breadcrumbs {
+	clear:both;
+	margin-bottom:10px;
+}
+
+#login {
+	float:right;
+}
+
+div#contentbodywrapper{
+	clear:both;
+	margin-top:10px;
+
+}
+
+#wrapper .Normal,.NormalDisabled, P, TD
+{
+	line-height: 115%;
+}
+
+
+/* left column for navigation. style with background image */
+div#navigation{
+float:left;
+	width:180px; 
+	z-index:100;
+	margin: 0px auto;
+	/*margin-left:10px;*/
+	/*padding-left:29px;*/
+	font-size:small;	
+}
+
+/* sections held in the left panel*/
+.sticky{
+	color: #333;
+	background: #fff;
+	margin: 0px 0 10px;
+	background: #D4E7F7;
+	border-left: 1px solid #005B8F;
+	border-right: 1px solid #005B8F;
+	border-bottom: 1px solid #005B8F;
+	padding: 0px;
+	line-height: 100%;
+}
+
+/* sections held in the right panel */
+
+
+.bar {
+	/*font-size: 13px;*/
+	font-size:90%;
+	font-style:normal;
+	font-weight:bold;
+	color: #FFFFFF;
+	background-image: url(images/bar_item.png);
+	background-repeat: no-repeat;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin: 0 0 0 0;
+	padding: 0;
+	width:180px;
+}
+
+.bar .Head, .bar span .Head{
+	color: #ffffff;
+	font-size:120%;
+	font-weight:bold;
+}
+
+/* Breadcrumb */
+#BreadCrumb{
+	/*border-bottom: 1px solid #767676;*/
+	font-size:90%;
+}
+#BreadCrumb h2{
+	/*background-color:#767676;	
+	background-image: none;*/
+	background: #767676 none;
+	font-size:100%;
+	/*padding:0 2px 0 2px;*/
+	margin: 2px 0 2px 0;
+	color: rgb(221, 221, 221);
+	font-style: normal;
+	text-align:center;
+	line-height:150%;
+}
+
+/* holds all content sections so that they can be kept to the desired width (until one module busts it)*/
+div#wrapper{
+	width:780px;
+	float:left;
+	z-index:100; 
+	overflow:visible;
+	margin-left:10px;
+	font-size:small;
+	line-height: 130%;
+}
+
+div#hp_wrapper{
+	width:800px;
+}
+
+div#content, div#hp_content{
+	z-index:101; 
+	overflow:visible; 
+	font-size:medium;
+}
+
+div#content p, div#hp_content p{line-height:1.4}
+
+div#content td {vertical-align:top;}
+
+.ContentContainer{
+/* reset size for each container */
+	font-size:medium;
+		width: 98%;
+		float: left;
+}
+
+#dnn_ContentPane {
+	width:780px;
+}
+
+#hp_wrapper #dnn_ContentPane {
+	width:520px;
+}
+
+#rp_wrapper #dnn_ContentPane {
+	width:530px;
+}
+
+#dnn_RightPane {
+	width:240px;
+	float:right;
+}
+
+#dnn_RightPane h2, #dnn_RightPane h3, #dnn_RightPane h4, #dnn_RightPane h5, #dnn_RightPane h6, #dnn_RightPane p {
+	margin:0px 8px 0px 8px;
+}
+
+#dnn_RightPane h2 {
+	font-size:90%;
+	padding-top:10px;
+}
+
+#dnn_RightPane h3 {
+	font-size:100%;
+}
+
+#dnn_RightPane a {
+	font-weight:bold;
+}
+
+#hp_wrapper #dnn_RightPane {
+	width:260px;
+}
+
+/* second pane in content area. clear ensures that it is below the main content area */
+div#extra{
+	clear:both; 
+	margin-left:1px;
+	/*background:#FF8539;*/
+	overflow:auto;
+}
+
+
+#footer {
+	clear:both;
+	background:  url(images/bar_item_small.png) repeat-x;
+	padding: 5px 5px 5px;
+	overflow:auto;
+	/*margin-left:19px;*/
+}
+#LeftFooter{
+	float:left;
+}
+#OCfooter  {
+	float:right;
+	text-align: right;
+}
+
+#OCfooter , #LeftFooter {
+	color: #fff;
+	margin: 0px;
+	font-size:x-small;
+	vertical-align: bottom;
+}
+#OCfooter a, #LeftFooter a {
+	color: #fff;
+	text-decoration: none;
+}
+#OCfooter a:hover, #LeftFooter a:hover, #footer a:active {
+	color: #fff;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+/*has to outside container to close off the background to container*/
+#end {
+	background:  url("images/footer3.png") repeat-x;
+	margin: 0 auto;
+	width: 100%;
+	height: 30px;
+	float:left;
+	position:relative;
+	/*left:5px;*/
+
+}
+
+/* ==================================================== */
+/* Misc styles??
+/* ==================================================== */
+.Spacer{
+	clear:both;
+	font-size:0px;
+}
+
+/* ==================================================== */
+/* Active forums  */
+/* ==================================================== */
+
+.afgrid, .afnormal
+{
+	/*font-family: Verdana, Arial, Tahoma;*/
+	color: #000000;
+	font-size: 100%;
+}
+.aflastpost
+{
+	font-size: 95%;
+	border-top: solid 1px #cdcdcd;
+}
+.NTForums_Pager
+{
+	border: solid 1px #333333;
+}
+.af_pager, .af_pagernumber, .af_currentpage
+{
+	/*font-family: Verdana, Arial, Tahoma;*/
+	font-size:90%;
+	color: #000000;
+	padding: 2px,2px,2px,2px;
+}
+.af_pagernumber
+{
+	background-color: #DCDCDC;
+	border-left: #000000 1px solid;
+	width: 15px;
+}
+.af_currentpage
+{
+	background-color: #FFFFCC;
+	border-left: #000000 1px solid;
+	color: #000000;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	width: 15px;
+	font-weight:bold;
+}
+.afcrumb
+{
+	/*font-family: Verdana, Arial, Tahoma;*/
+	font-size: 95%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.afcrumb a, .afcrumb a:link, .afcrumb a:visited, .afcrumb a:active
+{
+	color: #cc0000;
+}
+.afsubjectheader
+{
+	/*font-family: Verdana, Arial, Tahoma;*/
+	font-size: 110%;
+	font-weight:bold;
+	padding-bottom: 10px;
+}
+.afgrouprow
+{
+	font-weight: bold;
+	font-size: 100%;
+	background-image: url(Images/headerback.gif);
+	color: #cc0000;
+	height: 30px;
+}
+.afgrouprow a:link, .afgrouprow a:visited, .afgrouprow a:active
+{
+	color:#cc0000;
+}
+.afsubgrid 
+{
+		border: solid 1px #cdcdcd;
+}
+.afheader
+{
+	font-weight: bold;
+	font-size: 100%;
+	background-image: url(Images/headerback22.gif);
+	color: #cc0000;
+	height: 22px;
+
+}
+
+.afheader2 td {
+	color:#FFFFFF;
+}
+.afforumrow
+{
+	font-size:100%;
+	border-right: solid 1px #cdcdcd;
+	border-top: solid 1px #cdcdcd;
+}
+.afforumrow a:link, .afforumrow a:visited, .afforumrow a:active, .afpostinfo a, .afpostinfo a:link, .afpostinfo a:visited, .afpostinfo a:active, .afposttopic a, .afposttopic a:link, .afposttopic a:visited, .afpostreply a, .afpostreply a:link, .afpostreply a:visited
+{
+	color: #cc0000;
+}
+
+.aflastpost a:link, .aflastpost a:visited, .aflastpost a:active
+{
+	color: #cc0000;
+}
+.aftopicrow1, .aftopicrownew, .afcol3, .afcol4, .afcol5, .afcol6, .afsubject, .afpostinfo, .afposttopic, .afpostreply, .afpostbody, .afpostattach, .afpostsig
+{
+	font-size: 100%;
+}
+.afpostinfo 
+{
+	border-left: solid 1px #cdcdcd;
+	border-right: solid 1px #cdcdcd;
+	border-bottom: solid 1px #cdcdcd;
+}
+.afposttopic, .afpostreply 
+{
+	border-right: solid 1px #cdcdcd;
+	border-bottom: solid 1px #cdcdcd;
+}
+.afsubrow
+{
+	font-size:100%;
+	border-bottom: solid 1px #333333;
+}
+.afcol1 
+{
+	border-left: solid 1px #cdcdcd;
+	border-bottom: solid 1px #cdcdcd;
+	border-right: solid 1px #cdcdcd;
+	}
+ 
+.aftopicrow1, .aftopicrownew
+{
+	border-bottom: solid 1px #cdcdcd;
+	border-right: solid 1px #cdcdcd;
+}
+.aftopicrow1 a, aftopicrow1 a:link, aftopicrow1 a:visited, aftopicrow1 a:active
+{
+	color: #cc0000;
+}
+.aftopicrownew a, aftopicrownew a:link, aftopicrownew a:visited, aftopicrownew a:active
+{
+	color: #cc0000;
+	font-weight: bold;
+}
+.NTForums_Button 
+{
+	cursor:hand;
+	border: #000000 1px solid;
+	padding-right: 2px;
+	display: block;
+	padding-left: 2px;
+	font-weight: bold;
+	font-size: 80%;
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#F5F0F0, EndColorStr=#CCCCCC);
+	padding-bottom: 5px;
+	width: 100px;
+	color: #666666;
+	padding-top: 5px;
+	background-color: #cccccc;
+	text-align: center;
+	text-decoration: none;
+}
+.afButton 
+{
+	cursor:hand;
+	border: #000000 1px solid;
+	
+}
+.afarrow 
+{
+	background-color: #FFFFFF;
+	border: #696969 1px solid;
+}
+.afborder 
+{
+	border-left: solid 1px #cdcdcd;
+	border-right: solid 1px #cdcdcd;
+	border-bottom: solid 1px #cdcdcd;
+}
+
+.afpostbody p, .afpostbody ul, .afpostbody ol{
+	font-size: 100%;
+}
+
+/* ==================================================== */
+/* Active forums controls */
+.afprofiledetailhidden{
+	visibility:hidden;
+}
+
+
+/* ==================================================== */
+/* System Profile Controls  */
+/* ==================================================== */
+
+#dnn_ctr682_ManageUsers_Profile_ProfileProperties__ctl20_Biographyedit___Frame{
+	width:450px;
+	height:400px;
+	padding-top:40px;
+	padding-bottom:20px;
+}
+
+
+/* ==================================================== */
+/* Static repository styling  */
+/* ==================================================== */
+table.CSLtbl {
+	margin-left:30px;
+	margin-right:10px;
+		border:1px solid black;
+		border-spacing:0px;	
+}
+
+
+td.CSL {
+  background-color:#FFFFFF;
+	border:1px solid gray;
+	padding:5px;
+	vertical-align:top;
+}
+
+/****************************** MISC **************************************/
+/*************************************************************************/
+/* --- Overwrite default css --- */
+.ControlPanel{
+	font-size:small;
+}
+
+.SkinObject {
+    font-weight: bold;
+    font-size: x-small;
+    color: #303030;
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+A.SkinObject:link {
+    text-decoration:    none;
+    color:#303030;
+}
+
+A.SkinObject:visited  {
+    text-decoration:    none;
+    color:#303030;
+}
+
+A.SkinObject:active   {
+    text-decoration: underline;
+    color:#303030;
+}
+
+A.SkinObject:hover    {
+    text-decoration: underline;
+    color:#303030;
+}
+
+/* style for module titles */
+.HeadXXXX   {
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size:  120%; /*20px;*/
+    font-weight:    bold;
+	font-style: italic;
+    color: #005b8f;
+}
+
+/* style of item titles on edit and admin pages */
+.SubHead    {
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size:  105%;
+    font-weight: bold;
+    color: #303030;
+}
+.SubHead .faq {
+	font-size:0.9em;
+	font-family:Tahoma, Arial, Helvetica;
+}
+
+/* module title style used instead of Head for compact rendering by QuickLinks and Signin modules */
+.SubSubHead {
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size:  95%;
+    font-weight: bold;
+    color: black;
+}
+
+/* styles used by Data Grids */
+.DataGrid_AlternatingItem
+{
+    background-color:White;
+    color: Red;
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%; /*10px;*/
+    font-weight: normal;
+}
+.DataGrid_Container
+{
+	background-color: Transparent;
+}
+.DataGrid_Footer
+{
+    background-color:White;
+}
+.DataGrid_Header
+{
+    background-color:Transparent;
+    color: Black;
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 95%; /*10px;*/
+    font-weight: bold;
+    text-align: center;
+}
+.DataGrid_Item
+{
+    background-color:Transparent;
+    color: Black;
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 95%; /*10px;*/
+    font-weight: normal;
+}
+.DataGrid_SelectedItem
+{
+    background-color: Silver;
+    color: Blue;
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 95%; /*10px;*/
+    font-weight: normal;
+}
+
+/* styles used in the FileManager */
+.FileManager
+{
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+	height:800px;
+}
+.FileManager_ToolBar
+{
+	border-bottom: black 1px solid;
+	height:25px;
+}
+.FileManager_Explorer
+{
+	height:100%;
+	border: dimgray 1px solid;
+	background-color: White;
+	margin: 2px 2px 2px 2px;
+	overflow: scroll;
+}
+
+.FileManager_FileList 
+{
+	height:100%;
+	border: dimgray 1px solid;
+	background-color: White;
+	margin: 2px 2px 2px 2px;
+	overflow: scroll;
+}
+
+.FileManager_MessageBox 
+{
+	text-align: center;
+	vertical-align: middle;
+	background-color: White;
+	padding: 25px 25px 25px 25px;
+}
+
+.FileManager_Header
+{
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px; /*11px*/
+    font-weight: bold;
+    color: #E7E7FF;
+    background-color: #9EBFF6;
+    border-bottom: dimgray 1px solid;
+    height: 25px;
+}
+
+.FileManager_Pager
+{
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px; /*11px*/
+    font-weight: bold;
+    background-color: #EEEEEE;
+    border-top: dimgray 1px solid;
+    height: 25px;
+}
+
+.FileManager_StatusBar
+{
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px; /*11px*/
+    font-weight: normal;
+    background-color: #dedfde;
+    height: 25px;
+	margin: 2px 2px 2px 2px;
+}
+
+.FileManager_Item
+{
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px; /*11px*/
+    font-weight: normal;
+    color: Black;
+    background-color: #F8F8F8;
+    border-top: black 1px dashed;
+    border-bottom: black 1px dashed;
+}
+
+.FileManager_AltItem
+{
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px; /*11px*/
+    font-weight: normal;
+    color: Black;
+    background-color: #EEEEEE;
+    border-style: none;
+}
+.FileManager_SelItem
+{
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px; /*11px*/
+    font-weight: bold;
+    color: White;
+    background-color: #99ffff;
+    border-style: none;
+}
+
+.FileManagerTreeNode 
+{
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px; /*11px*/
+    font-weight: normal;
+}
+
+.FileManagerTreeNodeSelected 
+{
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px; /*11px*/
+    font-weight: normal;
+	background-color: #dcdcdc; 
+}
+
+A.FileManagerTreeNode:link, A.FileManagerTreeNodeSelected:link {
+    text-decoration:    none;
+    color: #303030;
+}
+
+A.FileManagerTreeNode:visited, A.FileManagerTreeNodeSelected:visited  {
+    text-decoration:    none;
+    color: #303030;
+}
+
+A.FileManagerTreeNode:active, A.FileManagerTreeNodeSelected:active   {
+    text-decoration:    none;
+    color: #303030;
+}
+
+A.FileManagerTreeNode:hover, A.FileManagerTreeNodeSelected:hover    {
+    text-decoration:    none;
+    color: #ff0000;
+}
+
+/* text style used for help text rendered by modules */
+.Help
+{
+  border-right: black 1px solid;
+  padding-right: 2px;
+  border-top: black 1px solid;
+  padding-left: 2px;
+  font-weight: normal;
+  font-size: 100%; /*11px*/
+  padding-bottom: 2px;
+  border-left: black 1px solid;
+  color: black;
+  padding-top: 2px;
+  border-bottom: black 1px solid;
+  font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  background-color: #ffff99;
+}
+
+/* text style for buttons and link buttons used in the portal admin pages */
+.CommandButton     {
+    font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: small; /*11px*/
+    font-weight: normal;
+}
+    
+/* hyperlink style for buttons and link buttons used in the portal admin pages */
+A.CommandButton:link {
+    text-decoration:    underline;
+    color: #3D0000;
+}
+
+A.CommandButton:visited  {
+    text-decoration:    underline;
+    color: #3D0000;
+}
+
+A.CommandButton:active   {
+    text-decoration:    underline;
+    color: #3D0000;
+}
+
+A.CommandButton:hover    {
+    text-decoration:    underline;
+    color: #ff0000;
+}
+
+/* button style for standard HTML buttons */
+.StandardButton
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: normal;
+	font-size: small; /*11px*/
+	background: #005B8F;
+	color: #DDDDDD;
+	font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Module Title Menu */
+.ModuleTitle_MenuContainer {
+	border-bottom: blue 0px solid; 
+	border-left: blue 0px solid; 
+	border-top: blue 0px solid; 
+	border-right: blue 0px solid; 
+}
+
+.ModuleTitle_MenuBar {
+	cursor: pointer; 
+	cursor: hand;
+	height:16;
+	background-color: Transparent;
+}
+
+.ModuleTitle_MenuItem {
+	cursor: pointer; 
+	cursor: hand; 
+	color: black; 
+	font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 85%; /*9pt; */
+	font-weight: bold; 
+	font-style: normal; 
+	border-left: white 0px solid; 
+	border-bottom: white 1px solid; 
+	border-top: white 1px solid; 
+	border-right: white 0px solid;
+	background-color: Transparent;
+}
+
+.ModuleTitle_MenuIcon {
+	cursor: pointer; 
+	cursor: hand; 
+	background-color: #EEEEEE; 
+	border-left: #EEEEEE 1px solid; 
+	border-bottom: #EEEEEE 1px solid; 
+	border-top: #EEEEEE 1px solid; 
+	text-align: center; 
+	width: 15; 
+	height: 21;
+}
+
+.ModuleTitle_SubMenu {
+	z-index: 1000; 
+	cursor: pointer; 
+	cursor: hand; 
+	background-color: #FFFFFF; 
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='DimGray', Direction=135, Strength=3); 
+	border-bottom: #FFFFFF 0px solid; 
+	border-left: #FFFFFF 0px solid; 
+	border-top: #FFFFFF 0px solid; 
+	border-right: #FFFFFF 0px solid;
+}
+
+.ModuleTitle_MenuBreak {
+	border-bottom: #EEEEEE 1px solid; 
+	border-left: #EEEEEE 0px solid; 
+	border-top: #EEEEEE 1px solid;  
+	border-right: #EEEEEE 0px solid; 
+	background-color: #EEEEEE; 
+	height: 1px;
+}
+
+.ModuleTitle_MenuItemSel {
+
+	cursor: pointer; 
+	cursor: hand; 
+	color: black; 
+	font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 90%; /*9pt; */
+	font-weight: bold; 
+	font-style: normal;
+
+	background-color: #C1D2EE;
+}
+
+.ModuleTitle_MenuArrow {
+	font-family: webdings; 
+	font-size: 90%; 
+	cursor: pointer; 
+	cursor: hand; 
+	border-right: #FFFFFF 1px solid; 
+	border-bottom: #FFFFFF 1px solid; 
+	border-top: #FFFFFF 0px solid;
+}
+
+.ModuleTitle_RootMenuArrow {
+	font-family: webdings; 
+	font-size: 90%; 
+	cursor: pointer; 
+	cursor: hand;
+}
+
+
+
+/* --- Overwrite default css end --- */
+
+/* ==================================================== */
+/* Tree view styles
+/* ==================================================== */
+.LSTreeViewContainer{
+	margin-left:14px;
+}
+
+ul.LSTreeView
+{
+	margin:0px 0px 0px 0px; /*2px ...*/
+	padding:0px;
+	text-indent:-14px;
+	font-size:small;
+}
+
+ul.LSTreeView ul
+{
+	margin:0px 0px 0px 14px;
+	padding:0px;
+
+}
+ul.LSTreeView a
+{
+	padding-left:4px;
+}
+
+ul.LSTreeView a.LSTreeViewNonExpandable
+{
+	/*padding-left:15px;	*/
+	/*margin:0px 0px 0px 14px; /*2px ..*/
+	/*padding-left:4px;*/
+	/*display:list-item;*/
+}
+
+ul.LSTreeView li
+{
+	/*display:inline-block; /*needed by ie until the VB was hacked*/
+	/*display:list-item;*/
+	list-style:none;
+	margin:0px 0px 0px 0px;
+	padding:0px;
+}
+
+ul.LSTreeView li a
+{
+	color:#424356;
+	font-size:90%;
+}
+
+.quote {
+	width:80%;
+	font-size:110%;
+	font-style:italic;
+	font-weight:bold;
+	margin:auto;
+	margin-top:10px;
+}
+
+.quote_reference {
+	width:80%;
+	margin:auto;
+	text-align:right;
+}
+
+table.ds td {
+border-top:1px solid #303030;
+padding:2px 4px;
+}
+
+li.faq { font-family:Tahoma,Arial,Helvetica; font-weight:normal; font-size:small; }
+.faq p { margin:0px; display:inline; }
+.faq a { color:#005b8f; text-decoration:underline; }
+.faq a:hover { cursor:pointer; }
+
+

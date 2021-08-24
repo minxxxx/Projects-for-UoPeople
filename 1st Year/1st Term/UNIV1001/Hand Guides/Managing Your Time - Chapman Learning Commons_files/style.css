@@ -1,0 +1,454 @@
+/**
+ * Theme Name: UBC Collab
+ * Theme URI: http://cms.ubc.ca
+ * Description:  with CLF 7 Implementation
+ * Version: 1.0.4
+ * Author: UBC
+ * Tags: threaded-comments, theme-options
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+ */
+
+/** Unit Bar background gradient and box shadow **/
+#ubc7-unit {
+   background: #264E6A;
+}
+#container{
+	background: #FFF;
+	padding-top: 15px;
+}
+#global-unit-footer{
+	background: #FFF;
+}
+
+/**
+ * WordPress Styles
+ * Clearing of the entry-content
+ */
+/* =Entry Content
+-------------------------------------------------------------- */
+.entry-content:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .entry-content            { zoom: 1; } /* IE6 */
+*:first-child+html .entry-content { zoom: 1; } /* IE7 */
+
+/* =Entry
+-------------------------------------------------------------- */
+.hentry{
+	margin-bottom: 50px;
+}
+.byline,
+.entry-meta{
+	font-size: 13px;
+	color:#757575;
+}
+.byline a,
+.entry-meta a{
+	color:#757575;
+}
+.byline a:hover,
+.entry-meta a:hover{
+	color:#2F5D7C;
+	text-decoration: underline;
+}
+/* =Alignment
+-------------------------------------------------------------- */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+/* =Caption
+-------------------------------------------------------------- */
+.wp-caption {
+	border: 1px solid #ccc;
+	max-width: 100%;
+}
+.wp-caption.aligncenter,
+.wp-caption.alignleft,
+.wp-caption.alignright {
+	margin-bottom: 1.5em;
+}
+.wp-caption img {
+	display: block;
+	margin: 1.2% auto 0;
+	max-width: 98%;
+}
+.wp-caption-text {
+	text-align: center;
+}
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+/* =Gallery
+-------------------------------------------------------------- */
+.gallery {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	margin: 0 auto;
+	}
+.gallery .gallery-row {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	margin: 0;
+	}
+.gallery .gallery-item {
+	overflow: hidden;
+	float: left;
+	margin: 0;
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	}
+.gallery .gallery-item .gallery-icon img {
+	width: auto;
+	max-width: 89%;
+	height: auto;
+	padding: 1%;
+	margin: 0 auto;
+	}
+.gallery-caption {
+	margin-left: 0;
+	}
+
+/* Image sizes depending on the number of columns */
+.gallery .col-0 { width: 100%; }
+.gallery .col-1 { width: 100%; }
+.gallery .col-2 { width: 50%; }
+.gallery .col-3 { width: 33.33%; }
+.gallery .col-4 { width: 25%; }
+.gallery .col-5 { width: 20%; }
+.gallery .col-6 { width: 16.66%; }
+.gallery .col-7 { width: 14.28%; }
+.gallery .col-8 { width: 12.5%; }
+.gallery .col-9 { width: 11.11%; }
+.gallery .col-10 { width: 10%; }
+.gallery .col-11 { width: 9.09%; }
+.gallery .col-12 { width: 8.33%; }
+.gallery .col-13 { width: 7.69%; }
+.gallery .col-14 { width: 7.14%; }
+.gallery .col-15 { width: 6.66%; }
+.gallery .col-16 { width: 6.25%; }
+.gallery .col-17 { width: 5.88%; }
+.gallery .col-18 { width: 5.55%; }
+.gallery .col-19 { width: 5.26%; }
+.gallery .col-20 { width: 5%; }
+.gallery .col-21 { width: 4.76%; }
+.gallery .col-22 { width: 4.54%; }
+.gallery .col-23 { width: 4.34%; }
+.gallery .col-24 { width: 4.16%; }
+.gallery .col-25 { width: 4%; }
+.gallery .col-26 { width: 3.84%; }
+.gallery .col-27 { width: 3.7%; }
+.gallery .col-28 { width: 3.57%; }
+.gallery .col-29 { width: 3.44%; }
+.gallery .col-30 { width: 3.33%; }
+
+/* =Header-widget area
+-------------------------------------------------------------- */
+.header-widget {
+	background: #FFF;
+	margin-top: -10px;
+	margin-bottom: -20px;
+}
+
+/* =Comments
+-------------------------------------------------------------- */
+#comments-template{
+	clear: both;
+}
+/* Comment headers */
+#comments-number,
+#reply-title{
+	font-size: 20px; /* reduce the font size */
+}
+/* Comment list */
+.comment-list {
+	list-style: none;
+	margin: 0;
+}
+/* Comment */
+.ping,
+.comment {
+	list-style: none;
+	margin-bottom: 10px;
+	padding: 10px;
+	border:1px solid #E6E6E6;
+}
+.comment-list #respond,
+.comment-wrap{
+	margin-left: 60px;
+}
+/* Comment Meta Data */
+.comment-meta-data{
+	position: relative;
+}
+.comment-wrap .avatar{
+	margin-left: -60px;
+	width: 40px;
+	height: 40px;
+	padding: 2px;
+	float: left;
+	background: #FFF;
+	border-bottom:1px solid #D7D7D7;
+	border-left:1px solid #F2F2F2;
+	border-right:1px solid #F2F2F2;
+	overflow: hidden;
+	font-size: 9px;
+	line-height: 11px;
+}
+.comment-list .comment-author{
+	display: block;
+	font-size: 1.1em;
+}
+.comment-action{
+	position: absolute;
+	top:0;
+	right: 0;
+	font-size: 0.9em;
+}
+
+
+/* Comments are closed */
+.comments-closed {
+	font-style: italic;
+}
+
+/* Comments Children */
+.comment .children{
+	margin-left: 50px;
+}
+.children .comment {
+	margin-right: -10px;
+	border-right:0;
+}
+
+
+.comment-text blockquote {
+	margin-bottom: 21px;
+}
+.comment-text blockquote p{
+	display: inline;
+}
+
+/* comments form */
+#respond{
+	padding-right: 30px;
+
+}
+#cancel-comment-reply-link{
+	margin:-3em 10px 0 0;
+}
+#respond #submit {
+	border:1px solid rgba(38, 78, 106, 0.5);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    background-color: #2F5D7C;
+    /* background-image: -moz-linear-gradient(center top , #2F5D7C, #264E6A); */
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+#respond #submit:hover,
+#respond #submit:active,
+#respond #submit.active {
+    background-color: #98B2C3;
+    border: 1px solid #98B2C3;
+    color: #002145;
+}
+#respond #submit:active,
+#respond #submit.active {
+    background-color: #C3D0DB;
+    border-color: #C3D0DB;
+}
+
+#respond .form-author,
+#respond .form-email{
+	float: left;
+	width: 48%;
+}
+#respond .form-author{
+	margin-right: 4%;
+}
+#respond input[type=text],
+#respond #comment{
+	width: 100%;
+}
+.no-padding{
+	padding: 0;
+}
+
+body.archive h2.post-title {
+	margin-top: 0px;
+	line-height: 30px;
+}
+
+body.archive h1.archive-title {
+	margin-bottom: 20px;
+}
+
+body.archive img.medium {
+	border: 1px solid #d7e0e7; padding: 5px;
+}
+
+/*eo styles*/
+.singular-event .eo-event-meta{
+        float:left;
+        width:40%;
+}
+
+.singular-event #eo-map{
+        float:right;
+        width:45%;
+}
+
+.eo-event-meta{
+        margin:0 0 10px 25px!important;
+        color: #757575!important;
+        font-size: 13px!important;
+}
+
+.eo-event-meta a{
+        color:#757575!important;
+}
+
+#eo-clear{
+        clear:both;
+}
+
+.taxonomy-event-category h1.entry-title,
+.taxonomy-event-venue h1.entry-title,
+.taxonomy-event-tag h1.entry-title,
+.singular-event h1.entry-title,
+.archive-event h1.entry-title{
+        display:inline;
+}
+/* =Sticky Top
+-------------------------------------------------------------- */
+.stick-to-top {
+    position:static;
+    z-index:100;
+}
+
+.place_holder {
+	display: none;
+	width: 100%;
+}
+
+/* TEMPORARY FIXES - because they're always temporary */
+/* GravityForms inputs in Firefox */
+.gform_wrapper .ginput_complex input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="file"]) {
+    height: 100%;
+    width: 100%;
+}
+
+/* block default styles styles */
+.wp-block-button .has-ubc-white-color,
+.has-ubc-white-color {
+	color: #fff;
+}
+.wp-block-button .has-ubc-black-color,
+.has-ubc-black-color {
+	color: #222;
+}
+.wp-block-button .has-ubc-blue-color,
+.has-ubc-blue-color  {
+	color: #002145;
+}
+.wp-block-button .has-ubc-secondary-blue-color,
+.has-ubc-secondary-blue-color  {
+	color: #0055b7;
+}
+.wp-block-button .has-ubc-tertiary-blue-color,
+.has-ubc-tertiary-blue-color {
+	color: #00a7e1;
+}
+.wp-block-button .has-ubc-quaternary-blue-color,
+.has-ubc-quaternary-blue-color {
+	color: #40b4e5;
+}
+.wp-block-button .has-ubc-quinary-blue-color,
+.has-ubc-quinary-blue-color {
+	color: #6ec4e8;
+}
+.wp-block-button .has-ubc-senary-blue-color,
+.has-ubc-senary-blue-color {
+	color: #97d4e9;
+}
+.has-ubc-white-background-color {
+	background-color: #fff;
+}
+.has-ubc-black-background-color {
+	background-color: #222;
+}
+.has-ubc-blue-background-color {
+	background-color: #002145;
+}
+.has-ubc-secondary-blue-background-color {
+	background-color: #0055b7;
+}
+.has-ubc-tertiary-blue-background-color {
+	background-color: #00a7e1;
+}
+.has-ubc-quaternary-blue-background-color {
+	background-color: #40b4e5;
+}
+.has-ubc-quinary-blue-background-color {
+	background-color: #6ec4e8;
+}
+.has-ubc-senary-blue-background-color {
+	background-color: #97d4e9;
+}
+.wp-block-button__link.has-ubc-senary-blue-background-color:hover {
+	background-color: #ace8fc;
+}
+.wp-block-button__link.has-ubc-white-background-color:hover {
+	font-style: italic;
+}
+.wp-block-button__link.has-ubc-black-background-color:hover {
+	background-color: #666;
+}
+.wp-block-button__link.has-ubc-blue-background-color:hover {
+	background-color: #0055b7;
+}
+.wp-block-button__link.has-ubc-secondary-blue-background-color:hover {
+	background-color: #00a7e1;
+}
+.wp-block-button__link.has-ubc-tertiary-blue-background-color:hover {
+	background-color: #40b4e5;
+}
+.wp-block-button__link.has-ubc-quaternary-blue-background-color:hover {
+	background-color: #6ec4e8;
+}
+.wp-block-button__link.has-ubc-quinary-blue-background-color:hover {
+	background-color: #97d4e9;
+}

@@ -1,0 +1,42 @@
+$(document).ready(function() {
+
+	// Show more archives
+	$('.widget_archive').append('<a href="#" class="show-more">Show more</a>');
+
+	// Prevent jump when clicking hash link
+	$('body').on('click', 'a.show-more', function() {
+		$(this).toggleClass('more');
+		$(this).text('Show less');
+		$(this).prev().toggleClass('more');
+		return false;
+	})
+
+	$('body').on('click', 'a.more', function() {
+		$(this).text('Show more');
+	})
+
+	// Mobile nav open / close
+	$('#burger').on('click', function() {
+		$('#main-menu').toggleClass('open');
+		$('#content .category-list').toggleClass('open');
+	})
+
+	// Twiiter widget
+	window.twttr = (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0],
+	    t = window.twttr || {};
+	  if (d.getElementById(id)) return t;
+	  js = d.createElement(s);
+	  js.id = id;
+	  js.src = "https://platform.twitter.com/widgets.js";
+	  fjs.parentNode.insertBefore(js, fjs);
+	 
+	  t._e = [];
+	  t.ready = function(f) {
+	    t._e.push(f);
+	  };
+	 
+	  return t;
+	}(document, "script", "twitter-wjs"));
+
+});

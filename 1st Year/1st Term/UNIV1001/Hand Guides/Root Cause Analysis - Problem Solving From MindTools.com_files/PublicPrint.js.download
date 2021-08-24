@@ -1,0 +1,1 @@
+var PrintButton={init:function(){$(".article-print").on("click",function(n){n.preventDefault(),window.print()})}};

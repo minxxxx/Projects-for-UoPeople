@@ -1,0 +1,60 @@
+/* PRINT CSS */
+
+@media print {
+	body {
+		background: white;
+		color: black;
+		margin: 0;
+	}
+	.breadcrumb-container {
+		display: none !important;
+	}
+	.col-2cr .main-inner {
+		background: none !important;
+		padding-left: 0 !important;
+	}	
+	.col-3cm .main {
+		background-color: #fff !important;
+		background-image: none !important;
+	}
+	.col-3cm .main-inner {
+		background-image: none !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.container {
+		padding: 0 !important;
+	}
+	.content {
+		width: 100%;
+	}
+	.entry {
+		min-height: 200px;
+	}
+	#Feedback {
+		display: none;
+	}
+	#footer {
+		display: none;
+	}
+  .grumble { display: none !important; }
+	#header {
+		display: none !important;
+	}
+	#page {
+		margin-top: 0 !important;
+	}
+  .previous-next { display: none !important; }
+	.print-owl {
+		display: block !important;
+	}
+	.sharedaddy {
+		display: none;
+	}
+	.sidebar {
+		display: none !important;
+	}
+	table tr, table tr td, table tr th {
+		page-break-inside: avoid !important;
+	}
+}

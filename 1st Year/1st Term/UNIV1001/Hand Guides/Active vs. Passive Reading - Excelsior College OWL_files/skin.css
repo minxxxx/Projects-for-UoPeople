@@ -1,0 +1,24 @@
+.lrm-inline .lrm-user-modal-container { border: 2px solid #d2d8d8; }
+
+.lrm-user-modal-container-inner {
+    border-radius: 0.25em;
+    overflow: hidden;
+}
+
+
+/* TABS */
+.lrm-user-modal-container { x-border-radius: 0.25em; }
+.lrm-user-modal-container .lrm-switcher a { background: #d2d8d8; color: #809191; }
+.lrm-user-modal-container .lrm-switcher.-is-not-login-only a.selected { background: #FFF; color: #505260; }
+.lrm-user-modal-container .lrm-switcher.-is-not-login-only li:first-child a { border-radius: 0.25em 0 0 0; }
+.lrm-user-modal-container .lrm-switcher.-is-not-login-only li:last-child a { border-radius: 0 0.25em 0 0; }
+.lrm-user-modal-container .lrm-switcher.-is-login-only li a { border-radius: 0.25em 0.25em 0 0; }
+
+.lrm-form input.has-border, .lrm-form select.has-border { border: 1px solid #d2d8d8; }
+
+.lrm-form a.button, .lrm-form button, .lrm-form button[type=submit], .lrm-form #buddypress input[type=submit], .lrm-form input[type=submit] { background: #2f889a; color: #FFF; }
+
+.lrm-form .hide-password { border-color: #d2d8d8; color: #343642; }
+
+.lrm-user-modal-container .input-text, .lrm-user-modal-container input[type=email], .lrm-user-modal-container input[type=password], .lrm-user-modal-container input[type=search], .lrm-user-modal-container input[type=tel], .lrm-user-modal-container input[type=text], .lrm-user-modal-container input[type=url], .lrm-user-modal-container select, .lrm-user-modal-container textarea { background-color: #f7f7f7; color: #000; font-weight: 300; box-shadow: none; border-radius: 0.25em; }
+.lrm-user-modal-container .input-text:focus, .lrm-user-modal-container input[type=email]:focus, .lrm-user-modal-container input[type=password]:focus, .lrm-user-modal-container input[type=search]:focus, .lrm-user-modal-container input[type=tel]:focus, .lrm-user-modal-container input[type=text]:focus, .lrm-user-modal-container input[type=url]:focus, .lrm-user-modal-container select:focus, .lrm-user-modal-container textarea:focus { border: 1px solid #d2d8d8; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25); }

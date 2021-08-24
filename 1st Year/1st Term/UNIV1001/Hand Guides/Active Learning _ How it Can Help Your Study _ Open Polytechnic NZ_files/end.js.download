@@ -1,0 +1,18 @@
+$(document).ready(function(){
+
+    if (typeof jQuery.cookie == "function") {
+        if ($('body.programme').length > 0) {
+            jQuery.cookie('OPLastProgrammePage', $('input[name=ProgrammeCode]').val(), {path: '/'});
+        }
+        else if($('body.enrollmentplanpage, body.enrolmentformloginpage, body.enrollmentformpage').length > 0) {
+            //Do Nothing
+        }
+        else {
+            jQuery.cookie('OPLastProgrammePage', null, {path: '/'});
+        }
+    }
+
+    // removes class right at the end of JS execution
+    $('html').removeClass('js-temp-hide');
+
+});
