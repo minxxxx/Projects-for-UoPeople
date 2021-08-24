@@ -1,38 +1,0 @@
-
-var ftGUID_4891237="4983D55B0BF4B4";
-var ftConfID_4891237="0";
-var ftParams_4891237="ftx=&fty=&ftadz=&ftscw=&ft_custom=&ftOBA=1&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fhtml%2Fr20210816%2Fr20110914%2Fzrt_lookup.html%3Ffsb%3D1%23RS-0-%26adk%3D1812271801%26client%3Dca-pub-8347101402675282%26fa%3D1%26ifi%3D2%26uci%3Da!2%26btvi%3D1&gdpr=&gdpr_consent=&gdpr_pd=&us_privacy=${US_PRIVACY}&cachebuster=836857.8023780435";
-var ftKeyword_4891237="";
-var ftCustom_4891237="";
-var ftSection_4891237="";
-var ftSegment_4891237="";
-var ftSegmentList_4891237=[];
-var ftRuleMatch_4891237="0";
-var ftTimestamp_4891237="1629717786";
-var ftGeoC2_4891237="za";
-var ftGeoState_4891237="gp";
-var ftGeoCity_4891237="halfway house";
-var ftISP_4891237="african network information center";
-var ftSpeed_4891237="broadband";
-var ftDMA_4891237="-1";
-var ftLong_4891237="28.13";
-var ftLat_4891237="-26.0";
-var ftPostal_4891237="1685";
-var ftTimeZone_4891237="200";
-var ftMobileCarrier_4891237="";
-var ftImp4891237 = {};
-ftImp4891237.privacy = "x";
-ftImp4891237.guidAge = "0";
-ftImp4891237.impID = "33D1E067-C525-2E64-8319-38E818DD932C";
-ftImp4891237.duid = "FT:4983D55B0BF4B4";
-
-ftImp4891237.ft_tpplid = "";
-ftImp4891237.ft_c = {};
-ftImp4891237.gdpr = "";
-ftImp4891237.gdpr_consent = "";
-ftImp4891237.gdpr_pd = "";
-ftImp4891237.oob_consent = "0";
-ftImp4891237.gdprStoredConsent = "";
-ftImp4891237.us_privacy = "!!US_PRIVACY!";
-
-document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/489/4891237/3470248/js/j-4891237-3470248.js" id="ftscript_m4891237" name="ftscript_m4891237"></scr'+'ipt>');

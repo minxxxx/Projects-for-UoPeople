@@ -1,0 +1,43 @@
+Programming Fundamentals (Python) –
+CS 1101: Learning Materials
+Get Ready For Your College Courses
+To best prepare for your future studies, please review the below preparation resources. We encourage you to use the time before starting your first term, to get a taste of the topics of your upcoming courses.
+
+There’s no better time to start than now! Good luck with your studies!
+
+ 
+
+Learn Programming Fundamentals
+Course Overview
+
+CS1101 is the first programming course encountered in the Computer Science program at the University of the People. Although this course does not have the technical difficulty that will be encountered in later computer science courses, it does introduce concepts that may be very new to many students so it will require significant commitment and focus. It is imperative that you have mastered the ideas, concepts, and skills that are introduced in this course as later courses will assume that you have proficiency in these areas. As such do not just get by in this course. Make sure that you understand ALL of the concepts and can complete ALL of the assignments. If you are struggling with any idea, concept, or project, reach out for help to your peer and your instructor EARLY by posting in the course forum.
+
+ 
+
+Preparation Resources
+Think Python, How to Think Like a Computer Scientist, version 1.1.24+Kart [Python 3.2] by Allen B. Downey. The book is available in an online interactive format at http://interactivepython.org/runestone/static/thinkcspy/index.html
+A history of the personal computer: the people and the technology – available from the Libraries and Archives Canada online at: http://epe.lac-bac.gc.ca/100/200/300/allan_publishing/history_personal_ computer/index.html
+Programming Fundamental -Course Schedule and Topics:
+ 
+
+This course will cover the following topics in eight learning sessions, with one Unit per week. The Final Exam will take place during Week/Unit 9 (UoPeople time).
+
+ 
+
+Week 1: Unit 1 – Introduction and Fundamental Concepts
+
+Week 2: Unit 2 – Variables, Expressions, and Statements
+
+Week 3: Unit 3 – The Conceptual Model: Flowcharts and Pseudo Code
+
+Week 4: Unit 4 – Functions
+
+Week 5: Unit 5 – Conditionals and Iterations
+
+Week 6: Unit 6 – Functions and Return Values
+
+Week 7: Unit 7 – Data and Data Structures
+
+Week 8: Unit 8 – Dictionaries and Files
+
+Week 9: Unit 9 – Final Exam
