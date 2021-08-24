@@ -1,0 +1,2 @@
+Chapter 3 - Programming in the Small 2: Control || https://math.hws.edu/javanotes/c3/index.html
+Chapter 4 - Programming in the Large 1: Subroutines || https://math.hws.edu/javanotes/c4/index.html

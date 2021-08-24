@@ -1,0 +1,2 @@
+Chapter 7 - Arrays and ArrayLists || https://math.hws.edu/javanotes/c7/index.html
+Chapter 8 - Correctness, Robustness, Efficiency || https://math.hws.edu/javanotes/c8/index.html

@@ -1,0 +1,2 @@
+Chapter 5 - Programming in the Large 2: Objects and Classes || https://math.hws.edu/javanotes/c5/index.html
+Chapter 6 - Introduction to GUI Programming || https://math.hws.edu/javanotes/c6/index.html
