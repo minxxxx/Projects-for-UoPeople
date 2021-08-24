@@ -1,0 +1,5 @@
+Lab 1 - Astronomy Animation: https://runestone.academy/runestone/books/published/thinkcspy/Labs/astronomylab.html
+Lab 2 - Turtle Racing: https://runestone.academy/runestone/books/published/thinkcspy/Labs/lab03_01.html
+Lab 3 - Drawing a Circle: https://runestone.academy/runestone/books/published/thinkcspy/Labs/lab04_01.html
+Lab 4 - Lessons from a Triangle: https://runestone.academy/runestone/books/published/thinkcspy/Labs/lab04_01a.html
+Lab 5 - Counting Letters: https://runestone.academy/runestone/books/published/thinkcspy/Labs/lab12_01.html

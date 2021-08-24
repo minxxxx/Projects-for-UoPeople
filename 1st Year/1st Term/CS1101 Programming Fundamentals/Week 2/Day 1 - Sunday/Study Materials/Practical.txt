@@ -1,0 +1,4 @@
+Chapter 5 - Python Modules: https://runestone.academy/runestone/books/published/thinkcspy/PythonModules/toctree.html
+Chapter 6 - Functions: https://runestone.academy/runestone/books/published/thinkcspy/Functions/toctree.html
+Chapter 7 - Selection: https://runestone.academy/runestone/books/published/thinkcspy/Selection/toctree.html
+Chapter 8 - More About Iteration: https://runestone.academy/runestone/books/published/thinkcspy/MoreAboutIteration/toctree.html

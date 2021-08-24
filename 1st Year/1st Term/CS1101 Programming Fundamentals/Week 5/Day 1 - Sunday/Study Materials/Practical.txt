@@ -1,0 +1,4 @@
+Chapter 17 - Classes and Objects - the Basics: https://runestone.academy/runestone/books/published/thinkcspy/ClassesBasics/toctree.html
+Chapter 18 - Classes and Objects - Digging a Little Deeper: https://runestone.academy/runestone/books/published/thinkcspy/ClassesDiggingDeeper/toctree.html
+Chapter 19 - Inheritance: https://runestone.academy/runestone/books/published/thinkcspy/Inheritance/toctree.html
+Chapter 20 - Unit Testing: https://runestone.academy/runestone/books/published/thinkcspy/UnitTesting/toctree.html

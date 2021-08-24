@@ -1,1 +1,0 @@
-_gfp_s_({"_cookies_":[{"_value_":"ID=7cf7e0ff4f1813f6-2291a53ab3c900b2:T=1629708169:RT=1629805514:S=ALNI_MbUDHHKWuvoX2DgnG33qkd8T4axBg","_expires_":1663404169,"_path_":"/","_domain_":"psychcentral.com"}]});

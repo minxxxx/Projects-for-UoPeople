@@ -1,0 +1,4 @@
+Chapter 9 - Strings: https://runestone.academy/runestone/books/published/thinkcspy/Strings/toctree.html
+Chapter 10 - Lists: https://runestone.academy/runestone/books/published/thinkcspy/Lists/toctree.html
+Chapter 11 - Files: https://runestone.academy/runestone/books/published/thinkcspy/Files/toctree.html
+Chapter 12 - Dictionaries: https://runestone.academy/runestone/books/published/thinkcspy/Dictionaries/toctree.html

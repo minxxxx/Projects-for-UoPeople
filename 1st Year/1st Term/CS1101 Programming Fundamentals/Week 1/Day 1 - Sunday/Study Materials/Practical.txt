@@ -1,0 +1,4 @@
+Chapter 1 - General Introduction: https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/toctree.html
+Chapter 2 - Simple Python Data: https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/toctree.html
+Chapter 3 - Debugging Interlude 1: https://runestone.academy/runestone/books/published/thinkcspy/Debugging/toctree.html
+Chapter 4 - Python Turtle Graphics: https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/toctree.html

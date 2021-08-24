@@ -1,0 +1,4 @@
+Chapter 13 - Exceptions: https://runestone.academy/runestone/books/published/thinkcspy/Exceptions/toctree.html
+Chapter 14 - Web Applications: https://runestone.academy/runestone/books/published/thinkcspy/WebApps/toctree.html
+Chapter 15 - GUI and Event Driven Programming: https://runestone.academy/runestone/books/published/thinkcspy/GUIandEventDrivenProgramming/toctree.html
+Chapter 16 - Recursion: https://runestone.academy/runestone/books/published/thinkcspy/IntroRecursion/toctree.html
