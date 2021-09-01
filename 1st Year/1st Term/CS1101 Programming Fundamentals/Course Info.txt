@@ -1,43 +1,229 @@
-Programming Fundamentals (Python) –
-CS 1101: Learning Materials
-Get Ready For Your College Courses
-To best prepare for your future studies, please review the below preparation resources. We encourage you to use the time before starting your first term, to get a taste of the topics of your upcoming courses.
+CS 1101: PROGRAMMING FUNDAMENTALS
 
-There’s no better time to start than now! Good luck with your studies!
+Syllabus
 
- 
+Prerequisites: None
 
-Learn Programming Fundamentals
-Course Overview
+Course Description:
 
-CS1101 is the first programming course encountered in the Computer Science program at the University of the People. Although this course does not have the technical difficulty that will be encountered in later computer science courses, it does introduce concepts that may be very new to many students so it will require significant commitment and focus. It is imperative that you have mastered the ideas, concepts, and skills that are introduced in this course as later courses will assume that you have proficiency in these areas. As such do not just get by in this course. Make sure that you understand ALL of the concepts and can complete ALL of the assignments. If you are struggling with any idea, concept, or project, reach out for help to your peer and your instructor EARLY by posting in the course forum.
+This course covers the basics of computer programming and provides a foundation for further learning in this area. No previous computer programming knowledge is required to finish this course. The course uses the Python programming language which is very simple and straightforward. The course also covers abstract concepts which can be applied to almost any programming language, and students are encouraged to pay attention to these, since the way of thinking like a programmer is the most valuable lesson they will learn.
 
- 
+Required Textbook and Materials:
 
-Preparation Resources
-Think Python, How to Think Like a Computer Scientist, version 1.1.24+Kart [Python 3.2] by Allen B. Downey. The book is available in an online interactive format at http://interactivepython.org/runestone/static/thinkcspy/index.html
-A history of the personal computer: the people and the technology – available from the Libraries and Archives Canada online at: http://epe.lac-bac.gc.ca/100/200/300/allan_publishing/history_personal_ computer/index.html
-Programming Fundamental -Course Schedule and Topics:
- 
+UoPeople courses use open educational resources (OER) and other materials specifically donated to the University with free permissions for educational use. Therefore, students are not required to purchase any textbooks or sign up for any websites that have a cost associated with them. The main required textbooks for this course are listed below, and can be readily accessed using the provided links. There may be additional required/recommended readings, supplemental materials, or other resources and websites necessary for lessons; these will be provided for you in the course's General Information and Forums area, and throughout the term via the weekly course Unit areas and the Learning Guides.
+
+Downey, A. (2015). Think Python: How to think like a computer scientist. Green Tea Press. This book is licensed under Creative Commons Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0). Download for PDF: https://my.uopeople.edu/pluginfile.php/1404468/mod_page/content/52/TEXT%20-%20Think%20Python%202e.pdf
+
+Software Requirements/Installation:
+
+For your assignments, you must download and install the appropriate Python interpreter for your computer and operating system. Versions of the software are available for Windows (XP, Vista, Windows7), Linux distributions, and Mac OS. Most popular distributions of Linux will either include Python or will provide an installation option for it in the software management utility.
+
+You can find available downloads for Python v3 at the following URL: Python software Foundation. (2019). Download Python. http://www.python.org/download/
+
+Installation is relatively straightforward. Follow the prompts when installing. Further information is available in the documentation section located here: Python Software Foundation. (2020). Python 3.8.1 documentation. https://docs.python.org/3/. 
+
+Instructions to install and configure Python can be found in the Python setup and usage section of this page.
+
+Additional Resources:
+
+WisdomJobs. (2018). IDLE - Python. https://www.wisdomjobs.com/e-university/python-tutorial-176/idle-8842.html
+Pythonanywhere. (n.d.). Host, run, and code Python in the cloud. https://www.pythonanywhere.com/
+Note: the PythonAnywhere website above is a good alternative for Python programming. You can get a free account with just your email address. Please make sure that you use Python 3.x (not 2.x).
+
+Learning Objectives and Outcomes:
+
+By the end of this course students will be able to:
+
+Implement code using fundamental programming concepts, language constructs and procedural programming approaches.
+Develop programs using the Python programming language to solve programming problems.
+Independently research programming languages and apply new programming language features.
+
+Course Schedule and Topics:
 
 This course will cover the following topics in eight learning sessions, with one Unit per week. The Final Exam will take place during Week/Unit 9 (UoPeople time).
 
- 
+Week 1: Unit 1 - Introduction and Fundamental Concepts
 
-Week 1: Unit 1 – Introduction and Fundamental Concepts
+Week 2: Unit 2 - Variables, Expressions, Statements, and Functions
 
-Week 2: Unit 2 – Variables, Expressions, and Statements
+Week 3: Unit 3 - Conditionals and Recursion
 
-Week 3: Unit 3 – The Conceptual Model: Flowcharts and Pseudo Code
+Week 4: Unit 4 - Functions and Return Values
 
-Week 4: Unit 4 – Functions
+Week 5: Unit 5 - Iteration and Strings
 
-Week 5: Unit 5 – Conditionals and Iterations
+Week 6: Unit 6 - Lists
 
-Week 6: Unit 6 – Functions and Return Values
+Week 7: Unit 7 - Dictionaries and Tuples
 
-Week 7: Unit 7 – Data and Data Structures
+Week 8: Unit 8 - Files
 
-Week 8: Unit 8 – Dictionaries and Files
+Week 9: Unit 9 - Final Exam
 
-Week 9: Unit 9 – Final Exam
+Learning Guide:
+
+The following is an outline of how this course will be conducted, with suggested best practices for students.
+
+Unit 1: Introduction and Fundamental Concepts
+
+Read through the Learning Guide and the Reading Assignment.
+Download and install a working Python 3 environment (not required for PythonAnywhere users). Refer to the Software Requirements/Installation section of the Syllabus.
+Complete the Discussion Assignment by posting in the Discussion Forum.
+Respond to three of your fellow classmates’ posts in the Discussion Forum.
+Complete an entry in the Learning Journal.
+Take the Self-Quiz.
+
+Unit 2: Variables, Expressions, Statements, and Functions
+
+Read through the Learning Guide and the Reading Assignment.
+Complete the Discussion Assignment by posting in the Discussion Forum.
+Respond to three of your fellow classmates’ posts in the Discussion Forum.
+Complete and submit the Programming Assignment.
+Complete an entry in the Learning Journal.
+Take the Self-Quiz.
+
+Unit 3: Conditionals and Recursion 
+
+Peer-assess Unit 2 Programming Assignment.
+Read through the Learning Guide and the Reading Assignment.
+Complete the Discussion Assignment by posting in the Discussion Forum.
+Respond to three of your fellow classmates’ posts in the Discussion Forum.
+Complete an entry in the Learning Journal.
+Take the Self-Quiz.
+Take the Graded Quiz.
+
+Unit 4: Functions and Return Values
+
+Read through the Learning Guide and the Reading Assignment.
+Complete the Discussion Assignment by posting in the Discussion Forum.
+Respond to three of your fellow classmates’ posts in the Discussion Forum.
+Complete and submit the Programming Assignment.
+Complete an entry in the Learning Journal.
+Take the Self-Quiz.
+
+Unit 5: Iteration and Strings
+
+Peer-assess Unit 4 Programming Assignment.
+Read through the Learning Guide and the Reading Assignment.
+Complete the Discussion Assignment by posting in the Discussion Forum.
+Respond to three of your fellow classmates’ posts in the Discussion Forum.
+Complete and submit the Programming Assignment.
+Complete an entry in the Learning Journal.
+Take the Self-Quiz.
+
+Unit 6: Lists
+
+Peer-assess Unit 5 Programming Assignment.
+Read through the Learning Guide and the Reading Assignment.
+Complete the Discussion Assignment by posting in the Discussion Forum.
+Respond to three of your fellow classmates’ posts in the Discussion Forum.
+Complete an entry in the Learning Journal.
+Take the Self-Quiz.
+Take the Graded Quiz.
+
+Unit 7: Dictionaries and Tuples
+
+Read through the Learning Guide and the Reading Assignment.
+Complete the Discussion Assignment by posting in the Discussion Forum.
+Respond to three of your fellow classmates’ posts in the Discussion Forum.
+Complete and submit the Programming Assignment.
+Complete an entry in the Learning Journal.
+Take the Self-Quiz.
+
+Unit 8: Files
+
+Peer assess Unit 7 Programming Assignment.
+Read the Learning Guide and Reading Assignments.
+Complete the Discussion Assignment by posting in the Discussion Forum.
+Respond to three of your fellow classmates’ posts in the Discussion Forum.
+Complete an entry in the Learning Journal.
+Read the Unit 9 Learning Guide carefully for instructions on the Final Exam.
+Take the Self-Quiz.
+Take the Review Quiz.
+Complete and submit the anonymous Course Evaluation.
+
+Unit 9: Course Review and Final Exam
+
+Read the Learning Guide and take the Review Quiz, if you haven't already done so.
+Prepare for, take, and submit the Final Exam.
+The Final Exam will take place during the Thursday and Sunday of Week/Unit 9 (UoPeople time); exact dates, times, and other details will be provided accordingly by your instructor.
+
+Course Requirements:
+
+Programming Assignments
+Some units in this course require that you complete a programming assignment. For each programming assignment, you must develop the required program and submit by the required due date. Your submission must include the code of your program and description of the results obtained when running the program. You are required to submit your assignments by the indicated deadlines and, in addition, to peer assess three (3) of your classmates’ assignments according to the instructions found in the Assessment Form, which is provided to you during the following week. During this peer assessment period, you are expected to provide details in the feedback section of the Assessment Form, indicating why you awarded the grade that you did to your peer. Failure to submit Written Assignments and/or Assessment Forms may result in failure of the course.
+
+Discussion Assignments & Response Posts/Ratings
+Some units in this course require that you complete a Discussion Assignment. You are required to develop and post a substantive response to the Discussion Assignment in the Discussion Forum. A substantive response is one that fully answers the question that has been posed by the instructor. In addition, you must extend the discussion by responding to at least three (3) of your peers’ postings in the Discussion Forum and by rating their posts. Instructions for proper posting and rating are provided inside the Discussion Forum for each week. Discussion Forums are only active for each current and relevant learning week, so it is not possible to contribute to the forum once the learning week has come to an end. Failure to participate in the Discussion Assignment by posting in the Discussion Forum and responding to peers as required may result in failure of the course.
+
+Learning Journal
+Your instructor may choose to assign specific topics and/or relevant questions as a weekly Learning Journal entry for you to complete, but you are still encouraged to also use it to document your activities, record questions/problems you may have encountered, reflect on the learning process, and draft answers for other course assignments. The Learning Journal must be updated on a weekly basis because its entries will be assessed by your instructor directly as a part of your final grade. The Learning Journal will only be seen by your instructor.
+
+Quizzes
+This course will contain three types of quizzes – Self-Quizzes, Graded Quizzes, and the Review Quiz. These quizzes may contain multiple choice, true/false, or short answer questions. The results of the Self-Quiz will not count towards your final grade. However, it is highly recommended that you complete the Self-Quiz to ensure that you have adequately understood the course materials. Along with the Reading Assignments, the results of the Self-Quiz should be used as part of an iterative learning process, to thoroughly cover and test your understanding of course material. You should use the results of your Self-Quiz as a guide to go back and review relevant sections of the Reading Assignments. Likewise, the Review Quiz will not count towards your final grade, but should also be used to assist you in a comprehensive review and full understanding of all course material, in preparation for your Final Exam. Lastly, the results of the Graded Quizzes will count towards your final grade. Specific instructions on the format and content of the Graded Quizzes will be provided by your instructor.
+
+Final Exam
+The Final Exam will take place during the Thursday and Sunday of Week/Unit 9, following the completion of eight units of work. The format of the Final Exam is similar to that of the quizzes and may contain a combination of different question types. You will have one attempt to take the exam, and it will be graded electronically. Specific instructions on how to prepare for and take the Final Exam will be provided during Week 8 (located inside the Unit 9 Learning Guide). Final Exams must be taken without the use of course learning materials (both those inside and outside the course). If particular materials are allowed for use during the exam, these will be noted in the exam’s instructions.
+
+Course Forum
+The Course Forum is the place to raise issues and questions relating to the course. It is regularly monitored by the instructors and is a good place to meet fellow students taking the same course. While it is not required to participate in the Course Forum, it is highly recommended.
+
+Course Policies:
+
+Grading Components and Weights
+Each graded component of the course will contribute some percentage to the final grading scale, as indicated here:
+
+Learning Journals		20%
+Programming Assignments		5%
+Discussion Questions  		5%
+Graded Quizzes (Units 3 & 6)	30% (15% each)
+Final Exam			40%
+TOTAL				100%
+
+Grading Scale
+This course will follow the standard 100-point grading scale defined by the University of the People, as indicated here:
+
+Letter Grade
+Grade 		Scale		Grade Points
+A+		98-100		4.00
+A		93-97		4.00
+A-		90-92		3.67
+B+		88-89		3.33
+B		83-87		3.00
+B-		80-82		2.67
+C+		78-79		2.33
+C		73-77		2.00
+C-		70-72		1.67
+D+		68-69		1.33
+D		63-67		1.00
+D-		60-62		0.67
+F		Under 60	0.00
+
+Grade Appeal
+If you believe that the final grade you received for a course is erroneous, unjust, or unfair, please contact your course instructor. This must be done within seven days of the posted final grade. For more information on this topic, please review the Grade Appeal Procedure in the University Catalog.
+
+Participation
+Non-participation is characterized by lack of any assignment submissions, inadequate contributions to the Discussion Forums, and/or lack of peer feedback to Discussion/Written Assignments. Also, please note the following important points about course participation:
+
+Assignments must be submitted on or before the specified deadline. A course timeline is provided in the course schedule, and the instructor will specify deadlines for each assignment.
+Any student showing non-participation for two weeks (consecutive or non-consecutive) is likely to automatically fail the course.
+Occasionally there may be a legitimate reason for submitting an assignment late. Most of the time, late assignments will not be accepted and there will be no make-up assignments.
+All students are obligated to inform their instructor in advance of any known absences which may result in their non-participation.
+
+Academic Honesty and Integrity
+When you submit any work that requires research and writing, it is essential to cite and reference all source material. Failure to properly acknowledge your sources is known as “plagiarism” – which is effectively passing off an individual’s words or ideas as your own. University of the People adheres to a strict policy of academic honesty and integrity. Failure to comply with these guidelines may result in sanctions by the University, including dismissal from the University or course failure. For more information on this topic, please review the Academic Integrity Policy in the University Catalog.
+
+Unless otherwise stated, any materials cited in this course should be referenced using the style guidelines established by the American Psychological Association (APA). The APA format is widely used in colleges and universities across the world and is one of several style and citation formats required for publication in professional and academic journals. Purdue University’s Online Writing Lab (OWL) is a free website that provides excellent information and resources for understanding and using the APA format and style. The OWL website can be accessed here: Purdue Online Writing Lab. (n.d.). APA style introduction. Purdue University. https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_style_introduction.html
+
+Code of Conduct
+University of the People expects that students conduct themselves in a respectful, collaborative, and honest manner at all times. Harassment, threatening behavior, or deliberate embarrassment of others will not be permitted. Any conduct that interferes with the quality of the educational experience is not allowed and may result in disciplinary action, such as course failure, probation, suspension, or dismissal. For more information on this topic, please review the Code of Conduct Policy in the University Catalog.
+
+Course Overview
+CS1101 is the first programming course encountered in the Computer Science program at the University of the People. Although this course does not have the technical difficulty that will be encountered in later computer science courses, it does introduce concepts that may be very new to many students so it will require significant commitment and focus. It is imperative that you have mastered the ideas, concepts, and skills that are introduced in this course as later courses will assume that you have proficiency in these areas. As such do not just get by in this course. Make sure that you understand ALL of the concepts and can complete ALL of the assignments. If you are struggling with any idea, concept, or project, reach out for help to your peer and your instructor EARLY by posting in the course forum.
+
+This course, CS1101 is an introductory course to the computer science program. For many students, this course will represent your first formalized exposure to the computer science discipline and field. The recommended readings provide an excellent history of the development of computer technology, computers, programming languages and the field of computer science in general. The recommended readings trace the development of modern computer technology from its earliest beginnings, through the personal computer and internet revolutions through to the recent history of the field. These readings will provide you with a good understanding of the key innovators of the field as well as their innovations providing a foundation for your further studies in the computer science program.
+
+Finally selected units throughout this course have optional video lectures. These video lectures are not required but can be valuable to those students who have the ability to view streaming video as they present the same material covered in the reading assignment but in the form of a video/audio lecture that demonstrates implementing the concepts from the reading assignment. For those students who have access to sufficient computing resources and network bandwidth, these video lectures are highly recommended.
+
+Expectations
+This course is designed to be collaborative. Your interaction with your peers (other students in the class) should not be focused on providing an assessment of their work, but rather to collaborate to improve our collective understanding of the course material. As such feedback is MORE important than assessment. You should be providing feedback in the form of explanation, assistance, best practice sharing, and other forms of collaboration. Your instructor will be looking for these activities and a portion of your grade will be determined based upon the level of collaboration and peer interaction that you engage in.

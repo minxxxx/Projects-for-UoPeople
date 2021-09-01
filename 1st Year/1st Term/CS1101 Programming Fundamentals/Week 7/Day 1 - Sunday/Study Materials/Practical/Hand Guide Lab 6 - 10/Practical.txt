@@ -1,5 +1,0 @@
-Lab 6 - Letter Count Histogram: https://runestone.academy/runestone/books/published/thinkcspy/Labs/lab12_02.html
-Lab 7 - Approximating the Value of Pi: https://runestone.academy/runestone/books/published/thinkcspy/Labs/montepi.html
-Lab 8 - Python Beyond the Browser: https://runestone.academy/runestone/books/published/thinkcspy/Labs/pythonshell.html
-Lab 9 - Experimenting with the 3n+1 Sequence: https://runestone.academy/runestone/books/published/thinkcspy/Labs/sequencelab.html
-Lab 10 - Plotting a Sine Wave: https://runestone.academy/runestone/books/published/thinkcspy/Labs/sinlab.html
