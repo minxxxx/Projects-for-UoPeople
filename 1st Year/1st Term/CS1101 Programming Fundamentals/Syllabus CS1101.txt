@@ -1,8 +1,9 @@
 CS 1101: PROGRAMMING FUNDAMENTALS
-
 Syllabus
 
-Prerequisites: None
+Prerequisites:
+
+None
 
 Course Description:
 
@@ -58,7 +59,7 @@ Week 7: Unit 7 - Dictionaries and Tuples
 
 Week 8: Unit 8 - Files
 
-Week 9: Unit 9 - Final Exam
+Week 9: Unit 9 - Course Review and Final Exam
 
 Learning Guide:
 
@@ -150,27 +151,34 @@ The Final Exam will take place during the Thursday and Sunday of Week/Unit 9 (Uo
 
 Course Requirements:
 
-Programming Assignments
+Programming Assignments:
+
 Some units in this course require that you complete a programming assignment. For each programming assignment, you must develop the required program and submit by the required due date. Your submission must include the code of your program and description of the results obtained when running the program. You are required to submit your assignments by the indicated deadlines and, in addition, to peer assess three (3) of your classmates’ assignments according to the instructions found in the Assessment Form, which is provided to you during the following week. During this peer assessment period, you are expected to provide details in the feedback section of the Assessment Form, indicating why you awarded the grade that you did to your peer. Failure to submit Written Assignments and/or Assessment Forms may result in failure of the course.
 
-Discussion Assignments & Response Posts/Ratings
+Discussion Assignments & Response Posts/Ratings:
+
 Some units in this course require that you complete a Discussion Assignment. You are required to develop and post a substantive response to the Discussion Assignment in the Discussion Forum. A substantive response is one that fully answers the question that has been posed by the instructor. In addition, you must extend the discussion by responding to at least three (3) of your peers’ postings in the Discussion Forum and by rating their posts. Instructions for proper posting and rating are provided inside the Discussion Forum for each week. Discussion Forums are only active for each current and relevant learning week, so it is not possible to contribute to the forum once the learning week has come to an end. Failure to participate in the Discussion Assignment by posting in the Discussion Forum and responding to peers as required may result in failure of the course.
 
-Learning Journal
+Learning Journal:
+
 Your instructor may choose to assign specific topics and/or relevant questions as a weekly Learning Journal entry for you to complete, but you are still encouraged to also use it to document your activities, record questions/problems you may have encountered, reflect on the learning process, and draft answers for other course assignments. The Learning Journal must be updated on a weekly basis because its entries will be assessed by your instructor directly as a part of your final grade. The Learning Journal will only be seen by your instructor.
 
-Quizzes
+Quizzes:
+
 This course will contain three types of quizzes – Self-Quizzes, Graded Quizzes, and the Review Quiz. These quizzes may contain multiple choice, true/false, or short answer questions. The results of the Self-Quiz will not count towards your final grade. However, it is highly recommended that you complete the Self-Quiz to ensure that you have adequately understood the course materials. Along with the Reading Assignments, the results of the Self-Quiz should be used as part of an iterative learning process, to thoroughly cover and test your understanding of course material. You should use the results of your Self-Quiz as a guide to go back and review relevant sections of the Reading Assignments. Likewise, the Review Quiz will not count towards your final grade, but should also be used to assist you in a comprehensive review and full understanding of all course material, in preparation for your Final Exam. Lastly, the results of the Graded Quizzes will count towards your final grade. Specific instructions on the format and content of the Graded Quizzes will be provided by your instructor.
 
-Final Exam
+Final Exam:
+
 The Final Exam will take place during the Thursday and Sunday of Week/Unit 9, following the completion of eight units of work. The format of the Final Exam is similar to that of the quizzes and may contain a combination of different question types. You will have one attempt to take the exam, and it will be graded electronically. Specific instructions on how to prepare for and take the Final Exam will be provided during Week 8 (located inside the Unit 9 Learning Guide). Final Exams must be taken without the use of course learning materials (both those inside and outside the course). If particular materials are allowed for use during the exam, these will be noted in the exam’s instructions.
 
-Course Forum
+Course Forum:
+
 The Course Forum is the place to raise issues and questions relating to the course. It is regularly monitored by the instructors and is a good place to meet fellow students taking the same course. While it is not required to participate in the Course Forum, it is highly recommended.
 
 Course Policies:
 
-Grading Components and Weights
+Grading Components and Weights:
+
 Each graded component of the course will contribute some percentage to the final grading scale, as indicated here:
 
 Learning Journals		20%
@@ -180,10 +188,12 @@ Graded Quizzes (Units 3 & 6)	30% (15% each)
 Final Exam			40%
 TOTAL				100%
 
-Grading Scale
+Grading Scale:
+
 This course will follow the standard 100-point grading scale defined by the University of the People, as indicated here:
 
-Letter Grade
+Letter Grade:
+
 Grade 		Scale		Grade Points
 A+		98-100		4.00
 A		93-97		4.00
@@ -199,10 +209,12 @@ D		63-67		1.00
 D-		60-62		0.67
 F		Under 60	0.00
 
-Grade Appeal
+Grade Appeal:
+
 If you believe that the final grade you received for a course is erroneous, unjust, or unfair, please contact your course instructor. This must be done within seven days of the posted final grade. For more information on this topic, please review the Grade Appeal Procedure in the University Catalog.
 
-Participation
+Participation:
+
 Non-participation is characterized by lack of any assignment submissions, inadequate contributions to the Discussion Forums, and/or lack of peer feedback to Discussion/Written Assignments. Also, please note the following important points about course participation:
 
 Assignments must be submitted on or before the specified deadline. A course timeline is provided in the course schedule, and the instructor will specify deadlines for each assignment.
@@ -210,20 +222,24 @@ Any student showing non-participation for two weeks (consecutive or non-consecut
 Occasionally there may be a legitimate reason for submitting an assignment late. Most of the time, late assignments will not be accepted and there will be no make-up assignments.
 All students are obligated to inform their instructor in advance of any known absences which may result in their non-participation.
 
-Academic Honesty and Integrity
+Academic Honesty and Integrity:
+
 When you submit any work that requires research and writing, it is essential to cite and reference all source material. Failure to properly acknowledge your sources is known as “plagiarism” – which is effectively passing off an individual’s words or ideas as your own. University of the People adheres to a strict policy of academic honesty and integrity. Failure to comply with these guidelines may result in sanctions by the University, including dismissal from the University or course failure. For more information on this topic, please review the Academic Integrity Policy in the University Catalog.
 
 Unless otherwise stated, any materials cited in this course should be referenced using the style guidelines established by the American Psychological Association (APA). The APA format is widely used in colleges and universities across the world and is one of several style and citation formats required for publication in professional and academic journals. Purdue University’s Online Writing Lab (OWL) is a free website that provides excellent information and resources for understanding and using the APA format and style. The OWL website can be accessed here: Purdue Online Writing Lab. (n.d.). APA style introduction. Purdue University. https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_style_introduction.html
 
-Code of Conduct
+Code of Conduct:
+
 University of the People expects that students conduct themselves in a respectful, collaborative, and honest manner at all times. Harassment, threatening behavior, or deliberate embarrassment of others will not be permitted. Any conduct that interferes with the quality of the educational experience is not allowed and may result in disciplinary action, such as course failure, probation, suspension, or dismissal. For more information on this topic, please review the Code of Conduct Policy in the University Catalog.
 
-Course Overview
+Course Overview:
+
 CS1101 is the first programming course encountered in the Computer Science program at the University of the People. Although this course does not have the technical difficulty that will be encountered in later computer science courses, it does introduce concepts that may be very new to many students so it will require significant commitment and focus. It is imperative that you have mastered the ideas, concepts, and skills that are introduced in this course as later courses will assume that you have proficiency in these areas. As such do not just get by in this course. Make sure that you understand ALL of the concepts and can complete ALL of the assignments. If you are struggling with any idea, concept, or project, reach out for help to your peer and your instructor EARLY by posting in the course forum.
 
 This course, CS1101 is an introductory course to the computer science program. For many students, this course will represent your first formalized exposure to the computer science discipline and field. The recommended readings provide an excellent history of the development of computer technology, computers, programming languages and the field of computer science in general. The recommended readings trace the development of modern computer technology from its earliest beginnings, through the personal computer and internet revolutions through to the recent history of the field. These readings will provide you with a good understanding of the key innovators of the field as well as their innovations providing a foundation for your further studies in the computer science program.
 
 Finally selected units throughout this course have optional video lectures. These video lectures are not required but can be valuable to those students who have the ability to view streaming video as they present the same material covered in the reading assignment but in the form of a video/audio lecture that demonstrates implementing the concepts from the reading assignment. For those students who have access to sufficient computing resources and network bandwidth, these video lectures are highly recommended.
 
-Expectations
+Expectations:
+
 This course is designed to be collaborative. Your interaction with your peers (other students in the class) should not be focused on providing an assessment of their work, but rather to collaborate to improve our collective understanding of the course material. As such feedback is MORE important than assessment. You should be providing feedback in the form of explanation, assistance, best practice sharing, and other forms of collaboration. Your instructor will be looking for these activities and a portion of your grade will be determined based upon the level of collaboration and peer interaction that you engage in.
