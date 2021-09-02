@@ -1,0 +1,65 @@
+Type the statements below into your Python interpreter. For each statement, copy the output into your Discussion Assignment and explain the output. Compare it with any similar examples in the textbook, and describe what it means about your version of Python. 
+
+>>> print 'Hello, World!'
+>>> 1/2
+>>> type(1/2)
+>>> print(01)
+>>> 1/(2/3) 
+
+When you reply to your peers’ submissions, compare their results with yours.
+
+My terminal is running python 3. In the example below, an error is returned specifying that python 3 requires parethesis for function inputs as opposed to python 2 where this command would have yielded the output expected.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print 'Hello, World!'
+  File "<stdin>", line 1
+    print 'Hello, World!'
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print('Hello, World!')?
+
+In the following three examples, you can see that python automatically does calculation inside input parenthesis of a function before executing the function, not returning any error to the input of 1/2 in the type function, but rather printing out the same output that type(0.5) would have yielded as shown just below it. This tells me that python 3 is capable of executing more than one instruction at a time.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1/2
+0.5
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> type(1/2)
+<class 'float'>
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> type(0.5)
+<class 'float'>
+
+In python 3, integers must start with 1 - 9, not as in math where 2 + 02 = 2, as python stored each character as an integer datatype, and the syntax for that datatype excludes leading zeros, as indicated by the error below. A 0 at the end of a number like 10 is ofcourse still allowed, but for the mathematical calculation below to work, the leading 0 needs to be dropped, as python will not do so automatically during calculation as we do in mathematics.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print(01)
+  File "<stdin>", line 1
+    print(01)
+           ^
+SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+
+The example below is proof that python can also perform multiple calculations in a single given input, and follows the mathematical standard of using the BODMAS notation, following the correct order of performing the calculations; completing the calculation inside the bracket first, and only then the calculation outside the bracket: 2/3 THEN 1/(the answer of 2/3) instead of ignoring the parenthesis and computing 1/2/3 which would have yielded an answer of 0.166...
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1/(2/3)
+1.5
