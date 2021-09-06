@@ -1,2 +1,0 @@
-Chapter 1 - Overview: The Mental Landscape || https://math.hws.edu/javanotes/c1/index.html
-Chapter 2 - Programming in the Small 1: Names and Things || https://math.hws.edu/javanotes/c2/index.html

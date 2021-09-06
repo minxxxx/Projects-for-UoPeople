@@ -1,2 +1,0 @@
-Chapter 11 - Input/Output Streams, Files and Networking || https://math.hws.edu/javanotes/c11/index.html
-Chapter 12 - Threads and Multiprocessing || https://math.hws.edu/javanotes/c12/index.html

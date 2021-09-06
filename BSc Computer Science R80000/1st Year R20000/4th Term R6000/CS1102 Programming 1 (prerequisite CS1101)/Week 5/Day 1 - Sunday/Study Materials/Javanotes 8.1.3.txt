@@ -1,2 +1,0 @@
-Chapter 9 - Linked Data Structures and Recursion || https://math.hws.edu/javanotes/c9/index.html
-Chapter 10 - Generic Programming and Collection Classes || https://math.hws.edu/javanotes/c10/index.html
