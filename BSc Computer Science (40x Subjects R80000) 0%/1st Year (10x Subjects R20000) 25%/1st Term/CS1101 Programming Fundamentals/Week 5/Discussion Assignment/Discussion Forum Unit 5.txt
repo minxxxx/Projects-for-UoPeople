@@ -1,4 +1,4 @@
-Discussion Forum Unit 4
+Discussion Forum Unit 5
 
 You are required to submit a substantial response to the Discussion Assignment, which will be posted by your instructor in the Discussion Forum below. A substantial response is one that stays on topic and fully addresses the assignment in a clear, concise, and meaningful manner. If your instructor requires a specific word count, it will be stated in the assignment.
 
@@ -20,10 +20,51 @@ Remember that your instructor will be reviewing responses, ratings, and comments
 
 Assignment:
 
-Section 6.9 of your textbook ("Debugging") lists three possibilities to consider if a function is not working.
+This assignment is based on Exercise 8.4 from your textbook. Each of the following Python functions is supposed to check whether its argument has any lowercase letters.
 
-Describe each possibility in your own words.
+For each function, describe what it actually does when called with a string argument. If it does not correctly check for lowercase letters, give an example argument that produces incorrect results, and describe why the result is incorrect.
 
-Define "precondition" and "postcondition" as part of your description.
+# 1
 
-Create your own example of each possibility in Python code. List the code for each example, along with sample output from trying to run it.
+def any_lowercase1(s):
+     for c in s:
+          if c.islower():
+               return True
+          else:
+               return False
+
+
+# 2
+
+def any_lowercase2(s):
+     for c in s:
+          if 'c'.islower():
+               return 'True'
+          else:
+               return 'False'
+
+
+# 3
+
+def any_lowercase3(s):
+     for c in s:
+          flag = c.islower()
+     return flag
+
+
+# 4
+
+def any_lowercase4(s):
+     flag = False
+     for c in s:
+          flag = flag or c.islower()
+     return flag
+
+
+# 5
+
+def any_lowercase5(s):
+     for c in s:
+          if not c.islower():
+               return False
+     return True
