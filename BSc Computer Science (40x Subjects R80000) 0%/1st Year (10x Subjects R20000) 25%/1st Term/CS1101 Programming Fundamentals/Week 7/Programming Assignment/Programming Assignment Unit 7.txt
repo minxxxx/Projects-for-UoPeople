@@ -1,42 +1,73 @@
-Programming Assignment Unit 5
+Start with the following Python code.   
 
-This assignment is based on Exercise 7.1 from your textbook. 
+alphabet = "abcdefghijklmnopqrstuvwxyz"   
 
-Part 1
+test_dups = ["zzz","dog","bookkeeper","subdermatoglyphic","subdermatoglyphics"] 
 
-Encapsulate the following Python code from Section 7.5 in a function named my_sqrt that takes a as a parameter, chooses a starting value for x, and returns an estimate of the square root of a. 
+test_miss = ["zzz","subdermatoglyphic","the quick brown fox jumps over the lazy dog"] 
 
-while True:
-     y = (x + a/x) / 2.0
-     if y == x:
-          break
-     x = y 
+# From Section 11.2 of: 
 
+# Downey, A. (2015). Think Python: How to think like a computer scientist. Needham, Massachusetts: Green Tree Press. 
 
-Part 2
+def histogram(s):
+     d = dict()
+     for c in s:
+          if c not in d:
+               d[c] = 1
+          else:
+               d[c] += 1
+     return d 
 
-Write a function named test_sqrt that prints a table like the following using a while loop, where "diff" is the absolute value of the difference between my_sqrt(a) and math.sqrt(a). 
+Copy the code above into your program but write all the other code for this assignment yourself. Do not copy any code from another source. 
+Part 1 
 
-a = 1 | my_sqrt(a) = 1 | math.sqrt(a) = 1.0 | diff = 0.0
-a = 2 | my_sqrt(a) = 1.41421356237 | math.sqrt(a) = 1.41421356237 | diff = 2.22044604925e-16
-a = 3 | my_sqrt(a) = 1.73205080757 | math.sqrt(a) = 1.73205080757 | diff = 0.0
-a = 4 | my_sqrt(a) = 2.0 | math.sqrt(a) = 2.0 | diff = 0.0
-a = 5 | my_sqrt(a) = 2.2360679775 | math.sqrt(a) = 2.2360679775 | diff = 0.0
-a = 6 | my_sqrt(a) = 2.44948974278 | math.sqrt(a) = 2.44948974278 | diff = 0.0
-a = 7 | my_sqrt(a) = 2.64575131106 | math.sqrt(a) = 2.64575131106 | diff = 0.0
-a = 8 | my_sqrt(a) = 2.82842712475 | math.sqrt(a) = 2.82842712475 | diff = 4.4408920985e-16
-a = 9 | my_sqrt(a) = 3.0 | math.sqrt(a) = 3.0 | diff = 0.0 
+Write a function called has_duplicates that takes a string parameter and returns True if the string has any repeated characters. Otherwise, it should return False.  
 
-Modify your program so that it outputs lines for a values from 1 to 25 instead of just 1 to 9. 
+Implement has_duplicates by creating a histogram using the histogram function above. Do not use any of the implementations of has_duplicates that are given in your textbook. Instead, your implementation should use the counts in the histogram to decide if there are any duplicates. 
 
-You should submit a script file and a plain text output file (.txt) that contains the test output. Multiple file uploads are permitted.
+Write a loop over the strings in the provided test_dups list. Print each string in the list and whether or not it has any duplicates based on the return value of has_duplicates for that string. For example, the output for "aaa" and "abc" would be the following. 
+
+aaa has duplicates
+abc has no duplicates 
+
+Print a line like one of the above for each of the strings in test_dups. 
+
+Part 2 
+
+Write a function called missing_letters that takes a string parameter and returns a new string with all the letters of the alphabet that are not in the argument string. The letters in the returned string should be in alphabetical order. 
+
+Your implementation should use a histogram from the histogram function. It should also use the global variable alphabet. It should use this global variable directly, not through an argument or a local copy. It should loop over the letters in alphabet to determine which are missing from the input parameter. 
+
+The function missing_letters should combine the list of missing letters into a string and return that string. 
+
+Write a loop over the strings in list test_miss and call missing_letters with each string. Print a line for each string listing the missing letters. For example, for the string "aaa", the output should be the following. 
+
+aaa is missing letters bcdefghijklmnopqrstuvwxyz 
+
+If the string has all the letters in alphabet, the output should say it uses all the letters. For example, the output for the string alphabet itself would be the following. 
+
+abcdefghijklmnopqrstuvwxyz uses all the letters 
+
+Print a line like one of the above for each of the strings in test_miss. 
+
+Submit your Python program. It should include the following. 
+
+The provided code for alphabet, test_dups, test_miss, and histogram. 
+Your implementation of the has_duplicates function. 
+A loop that outputs duplicate information for each string in test_dups. 
+Your implementation of the missing_letters function. 
+A loop that outputs missing letters for each string in test_miss. 
+Also submit the output from running your program. 
 
 Your submission will be assessed using the following Aspects.
 
-Does the submission include a my_sqrt function that takes a single argument and includes the while loop from the instructions?
-Does the my_sqrt function initialize x and return its final value?
-Does the test_sqrt function print a values from 1 to 25?
-Does the test_sqrt function print the values returned by my_sqrt for each value of a?
-Does the test_sqrt function print correct values from math.sqrt for each value of a?
-Does the test_sqrt function print the absolute value of the differences between my_sqrt and math.sqrt for each value of a?
-Does the my_sqrt function compute values that are almost identical to math.sqrt ("diff" less than 1e-14)?
+Does the program include a function called has_duplicates that takes a string parameter and returns a boolean?
+Does the has_duplicates function call the histogram function? 
+Does the program include a loop over the strings in test_dups that calls has_duplicate on each string? 
+Does the program correctly identify whether each string in test_dups has duplicates? 
+Does the program include a function called missing_letters that takes a string parameter and returns a string? 
+Does the missing_letters function call the histogram function?
+Does the missing_letters function use the alphabet global variable directly?
+Does the program include a loop over the strings in test_miss that calls missing_letters on each string?
+Does the program correctly identify the missing letters for each string in test_miss, including each string that "uses all the letters"?
