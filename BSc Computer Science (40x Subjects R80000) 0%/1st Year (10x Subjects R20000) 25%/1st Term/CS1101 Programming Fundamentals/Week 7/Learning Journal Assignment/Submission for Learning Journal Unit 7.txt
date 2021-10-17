@@ -1,0 +1,8 @@
+def slicing():
+    string = "racecar"
+    # you can do negative index slicing
+    print("Negative index slicing: ", string[-5:-2])
+    # you can do slicing more than once in one go, skipping letters
+    print("Slicing more than once: ", string[0:7:2])
+    # you can use slicing as a boolean comparison
+    print("Slicing as a boolean comparison: ", string == string[::-1])
