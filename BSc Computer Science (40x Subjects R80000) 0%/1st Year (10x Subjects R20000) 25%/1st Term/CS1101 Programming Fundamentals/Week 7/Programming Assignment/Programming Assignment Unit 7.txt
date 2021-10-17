@@ -20,6 +20,7 @@ def histogram(s):
      return d 
 
 Copy the code above into your program but write all the other code for this assignment yourself. Do not copy any code from another source. 
+
 Part 1 
 
 Write a function called has_duplicates that takes a string parameter and returns True if the string has any repeated characters. Otherwise, it should return False.  
