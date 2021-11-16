@@ -1,0 +1,192 @@
+python3
+
+When leaving out a quotation mark at the end of the string, python returns an end of line error for the string literal meaning I never ended the string and python could not execute the code not knowing where the string ends.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print('Hello, World!)
+  File "<stdin>", line 1
+    print('Hello, World!)
+                         ^
+SyntaxError: EOL while scanning string literal
+
+When including both quotation marks using a print statement with a string, python outputs the string as directed.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print('Hello, World!')
+Hello, World!
+
+Oddly, whether using single quotation or double quotation marks, python prints the string all the same.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello, World!")
+Hello, World!
+
+It seems that double quotes are used for string representation, while single quotes are used as identifiers, as indicated in this example below where python replaces the double quotation marks with single identifying quotation marks in the output.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> '2'
+'2'
+>>> "2"
+'2'
+
+As in this example below, the single quotation as the identifier lets python take up the double quotation marks as part of the literal string, printing it out.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print('Hello, "World"!')
+Hello, "World"!
+
+Weirdly, it works the other way around as well...where the single quotation marks are taken as a literal part of the string and printed out. The two seem to be interchangeable.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello, 'World'!")
+Hello, 'World'!
+
+In python 3, parenthesis for the input of a function is a requirement, whereas it is not in python 2, as indicated with the error below. My terminal is set to python 3.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print 'Hello, World!'
+  File "<stdin>", line 1
+    print 'Hello, World!'
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print('Hello, World!')?
+
+This applies no matter what quotation marks you use, single or double. But this only applies to function calls, as simply typing something with single or double quotations without the print statement will still print output as indicated in a previous example (the fourth one) regardless of whether you are using python 2 or python 3.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print "Hello, World!"
+  File "<stdin>", line 1
+    print "Hello, World!"
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello, World!")?
+
+With integers and math notation py5thon uses the standard math rules. + * + = + as indicated by the output below where the two addition operators have been multiplied to result in an addition operator, resulting in the two integers being added together for an output of 4.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2++2
+4
+
+The same applies to other operators. - * - = - in math, and as indicated below, the two integers have been subtracted from one another resulting in the output of 0.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2--2
+4
+
+Again, simple math notation applies. + * - = - and below the two integers have been deducted from one another resulting in the output of 0.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2+-2
+0
+
+In math, - * + also  = - and so below the two integers have again been deducted from one another resulting in the output of 0.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2-+2
+0
+
+In python, integers in calculation must start with a number between 1 - 9, not as in math that can contain a 0. In math 2 + 02 is still 2, the 0 just falls away. In python, the 0 doesn't fall away as every character must be stored as a data type and the leading 0 is not part of the data type schema. A 0 can obviously be added at the end of a number such as 10, but not at the beginning such as 02, else it will result in the error indicated below, describing that integer literals must start with 1 - 9 and not 0.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2 + 02
+  File "<stdin>", line 1
+    2 + 02
+         ^
+SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+
+Python uses operators such as  + and - and simply providing two integer data types with no instruction in between telling the terminal what to do with the two numbers, how they should correlate to one another, results in an error stating invalid syntax. The syntax of coding in this instance is (input) (operator) (input) to result in (ouput) and with the operator missing, the terminal has no instruction for what to do with the two inputs, hence, invalid syntax.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2 2
+  File "<stdin>", line 1
+    2 2
+      ^
+SyntaxError: invalid syntax
+
+Oddly, python 3 prints out the Hello World string even without the print statement, but with the parenthesis, indicating that parentesis are intended to contain input, as the parenthesis are not printed out as well.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ('Hello, World!')
+'Hello, World!'
+
+This also works without the print statement and without the parenthesis, so python seems to automatically repeat a given input if only one input and no instruction has been given, by printing out the input provided.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 'Hello, World!'
+'Hello, World!'
+
+Notably, the print function seems to have a syntax of its own as well, in this example, not being able to print out two different data types provided as input.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print('Hello, World!' 2)
+  File "<stdin>", line 1
+    print('Hello, World!' 2)
+                          ^
+SyntaxError: invalid syntax
+
+The reason I particularly say two different data types above is because, as indicated below, the print function perfectly prints out two inputs of the same datatype without hassle.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print('Hello, World!' '2')
+Hello, World!2
+
+To fix this syntax, the print function requires different data types to be comma seperated, which will then print it out, notably with a space in between as opposed to the output above where it was printed directly without a space.
+
+BabyGirl@BunnyPower ~
+$ python -i
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print('Hello, World!', 2)
+Hello, World! 2

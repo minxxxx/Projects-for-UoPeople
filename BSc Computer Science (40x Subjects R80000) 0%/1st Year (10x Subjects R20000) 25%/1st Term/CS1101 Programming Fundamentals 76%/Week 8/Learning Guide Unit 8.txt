@@ -1,0 +1,28 @@
+Overview
+Unit 8: Files
+
+Topics:
+
+Reading and writing files.
+Format operator.
+Filenames and paths.
+Catching exceptions.
+
+Learning Objectives:
+
+By the end of this Unit, you will be able to:
+
+Create Python programs the read from and write to text files.
+Create Python programs that convert lines of text into dictionaries and convert dictionaries into lines of text.
+Utilize exception handling to deal with Python file errors.
+
+Tasks:
+
+Peer assess Unit 7 Programming Assignment.
+Read the Learning Guide and Reading Assignments.
+Participate in the Discussion Assignment (post, comment, and rate in the Discussion Forum).
+Complete an entry in the Learning Journal.
+Read the Unit 9 Learning Guide carefully for instructions on the Final Exam.
+Take the Self-Quiz.
+Take the Review Quiz.
+Complete and submit the anonymous Course Evaluation.

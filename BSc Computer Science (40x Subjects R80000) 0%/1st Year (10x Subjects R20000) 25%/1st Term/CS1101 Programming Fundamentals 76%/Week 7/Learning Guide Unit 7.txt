@@ -1,0 +1,32 @@
+Overview
+Unit 7: Data and Data Structures
+
+Topics:
+
+A dictionary is a mapping.
+Looping and dictionaries.
+Reverse lookup.
+Dictionaries and lists.
+Global variables.
+Tuples are immutable.
+Tuple assignment.
+Tuples as return values.
+Lists and tuples.
+Dictionaries as tuples.
+
+Learning Objectives:
+
+By the end of this Unit, you will be able to:
+
+Create code to manipulate the content of a dictionary.
+Modify global variables in functions.
+Apply tuples in loops over lists and dictionaries.
+Use the zip function, the enumerate function and the items dictionary method.
+
+Tasks:
+
+Read the Learning Guide and Reading Assignments.
+Participate in the Discussion Assignment (post, comment, and rate in the Discussion Forum).
+Complete and submit Programming Assignment.
+Complete an entry in the Learning Journal.
+Take the Self-Quiz.

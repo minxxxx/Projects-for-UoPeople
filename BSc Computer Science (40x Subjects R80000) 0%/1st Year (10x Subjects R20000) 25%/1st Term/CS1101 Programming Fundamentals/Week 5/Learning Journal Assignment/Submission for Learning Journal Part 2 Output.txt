@@ -1,9 +1,0 @@
-Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
->>> 
-= RESTART: C:/Users/BabyGirl/Desktop/Projects-for-UoPeople/BSc Computer Science (40x Subjects R80000) 0%/1st Year (10x Subjects R20000) 25%/1st Term/CS1101 Programming Fundamentals/Week 5/Learning Journal Assignment/Part 2.py
->>> slicing()
-Negative index slicing:  cec
-Slicing more than once:  rccr
-Slicing as a boolean comparison:  True
->>> 

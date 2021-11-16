@@ -1,0 +1,26 @@
+Overview
+Unit 4: Functions and Return Values
+
+Topics:
+
+Return values.
+Incremental development.
+Composition.
+Boolean functions.
+Recursion.
+
+Learning Objectives:
+
+By the end of this Unit, you will be able to:
+
+Develop example code to debug a function.
+Utilize a recursive function to compute a result.
+Develop a function using the concept of incremental development. 
+
+Tasks:
+
+Read the Learning Guide and Reading Assignments.
+Participate in the Discussion Assignment (post, comment, and rate in the Discussion Forum).
+Complete and submit the Programming assignment.
+Complete an entry in the Learning Journal.
+Take the Self-Quiz.

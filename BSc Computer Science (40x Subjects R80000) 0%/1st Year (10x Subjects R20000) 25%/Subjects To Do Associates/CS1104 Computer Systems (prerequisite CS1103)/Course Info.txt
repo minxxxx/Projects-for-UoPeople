@@ -1,0 +1,55 @@
+Computer Systems- CS 1104:
+Learning Materials
+Get Ready For Your College Courses
+To best prepare for your future studies, please review the below preparation resources. We encourage you to use the time before starting your first term, to get a taste of the topics of your upcoming courses. There’s no better time to start than now! Good luck with your studies!
+
+ 
+
+Learn Computer Systems
+Course Overview
+
+This course is an introduction to computer systems. In this course we will begin by exploring the internal design and functionality of the most basic computer components. From there, we will use an online hardware simulator to actually “build” a computer and develop an assembler from the ground using concepts we will learn in the class. In the process, we will cover the ideas and techniques used in the design of modern computer hardware and discuss major trade-offs involved in system design as well as future trends in computer architecture and how those trends might affect tomorrow’s computers.
+
+ 
+
+Preparation Resources
+Nisan and Schocken, The Elements of Computing Systems, MIT Press, 2005.
+Computer Organization and Design Fundamentals, David L. Tarnoff, Copyright (C) 2005-2007. All Rights Reserved. Text used with permission of author. Available from http://faculty.etsu.edu/tarnoff/138292/
+Computer Systems -Course Schedule and Topics:
+This course will cover the following topics in eight learning sessions, with one Unit per week. The Final Exam will take place during Week/Unit 9 (UoPeople time).
+
+ 
+
+Week 1: Unit 1 – Boolean Logic
+
+ 
+
+Week 2: Unit 2 – Binary Arithmetic
+
+ 
+
+Week 3: Unit 3 – Combinational Logic and the ALU
+
+ 
+
+Week 4: Unit 4 – Sequential Logic
+
+ 
+
+Week 5: Unit 5 – Computer Architecture
+
+ 
+
+Week 6: Unit 6 – Machine Language
+
+ 
+
+Week 7: Unit 7 – Assembler I
+
+ 
+
+Week 8: Unit 8 – Assembler II
+
+ 
+
+Week 9: Unit 9 – Course Review and Final Exam

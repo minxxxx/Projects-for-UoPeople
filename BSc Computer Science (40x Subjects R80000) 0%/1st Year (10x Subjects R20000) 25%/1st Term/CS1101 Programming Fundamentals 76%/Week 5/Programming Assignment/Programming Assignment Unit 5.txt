@@ -1,0 +1,42 @@
+Programming Assignment Unit 5
+
+This assignment is based on Exercise 7.1 from your textbook. 
+
+Part 1
+
+Encapsulate the following Python code from Section 7.5 in a function named my_sqrt that takes a as a parameter, chooses a starting value for x, and returns an estimate of the square root of a. 
+
+while True:
+     y = (x + a/x) / 2.0
+     if y == x:
+          break
+     x = y 
+
+
+Part 2
+
+Write a function named test_sqrt that prints a table like the following using a while loop, where "diff" is the absolute value of the difference between my_sqrt(a) and math.sqrt(a). 
+
+a = 1 | my_sqrt(a) = 1 | math.sqrt(a) = 1.0 | diff = 0.0
+a = 2 | my_sqrt(a) = 1.41421356237 | math.sqrt(a) = 1.41421356237 | diff = 2.22044604925e-16
+a = 3 | my_sqrt(a) = 1.73205080757 | math.sqrt(a) = 1.73205080757 | diff = 0.0
+a = 4 | my_sqrt(a) = 2.0 | math.sqrt(a) = 2.0 | diff = 0.0
+a = 5 | my_sqrt(a) = 2.2360679775 | math.sqrt(a) = 2.2360679775 | diff = 0.0
+a = 6 | my_sqrt(a) = 2.44948974278 | math.sqrt(a) = 2.44948974278 | diff = 0.0
+a = 7 | my_sqrt(a) = 2.64575131106 | math.sqrt(a) = 2.64575131106 | diff = 0.0
+a = 8 | my_sqrt(a) = 2.82842712475 | math.sqrt(a) = 2.82842712475 | diff = 4.4408920985e-16
+a = 9 | my_sqrt(a) = 3.0 | math.sqrt(a) = 3.0 | diff = 0.0 
+
+Modify your program so that it outputs lines for a values from 1 to 25 instead of just 1 to 9. 
+
+You should submit a script file and a plain text output file (.txt) that contains the test output. Multiple file uploads are permitted.
+
+Your submission will be assessed using the following Aspects.
+
+Does the submission include a my_sqrt function that takes a single argument and includes the while loop from the instructions?
+Does the my_sqrt function initialize x and return its final value?
+Does the test_sqrt function print a values from 1 to 25?
+Does the test_sqrt function print the values returned by my_sqrt for each value of a?
+Does the test_sqrt function print correct values from math.sqrt for each value of a?
+Does the test_sqrt function print the absolute value of the differences between my_sqrt and math.sqrt for each value of a?
+Does the my_sqrt function compute values that are almost identical to math.sqrt ("diff" less than 1e-14)?

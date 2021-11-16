@@ -1,0 +1,25 @@
+Discussion Forum Unit 7
+
+You are required to submit a substantial response to the Discussion Assignment, which will be posted by your instructor in the Discussion Forum below. A substantial response is one that stays on topic and fully addresses the assignment in a clear, concise, and meaningful manner. If your instructor requires a specific word count, it will be stated in the assignment.
+
+After you respond to the assignment, you are then required to both give a rating and also leave a significant comment (3-4 complete sentences) to at least three (3) of your peers' responses, in order to receive full credit. Rate only the substantial responses that contribute to the promotion of the discussion, and not the comments of your peers.
+
+Please review and follow the guidelines below for assessing your peer's responses to the Discussion Assignment.
+
+Discussion Forum Rating Guidelines:
+
+10 (A) - Excellent, substantial, relevant, insightful, enriching, and stimulating contribution to the discussion. Also, uses external resources to support position where required and/or applicable.
+8 - 9 (B) - Good, quite substantial and insightful, but missing minor details which would have otherwise characterized it as an excellent response.
+6 - 7 (C) - Satisfactory insight and relevance, but required some more information and effort to have warranted a better rating.
+4 - 5 (D) - Limited insight and relevance of the material; more effort and reflection needed to have warranted a satisfactory grading.
+0 - 3 (F) - Unsatisfactory insight/relevance or failure to answer the question, reflecting a poor or limited understanding of the subject matter and/or the guidelines of the question.
+
+If at any time you suspect that a post in this Discussion Forum violates UoPeople's rules regarding plagiarism and/or any aspect of UoPeople’s Academic Code of Conduct, please notify your instructor immediately.
+
+Remember that your instructor will be reviewing responses, ratings, and comments - and will adjust ratings if he/she believes that they do not seem warranted or supportable.
+
+Assignment:
+
+Describe how tuples can be useful with loops over lists and dictionaries, and give Python code examples. Create your own code examples. Do not copy them from the textbook or any other source. 
+
+Your descriptions and examples should include the following: the zip function, the enumerate function, and the items method. 

@@ -1,0 +1,71 @@
+
+Data Files
+This page contains links to data files that we will use in this class.  Please follow the directions for downloading the CSV files and practice reading them into R.  It is important to learn how to do this because we will need the files for graded assignments and quizzes.
+
+First read this full page, then Download ALL the files.  Do NOT open these files in Excel.  If you see Excel or OpenOffice Spreadsheet open, close it and right-click on the file and download it directly to your computer without opening it in Excel.  Excel can ruin the file by changing the format.
+
+1) Run interactive R and then run this command:
+
+getwd()
+
+The output of that command is your working directory.  You will need to know where this directory is.
+
+2) Download the following data files by right-clicking (maybe this is control-click on a Mac) and saving the files to your working directory.  Do NOT use a regular click because it might open the files in Excel. Excel can ruin your files by saving them in the wrong format.
+
+ex1.csv
+https://my.uopeople.edu/pluginfile.php/1524526/mod_page/content/11/ex1.csv
+
+ex2.csv
+https://my.uopeople.edu/pluginfile.php/1524526/mod_page/content/11/ex2.csv
+
+flowers.csv
+https://my.uopeople.edu/pluginfile.php/1524526/mod_page/content/11/flowers.csv
+
+pop1.csv
+https://my.uopeople.edu/pluginfile.php/1524526/mod_page/content/11/pop1.csv
+
+pop2.csv
+https://my.uopeople.edu/pluginfile.php/1524526/mod_page/content/11/pop2.csv
+
+pop3.csv
+https://my.uopeople.edu/pluginfile.php/1524526/mod_page/content/11/pop3.csv
+
+3) Start the R program.  There are instructions for downloading and installling the program in the Unit 1 Learning Guide.
+
+4) Run the dir() command in R to list the file names of files in your working directory.  You might have additional files in your listing, but somewhere in the  output of the dir() command, you should see the file names listed below (do not type the ">" character, this is the R prompt):
+
+> dir()
+[1] "ex1.csv"     "ex2.csv"     "flowers.csv" 
+[6] "pop1.csv"    "pop2.csv"    "pop3.csv"
+>
+
+5) Do you see the CSV file names in the output of the dir() commmand? If not, start at the top and try again.  You probably need to move the CSV files into the directory that you see when you run the getwd() command in R.  You move the files using your regular file manager program (Windows Explorer, Finder, or however you normally move files).
+
+Send a message to your instructor if you try this twice and you do not see your files.  Do not bother continuing if you do not see your files because the commands below will not work for you.  You have to see the files in the dir() command for the following commands to work.
+
+6) From R, run a command like the following to read your  data and see what it contains. You have to type it EXACTLY as shown.  If you use upper case letters when the command uses lower case letters, it is wrong and will not work.  If you use the wrong punctuation, it will not work.  If you see the word "Error" in the output of the command, you probably made a typo.
+
+ex.1 <- read.csv('ex1.csv')
+summary(ex.1)
+colnames(ex.1)
+
+Here is what I see when I run those commands.  You have to READ the output to see if there are error messages.  The most common errors are: (a) you do not have the file in your working directory, (b) you made a typo (you have to type the object names exactly correct), or (c) you opened the CSV file in Excel and then Excel saved the file in the wrong format and ruined your data.  Do NOT open CSV files in Excel.
+
+> ex.1 <- read.csv('ex1.csv')
+> summary(ex.1)
+       id                          sex                      height     
+Min.   :1538611        FEMALE:54        Min.   :117.0  
+1st Qu.:3339583      MALE  :46          1st Qu.:158.0  
+Median :5105620                               Median :171.0  
+Mean   :5412367                                Mean   :170.1  
+3rd Qu.:7622236                                3rd Qu.:180.2  
+Max.   :9878130                                 Max.   :208.0  
+>
+> colnames(ex.1)
+[1] "id"     "sex"    "height"
+
+Note that you can change the names of the objects, but you have to read the correct input file and be consistent so that you refer to the object that contains your data.  Try running these commands:
+
+carrot <- read.csv('ex1.csv')
+summary(carrot)
+colnames(carrot)
