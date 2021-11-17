@@ -1,0 +1,6 @@
+Welcome to MATH1280.
+
+Use the Discussion Forum to discuss your experience while installing or accessing R.  If you have any tips, post them to the forum.  If you are having trouble installing the R program, you may send a Moodle message to your instructor or post to the course forum.  The R program that we will be downloading is around 60 MB (for the Windows version), so if you have a slow Internet connection, it might take a long time to download.
+
+Note that there should be supplemental instructions for installing R on Mac OS X or Linux. Check the Announcements forum or email your instructor if you do not find those instructions.  You do not need the graphical client for Mac or Linux, but you can experiment with it if you want to.
+

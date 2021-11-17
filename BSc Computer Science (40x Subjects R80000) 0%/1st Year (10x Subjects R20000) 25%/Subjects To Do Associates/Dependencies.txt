@@ -1,0 +1,98 @@
+math1201
+engl1102
+engl1405
+phil1404
+biol1301
+bus2201
+psyc1504
+hist1421
+
+cs1101
+	cs1102
+
+cs1102
+	cs1103
+	cs2203
+
+cs1103
+	cs1104
+	cs2205
+	cs2301
+	cs2401
+
+cs1104
+	cs2204
+
+if only 2:
+
+cs1102
+math1201
+
+cs1103
+engl1102
+
+cs1104
+engl1405
+
+cs2203
+psyc1504
+
+cs2205
+phil1404
+
+cs2301
+biol1301
+
+cs2401
+hist1421
+
+cs2204
+bus2201
+
+try for:
+
+cs1102
+math1201
+engl1102
+
+cs1103
+cs2203
+engl1405
+
+cs1104
+phil1404
+psyc1504
+
+cs2205
+cs2301
+biol1301
+
+cs2401
+cs2204
+hist1421
+
+bus2201 with
+cs3303 and math1211 from bachelors
+
+else:
+4 subjects:
+
+cs1102
+math1201
+engl1102
+bus2201
+
+cs1103
+cs2203
+engl1405
+hist1421
+
+cs1104
+cs2205
+cs2301
+cs2401
+
+cs2204
+biol1301
+phil1404
+psyc1504
