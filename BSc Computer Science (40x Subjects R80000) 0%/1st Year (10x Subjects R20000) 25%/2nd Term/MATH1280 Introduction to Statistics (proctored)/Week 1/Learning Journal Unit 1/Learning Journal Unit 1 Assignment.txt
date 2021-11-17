@@ -1,0 +1,35 @@
+1. Learning Journal Reflective Comments:
+
+Write short reflective comments or notes about your learning activities during the week. It is highly recommended that you make these entries on a daily basis. You will be assessed on the completeness of your Learning Journal, and the quality of your self-reflection.
+
+You should date each entry, and use clear titles and sub-headings.  These entries should be brief, direct sentences indicating quick comments or notes such as:
+
+   * when you completed each step in the Learning Guide during the week,
+
+   * any problems or unexpected events that occurred during the week (including
+
+      problems understanding new or old material), and
+
+   * any other noteworthy that might affect your performance in this class.
+
+There is no need to include personal information or details of family events, but be sure to mention the existence of any situations that will positively or negatively affect your ability to focus on the classwork.
+
+2. Vocabulary and R functions
+
+Enter the following command in R to read a simple help page about the table() command (this is for your information, you do not need to show the output):
+
+?table
+
+Now enter the following command and describe the output of the table() command.  What does the first row of numbers in table() output represent?  What does the second row of output represent?
+
+x <- c(5, 8, 4, 1, 5, 6, 5, 9, 4, 2, 5, 7, 5, 3, 6, 4, 5, 3, 7, 6)
+
+table(x)
+
+[optional: You can test your theory by altering the numbers and rerunning the table command.]
+
+3. Task (References: Question 1.1 page 10-12 and self-Quiz Unit 1 Question 6 and 7)
+
+a) Read section 1.5 in the Yakir textbook.  If you were a teacher and had 30 students in your class and wanted to know the class average on the first quiz, would you use a parameter or a statistic?  Why?
+
+b) If you wanted to know how many people in your country recognize the name of your new company, would you use a parameter or a statistic?  Why?
