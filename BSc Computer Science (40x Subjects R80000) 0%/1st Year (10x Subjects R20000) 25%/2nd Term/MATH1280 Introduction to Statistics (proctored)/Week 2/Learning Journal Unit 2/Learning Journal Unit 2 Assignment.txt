@@ -1,0 +1,32 @@
+1. Learning Journal Reflective Comments:
+
+Write short reflective comments or notes about your learning activities during the week. It is highly recommended that you make these entries on a daily basis. You will be assessed on the completeness of your Learning Journal, and the quality of your self-reflection.
+
+You should date each entry, and use clear titles and sub-headings.  These entries should be brief, direct sentences indicating quick comments or notes such as:
+
+* when you completed each step in the Learning Guide during the week,
+
+* any problems or unexpected events that occurred during the week (including problems understanding new or old material), and
+
+* any other noteworthy that might affect your performance in this class.
+
+There is no need to include personal information or details of family events, but be sure to mention the existence of any situations that will positively or negatively affect your ability to focus on the classwork.
+
+2. Vocabulary and R functions
+
+a) Define the word frequency as it was used in Chapter 2 (include an APA citation).
+
+b) Define the phrase relative frequency as it was used in Chapter 2 (include an APA citation).
+
+c) What is the difference between frequency and relative frequency?
+
+3. More practice with R
+
+a) Run interactive R and then run this command:
+
+getwd()
+
+b) Run the following command and paste the output into your learning journal to demonstrate that you have the file:
+
+ex.1 <- read.csv('ex1.csv')
+summary(ex.1)

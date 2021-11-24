@@ -1,0 +1,7 @@
+1) It does not make sens to calculate the average of different fruits as they basically belong to different catergories. I would code these as a numeric value in R, but of different variables, the numeric value being 1 or 2 and the variable being a cherry or an apple.
+
+2) The average score is 68. I would code this as a numeric value in R.
+
+3) The average grade would be a D (or a D+ or - depending on the exact grades). I would code this as a numeric value in R.
+
+4) In 2 I had exact numbers to get the mean with, but in 3 I worked with number ranges instead of exact values.
