@@ -50,6 +50,7 @@ Read the Learning Guide and Reading Assignments
 Participate in the Discussion Assignment (post, comment, and rate in the Discussion Forum)
 Make entries to the Learning Journal
 Take the Self-Quiz
+
 Unit 2: Sampling and Data Structures
 
 Read the Learning Guide and Reading Assignments
@@ -57,6 +58,7 @@ Participate in the Discussion Assignment (post, comment, and rate in the Discuss
 Complete and submit the Assignment
 Make entries to the Learning Journal
 Take the Self-Quiz
+
 Unit 3: Descriptive Statistics
 
 Peer assess Unit 2 Assignment
@@ -66,6 +68,7 @@ Complete the Supplementary Exercise
 Make entries to the Learning Journal
 Take the Self-Quiz
 Take the Graded Quiz
+
 Unit 4: Probability
 
 Read the Learning Guide and Reading Assignments
@@ -74,6 +77,7 @@ Complete and submit the Assignment
 Complete the Supplementary Exercise
 Make entries to the Learning Journal
 Take the Self-Quiz
+
 Unit 5: Random Variables
 
 Peer assess Unit 4 Assignment
@@ -81,6 +85,7 @@ Read the Learning Guide and Reading Assignments
 Participate in the Discussion Assignment (post, comment, and rate in the Discussion Forum)
 Make entries to the Learning Journal
 Take the Self-Quiz
+
 Unit 6: The Normal Random Variable
 
 Read the Learning Guide and Reading Assignments
@@ -89,6 +94,7 @@ Complete and submit the Assignment
 Make entries to the Learning Journal
 Take the Self-Quiz
 Take the Graded Quiz
+
 Unit 7: The Sampling Distribution
 
 Peer assess Unit 6 Assignment
@@ -96,6 +102,7 @@ Read the Learning Guide and Reading Assignments
 Participate in the Discussion Assignment (post, comment, and rate in the Discussion Forum)
 Make entries to the Learning Journal
 Take the Self-Quiz
+
 Unit 8: Overview and Integration
 
 Read the Learning Guide and Reading Assignments
@@ -106,11 +113,13 @@ Take the Self-Quiz
 Take the Graded Quiz
 Read the Unit 9 Learning Guide carefully for instructions on the Final Exam
 Take the Review Quiz
+
 Unit 9: Course Review and Final Exam
 
 Read the Learning Guide and take the Review Quiz, if you haven't already done so
 Prepare for, take, and submit the Final Exam
 The Final Exam will take place during the Thursday and Sunday of Week/Unit 9 (UoPeople time); exact dates, times, and other details will be provided accordingly by your instructor
+
 Course Requirements:
 
 Assignments & Assessment Forms
