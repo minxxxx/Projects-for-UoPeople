@@ -1,0 +1,28 @@
+Learning Journal Unit 3
+1. Learning Journal Reflective  Comments:
+
+Write short reflective comments or notes about your learning activities during the week. It is highly recommended that you make these entries on a daily basis. You will be assessed on the completeness of your Learning Journal, and the quality of your self-reflection.
+
+You should date each entry, and use clear titles and sub-headings.  These entries should be brief, direct sentences indicating quick comments or notes such as:
+
+* when you completed each step in the Learning Guide during the week,
+
+* any problems or unexpected events that occurred during the week (including problems understanding new or old material), and
+
+* any other noteworthy that might affect your performance in this class.
+
+There is no need to include personal information or details of family events, but be sure to mention the existence of any situations that will positively or negatively affect your ability to focus on the classwork.
+
+2. Vocabulary and R functions
+
+a) Enter the following command in R to read a simple help page about the length() command:
+
+ ?length
+
+What does the length function tell you?
+
+b) Read section 3.4 about Measures of the Spread of Data.  In your own words, give a rough description of what variance is (we will go into more detail in the next few weeks).  Include an APA citation.
+
+3. Task
+
+Estimate how many hours you spent on this class in the past week, then list the days and times when you will spend an extra 3 hours to study during week 4 and beyond.  Units 4 and beyond often require more study than the first few weeks did, but if you prepare your schedule, you can improve your chance of success.
