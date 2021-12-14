@@ -1,0 +1,43 @@
+Learning Journal
+1. Learning Journal Reflective Comments:
+
+Write short reflective comments or notes about your learning activities during the week. It is highly recommended that you make these entries on a daily basis. You will be assessed on the completeness of your Learning Journal, and the quality of your self-reflection.
+
+You should date each entry, and use clear titles and sub-headings.  These entries should be brief, direct sentences indicating quick comments or notes such as:
+
+   * when you completed each step in the Learning Guide during the week,
+
+   * any problems or unexpected events that occurred during the week (including
+
+      problems understanding new or old material), and
+
+   * any other noteworthy that might affect your performance in this class.
+
+There is no need to include personal information or details of family events, but be sure to mention the existence of any situations that will positively or negatively affect your ability to focus on the classwork.
+
+2. Vocabulary and R functions
+
+We are now covering material that is not common knowledge, and it is now very important to include citations when you use an idea from another source (book, Internet, etc).  Be sure to add a citation and reference entry for the definition questions below.
+
+a) What is an exponential distribution (include an APA citation)? ___________________________
+
+b) When would you use an exponential distribution? ________________________
+
+c) What is a binomial distribution (include an APA citation)?_______________________
+
+d) When would you use a binomial distribution? ___________________
+
+3. Task
+
+Run these commands in R, then use your own words to describe what the resulting numbers represent.  You can get some information about the functions by using the help commands in R (such as ?pbinom to get information about the pbinom() command in R):
+
+a) pbinom(q=5, size=10, prob=1/6)
+
+b)
+
+n=10
+p=.5
+x=9
+pbinom(x, n, p)
+
+c) punif(5, min=1, max=10) - punif(4, min=1, max=10)

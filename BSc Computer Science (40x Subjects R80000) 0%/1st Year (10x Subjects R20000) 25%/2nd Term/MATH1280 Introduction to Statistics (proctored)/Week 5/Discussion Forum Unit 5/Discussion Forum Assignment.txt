@@ -1,0 +1,8 @@
+Discussion Assignment
+Unit 5 deals with two types of discrete random variables, the Binomial and the Poisson, and two types of continuous random variables, the Uniform and the Exponential. Depending on the context, these types of random variables may serve as theoretical models of the uncertainty associated with the outcome of a measurement.
+
+Give an example, USING YOUR OWN WORDS (NOT TEXT COPIED FROM THE INTERNET), of how either the Poisson or the Exponential distribution could be used to model something in real life (only one example is necessary). You can give an example in an area that interests you (a list of ideas is below). Give a very rough description of the sample space.
+
+If you use an idea from another source, please provide a citation in the sentence and a reference entry at the end of your post. Include a citation even if you paraphrase from a website. Please do not copy blocks of text from the Internet--try to use your own words.
+
+When forming your answer to this question you may give an example of a situation from your own field of interest for which a random variable, possibly from one of the types that are presented in this unit, can serve as a model. Discuss the importance (or lack thereof) of having a theoretical model for the situation. People can use models to predict business conditions, network traffic levels, sales, number of customers per day, rainfall, temperature, crime rates, or other such things.
