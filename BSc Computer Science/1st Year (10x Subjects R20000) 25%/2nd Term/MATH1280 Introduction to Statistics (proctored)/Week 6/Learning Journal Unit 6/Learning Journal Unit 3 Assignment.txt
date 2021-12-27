@@ -1,0 +1,26 @@
+Learning Journal Tasks
+1. Learning Journal Reflective Comments:
+
+Write short reflective comments or notes about your learning activities during the week. It is highly recommended that you make these entries on a daily basis. You will be assessed on the completeness of your Learning Journal, and the quality of your self-reflection.
+
+You should date each entry, and use clear titles and sub-headings.  These entries should be brief, direct sentences indicating quick comments or notes such as:
+
+   * when you completed each step in the Learning Guide during the week,
+
+   * any problems or unexpected events that occurred during the week (including
+
+      problems understanding new or old material), and
+
+   * any other noteworthy that might affect your performance in this class.
+
+There is no need to include personal information or details of family events, but be sure to mention the existence of any situations that will positively or negatively affect your ability to focus on the classwork.
+
+2. Vocabulary and R functions (be sure to include an APA citation)
+
+a) What is a normal distribution? _________________
+
+b) What does the pnorm() function do?_________________________
+
+3. Task
+
+If you know the mean and standard deviation of a normally distributed population, and somebody asks you questions about the highest 1% and lowest 1% of numbers in that population, what could you tell them? Pick your own values for the mean and standard deviation and then answer the question for those values. Choose one of these R functions to answer the question: dnorm(), pnorm(), qnorm(), rnorm().
