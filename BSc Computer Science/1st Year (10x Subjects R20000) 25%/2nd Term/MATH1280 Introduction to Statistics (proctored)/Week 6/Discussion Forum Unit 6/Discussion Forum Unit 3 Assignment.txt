@@ -1,0 +1,5 @@
+Mathematical models are used as tools to describe reality. These models are supposed to characterize the important features of the analyzed phenomena and provide insight. The normal distribution is an example of a random variable that is widely used by researchers to model real data.
+
+Researchers often model real observations using the normal distribution, but sometimes the real distribution is a bit different from the perfect, normal distribution. List some reasons why researchers might make approximations like this and describe at least one situation when researchers should not use this approximation.
+
+When forming your answer to this question you may give an example of a situation from your own field of interest for which a random variable can serve as a model.
