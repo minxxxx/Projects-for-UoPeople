@@ -1,0 +1,6 @@
+Discussion Assignment
+In past courses, some students have had trouble with the main topics of Chapter 7, so let's review it here.
+
+Imagine that you had to explain the law of large numbers and the central limit theorem to a person who has never heard of these things.  Write an explanation to help this person understand these concepts.  If you use a technical term, be sure to explain it.
+
+Do not cut and paste anything from the Internet, but if you get ideas from a book or Internet source, be sure to cite it in the text and add a reference entry at the end (and put the ideas into your own words). 
