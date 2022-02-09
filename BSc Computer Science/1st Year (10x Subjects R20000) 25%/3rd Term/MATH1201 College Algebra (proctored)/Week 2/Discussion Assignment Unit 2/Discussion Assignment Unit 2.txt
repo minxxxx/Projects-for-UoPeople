@@ -1,0 +1,20 @@
+Discussion Assignment
+Lines can be used to approximate a wide variety of functions; often a function can be described using many lines.
+
+If a stock price goes from $10 to $12 from January 1st to January 31, from $12 to $9 from February 1st to February 28th, and from $9 to $15 from March 1st to March 31th is the price change from $10 to $15 a straight line? 
+
+It is clear that in each of the three time intervals mentioned there was a complex daily variation of prices as in an electrocardiogram. But what would be a simplified solution for a first naive view of the situation? Would a simple function hold up? What is the simplest function to represent this situation? Does your naïve initial and simplified model allow you to predict the behavior of the stock in the next month?
+
+How can I use three “pieces” of lines to describe the price movements from the beginning of January to the end of March? Show the graph for the price movement.
+
+Go to www.desmos.com/calculator, and write your equations following the example
+
+y = x + 2    {0 < x < 2}
+
+y = –x + 6  {2 < x < 5}
+
+y = 2x – 9  {5 < x < 8}  
+
+example graph using he equations noted in the discussion prompt
+
+Your Discussion should be a minimum of 250 words in length and not more than 750 words. 

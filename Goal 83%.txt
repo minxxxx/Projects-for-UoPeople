@@ -1,0 +1,61 @@
+UNIV1001 	88%
+CS1101		76%
+MATH1280	70%
+BUS1101		67%
+CS1102		91%
+MATH1201	91%
+CS1103		91%
+ENGL1102	91%
+Total	(min)	83% = CGPA of 3.0 (for 4 subjects) (98.5)
+
+Year 1 Term 4
+cs1103
+engl1102
+
+Year 1 Term 5
+cs2203
+engl1405
+cs1104
+cs2205
+
+Year 2 Term 1
+cs2301
+cs2401
+psyc1504
+phil1404
+
+Year 2 Term 2
+bus2201
+cs2204
+ahist1401
+hist1421
+
+Year 2 Term 3
+biol1301
+bus3303
+cs3303
+cs3304
+
+Year 2 Term 4
+cs3305
+cs3306
+cs3307
+cs3308
+
+Year 2 Term 5
+cs4402
+cs4403
+cs4404
+cs4405
+
+Year 3 Term 1
+cs4406
+cs4407
+math1211
+math1302
+
+Year 3 Term 2
+bus4405
+phil1402
+soc1502
+cs4408

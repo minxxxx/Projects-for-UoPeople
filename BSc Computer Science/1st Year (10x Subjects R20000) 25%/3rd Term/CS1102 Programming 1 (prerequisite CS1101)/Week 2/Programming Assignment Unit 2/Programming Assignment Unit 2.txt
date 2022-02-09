@@ -1,0 +1,25 @@
+Programming Assignment
+In this assignment, you will write a program that asks the user a quiz question and prompts them for an answer until they get the question correct. This program will be the basis for future Programming Assignments in this course.
+
+These instructions assume you are using the Eclipse IDE on your own computer. You may use a different Java environment as long as you can provide your Java code and screenshots for your assignment submission.
+
+Download the Unit 2 Programming Assignment instructions.
+
+Upload the following for your Programming Assignment submission.
+
+Quiz.java
+Screenshot showing the input dialog with the quiz question
+Screenshot showing the message dialog for the correct answer
+Screenshot showing the message dialog for a valid but incorrect answer
+Screenshot showing the message dialog for an invalid answer
+Your assignment will be graded by your peers using the following criteria. 
+
+Does the submission include the file "Quiz.java"?
+Does the file include a public class called "Quiz" with a public static method called "main"?
+Does the main method have one or more String assignment statements that create a multiple-choice question String?
+Does the main method have a String assignment statement that records the answer to the quiz question, where the question is an argument to the method "JOptionPane.showInputDialog"?
+Does the main method convert the answer String using the "toUpperCase" method?
+Does the main method display a message indicating that the answer is correct when the answer matches a particular String ("A", "B", "C", "D", or "E")?
+Does the main method display a message indicating that the answer is incorrect when the answer matches particular Strings ("A", "B", "C", "D", or "E", but not the correct choice)?
+Does the main method display a message indicating that the answer is invalid when the answer does not match any of the expected Strings ("A", "B", "C", "D", or "E")?
+Does the main method continue to ask the quiz question until the answer is deemed correct?

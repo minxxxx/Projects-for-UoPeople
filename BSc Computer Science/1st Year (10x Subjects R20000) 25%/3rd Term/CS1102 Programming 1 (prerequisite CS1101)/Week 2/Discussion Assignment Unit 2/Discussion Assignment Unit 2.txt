@@ -1,0 +1,3 @@
+Give an example of a while loop, then provide the equivalent do-while loop and for loop.  Then give a different example of a do-while loop, along with the equivalent while loop and for loop. Finally, give an example of a for loop, along with the equivalent while loop and do-while loop. Use your examples to illustrate the advantages and disadvantages of each looping structure, and describe those advantages and disadvantages.
+
+Your Discussion should be at least 250 words in length, but not more than 750 words. Once you’ve completed your initial post, be sure to respond to the posts of at least 3 of your classmates.

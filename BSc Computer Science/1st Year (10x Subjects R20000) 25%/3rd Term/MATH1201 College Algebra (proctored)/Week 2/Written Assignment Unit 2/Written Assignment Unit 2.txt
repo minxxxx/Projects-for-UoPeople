@@ -1,0 +1,23 @@
+Written Assignment
+For this written assignment, answer the following questions showing all of your work.
+
+1. Determine whether the lines given by the equations below are parallel, perpendicular, or neither. Also, find a rigorous algebraic solution for each problem.
+
+a.  {3y+4x=12 \brace -6y=8x+1}      b.   {3y+x=12 \brace -y=8x+1}      c.   {4x-7y=10 \brace 7x+4y=1}  
+ [Suggestion: go to www.desmos.com/calculator, write the two equations and try to conclude the answer.]
+
+
+
+2. A ball is thrown in the air from the top of a building. Its height, in meters above ground, as a function of time, in seconds, is given by  h(t)=-4.9t^2+24t+8 . What is the height of the building? What is the maximum height reached by the ball? How long does it take to reach maximum height? Also, find a rigorous algebraic solution for the problem.
+
+[Suggestion: go to www.desmos.com/calculator and write 
+
+ y=-4.9x^2+24x+8 
+
+and observe the answers.]
+
+
+
+3. A farmer finds that if she plants 75 trees per acre, each tree will yield 20 bushels of fruit. She estimates that for each additional tree planted per acre, the yield of each tree will decrease by 3 bushels. How many trees should she plant per acre to maximize her harvest? Also, find a rigorous algebraic solution for the problem.
+
+[Suggestion: finding a function B(n), that is, the number of bushels corresponding to n trees per acre, go to the www.desmos.com/calculator and try to use a graph to visualize the situation and test your formula.]
