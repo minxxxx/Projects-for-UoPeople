@@ -1,0 +1,4 @@
+
+Discuss the concept of parameters. What are parameters for? What is the difference between formal parameters and actual parameters? Give an example in Java code that illustrates formal parameters and actual parameters.
+
+Your Discussion should be at least 250 words in length, but not more than 750 words. Once you’ve completed your initial post, be sure to respond to the posts of at least 3 of your classmates.

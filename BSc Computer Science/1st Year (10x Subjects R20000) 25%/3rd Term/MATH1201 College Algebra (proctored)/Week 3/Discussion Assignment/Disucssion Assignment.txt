@@ -1,0 +1,9 @@
+
+Discussion Assignment
+Polynomial and rational functions can be used to model a wide variety of phenomena of science, technology, and everyday life.
+
+Choose one of these sectors and give an example of a polynomial or rational function modeling a situation in that sector. [Hint: see the examples and exercises in the book.]
+
+Go to www.desmos.com/calculator, write your equation, or function, and develop your explanation using the properties of graphs.
+
+Your Discussion should be a minimum of 250 words in length and not more than 750 words. 
