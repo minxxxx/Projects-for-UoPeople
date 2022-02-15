@@ -1,0 +1,17 @@
+When you're finished, upload the following to the Programming Assignment submission area:
+
+Quiz.java 
+Screenshot showing the input dialog with a new quiz question, not the one from the previous assignment 
+Screenshot showing the message dialog for an incorrect answer
+Screenshot showing the message dialog for the number of questions and correct answers
+Your assignment will be graded by your peers using the following criteria. 
+
+Does the submission include a static method "ask" that returns a String and takes a String parameter?
+Does the "ask" method use "JOptionPane.showInputDialog" to ask the question provided as a parameter?
+Does the "ask" method return only a valid answer converted to all upper case?
+Does the submission include a static method "check" that takes two String parameters?
+Does the "check" method call the "ask" method with one of its parameters?
+Does the "check" method display one message for correct answers and a different message for incorrect answers?
+Does the "check" method update static member variables to count the number of questions and the number of correct answers?
+Does the main method call "check" with at least three different questions and answers?
+Does the main method display the number of questions and the number of correct answers using the static member variables?
